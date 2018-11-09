@@ -10,6 +10,59 @@
   margin-top: 10%;
   margin-left: 5%; }
 
+#contactBio {
+  clear: left;
+  margin-top: 5%;
+  margin-left: 10%; }
+
+#contactBio a {
+  text-decoration: none;
+  color: black; }
+
+#contactBio a:hover {
+  color: #FFD9D0; }
+
+form {
+  margin-left: 10%;
+  float: left; }
+
+form input {
+  background-color: #FFD9D0;
+  border: none;
+  width: 125%;
+  height: 25px;
+  margin-bottom: 10%; }
+
+#comments {
+  background-color: #FFD9D0;
+  border: none;
+  width: 125%;
+  height: 65px; }
+
+form label {
+  display: block;
+  font-size: 120%; }
+
+#endForm {
+  margin-left: 45%;
+  margin-top: 25.25%; }
+
+#submit {
+  background-color: #FFD9D0;
+  height: 40px;
+  width: 20%;
+  border: none;
+  font-size: 120%;
+  font-family: 'Didot', 'Times New Roman', serif; }
+
+#clear {
+  background-color: white;
+  height: 40px;
+  width: 20%;
+  border: 2px solid #FFD9D0;
+  font-size: 120%;
+  font-family: 'Didot', 'Times New Roman', serif; }
+
 body#page1 {
   background-color: #FFD9D0;
   color: white; }
