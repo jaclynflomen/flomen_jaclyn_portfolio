@@ -1,0 +1,26 @@
+body#page1 {
+    background-color: #FFD9D0;
+    color: white;
+}
+
+
+#headerName {
+    font-size: 400%;
+    color: white;
+    float: left;
+    text-shadow: 2.5px 2.5px black;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+#page1 nav {
+    background-color: white;
+}
+
+#page1 nav ul li a {
+    color:#FFD9D0;
+}
+
+#page1 nav ul li a:hover {
+    color:black;
+}
