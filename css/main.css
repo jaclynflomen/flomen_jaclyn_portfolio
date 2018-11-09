@@ -1,3 +1,15 @@
+#page2body p {
+  clear: left;
+  float: left;
+  width: 40%;
+  margin-left: 7%;
+  margin-top: 5%; }
+
+#selfPic {
+  width: 25%;
+  margin-top: 10%;
+  margin-left: 5%; }
+
 body#page1 {
   background-color: #FFD9D0;
   color: white; }
@@ -18,6 +30,20 @@ body#page1 {
 
 #page1 nav ul li a:hover {
   color: black; }
+
+#page3body {
+  clear: left;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 70%; }
+
+#page3 nav {
+  height: 1600px; }
+
+nav h4 {
+  text-align: center;
+  position: sticky;
+  margin-top: 515%; }
 
 body {
   font-family: 'Didot', 'Times New Roman', serif;
@@ -51,5 +77,13 @@ nav ul li a {
 
 nav ul li a:hover {
   color: black; }
+
+.headerTitle {
+  color: #FFD9D0;
+  text-shadow: 2px 2px black;
+  font-size: 300%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 5%; }
 
 /*# sourceMappingURL=main.css.map */
