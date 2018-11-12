@@ -6,11 +6,20 @@
 }
 
 #page3 nav {
-    height: 1600px;
+    height: 1650px;
 }
 
 nav h4{
     text-align: center;
     position: sticky;
-    margin-top: 515%;
+    margin-top: 540%;
+}
+
+#backtoTop {
+    text-decoration: none;
+    color: black;
+}
+
+#backtoTop:hover {
+    color: white;
 }
