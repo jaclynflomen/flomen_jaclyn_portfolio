@@ -24,7 +24,7 @@
         For business related matters, please email me at <a href="mailto:jaclynflomen@gmail.com">jaclynflomen@gmail.com</a> <br>
         Thank you</h4>
 
-        <form action="post">
+        <form method="get">
             <label for="name">Name</label>
             <input id="name" required>
             <br>
@@ -37,12 +37,14 @@
             <label for="comments">Comments/Questions</label>
             <textarea id="comments" required></textarea>
             <br>
-            
+            <div id="endForm">
+               <ul>
+                <li><button id="submit" type="submit" value="Submit">Submit</button></li>
+                <li><button id="clear" type="reset" value="Reset">Clear</button></li>
+            </ul> 
+            </div>
         </form>
-        <div id="endForm">
-            <button id="submit">Submit</button>
-            <button id="clear">Clear</button>
-        </div>
+        
     
 </body>
 </html>

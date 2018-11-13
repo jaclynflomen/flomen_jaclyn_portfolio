@@ -22,35 +22,40 @@
 #contactBio a:hover {
   color: #FFD9D0; }
 
-form {
-  margin-left: 10%;
-  float: left; }
-
 form input {
   background-color: #FFD9D0;
   border: none;
-  width: 125%;
+  width: 30%;
   height: 25px;
-  margin-bottom: 10%; }
+  margin-bottom: 2%;
+  margin-left: 10%; }
 
 #comments {
   background-color: #FFD9D0;
   border: none;
-  width: 125%;
-  height: 65px; }
+  width: 30%;
+  height: 125px;
+  margin-left: 10%; }
 
 form label {
-  display: block;
-  font-size: 120%; }
+  font-size: 120%;
+  margin-left: 10%;
+  display: block; }
 
 #endForm {
   margin-left: 45%;
-  margin-top: 25.25%; }
+  float: left; }
+
+#endForm ul {
+  list-style: none; }
+
+#endForm ul li {
+  display: inline; }
 
 #submit {
   background-color: #FFD9D0;
   height: 40px;
-  width: 20%;
+  width: 40%;
   border: none;
   font-size: 120%;
   font-family: 'Didot', 'Times New Roman', serif; }
@@ -58,7 +63,7 @@ form label {
 #clear {
   background-color: white;
   height: 40px;
-  width: 20%;
+  width: 40%;
   border: 2px solid #FFD9D0;
   font-size: 120%;
   font-family: 'Didot', 'Times New Roman', serif; }
@@ -119,7 +124,21 @@ nav ul li a {
     margin-top: 1070%; }
 
   #resume {
-    padding-right: 10%; } }
+    padding-right: 10%; }
+
+  form input {
+    margin-left: 25%; }
+
+  textarea {
+    margin-left: 25%; }
+
+  label {
+    margin-left: 25%; }
+
+  #endForm {
+    clear: left;
+    margin-left: 21.5%;
+    padding-top: 2%; } }
 #page3body {
   clear: left;
   margin-top: 5%;
