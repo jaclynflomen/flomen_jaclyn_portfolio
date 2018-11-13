@@ -16,14 +16,6 @@ body
     display: none;
 }
 
-#logo
-{
-    width: 45%;
-    margin-left: 30%;
-    margin-bottom: 33%;
-    margin-top: 20%;
-}
-
 nav {
     float: right;
     background-color: #FFD9D0;
@@ -37,12 +29,6 @@ nav ul {
 nav ul li {
     list-style: none;
     padding-bottom: 20%;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 200%;
-    text-decoration: none;
 }
 
 nav ul li a:hover {

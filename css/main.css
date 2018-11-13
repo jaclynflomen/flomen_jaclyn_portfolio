@@ -75,6 +75,17 @@ body#page1 {
   margin-left: 5%;
   margin-top: 10%; }
 
+#logo {
+  width: 45%;
+  margin-left: 30%;
+  margin-bottom: 33%;
+  margin-top: 20%; }
+
+nav ul li a {
+  color: white;
+  font-size: 200%;
+  text-decoration: none; }
+
 #page1 nav {
   background-color: white; }
 
@@ -84,6 +95,29 @@ body#page1 {
 #page1 nav ul li a:hover {
   color: black; }
 
+@media only screen and (max-width: 660px) {
+  #headerName {
+    font-size: 250%;
+    margin-top: 15%; }
+
+  #logo {
+    width: 35%; }
+
+  nav ul li a {
+    font-size: 150%;
+    text-align: center; }
+
+  nav {
+    width: 25%; }
+
+  #page3 nav h4 {
+    margin-top: 950%; }
+
+  #page3 nav {
+    height: 2000px; }
+
+  #page3body {
+    margin-right: 20%; } }
 #page3body {
   clear: left;
   margin-top: 5%;
@@ -112,12 +146,6 @@ body {
 .hidden {
   display: none; }
 
-#logo {
-  width: 45%;
-  margin-left: 30%;
-  margin-bottom: 33%;
-  margin-top: 20%; }
-
 nav {
   float: right;
   background-color: #FFD9D0;
@@ -129,11 +157,6 @@ nav ul {
 nav ul li {
   list-style: none;
   padding-bottom: 20%; }
-
-nav ul li a {
-  color: white;
-  font-size: 200%;
-  text-decoration: none; }
 
 nav ul li a:hover {
   color: black; }
