@@ -43,8 +43,7 @@ form label {
   display: block; }
 
 #endForm {
-  margin-left: 45%;
-  float: left; }
+  margin-left: 45%; }
 
 #endForm ul {
   list-style: none; }
@@ -68,6 +67,31 @@ form label {
   font-size: 120%;
   font-family: 'Didot', 'Times New Roman', serif; }
 
+@media only screen and (max-width: 660px) {
+  #endForm {
+    margin-left: 45%; }
+
+  #endForm ul {
+    list-style: none; }
+
+  #endForm ul li {
+    display: inline; }
+
+  #submit {
+    background-color: #FFD9D0;
+    height: 40px;
+    width: 40%;
+    border: none;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif; }
+
+  #clear {
+    background-color: white;
+    height: 40px;
+    width: 40%;
+    border: 2px solid #FFD9D0;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif; } }
 body#page1 {
   background-color: #FFD9D0;
   color: white; }
@@ -100,6 +124,9 @@ nav ul li a {
 #page1 nav ul li a:hover {
   color: black; }
 
+nav {
+  height: 610px; }
+
 @media only screen and (max-width: 660px) {
   #headerName {
     font-size: 250%;
@@ -117,28 +144,23 @@ nav ul li a {
   nav ul {
     padding-left: 20%; }
 
-  #page3 nav {
-    height: 2075px; }
-
-  #page3 nav h4 {
-    margin-top: 1070%; }
-
-  #resume {
-    padding-right: 10%; }
-
   form input {
-    margin-left: 25%; }
-
-  textarea {
-    margin-left: 25%; }
+    margin-left: 22%; }
 
   label {
-    margin-left: 25%; }
+    padding-left: 12%; }
+
+  #comments {
+    margin-left: 22%; }
 
   #endForm {
     clear: left;
-    margin-left: 21.5%;
-    padding-top: 2%; } }
+    margin-left: 13%;
+    padding-top: 2%;
+    width: 50%; }
+
+  #page5 nav {
+    height: 680px; } }
 #page3body {
   clear: left;
   margin-top: 5%;
@@ -157,6 +179,19 @@ nav h4 {
 #backtoTop:hover {
   color: white; }
 
+#page3 nav {
+  height: 1650px; }
+
+@media screen and (max-width: 660px) {
+  #page3 nav {
+    height: 1830%; }
+
+  #resume {
+    padding-right: 10%; }
+
+  #page3 nav h4 {
+    margin-top: 970%;
+    padding-bottom: 5%; } }
 body {
   font-family: 'Didot', 'Times New Roman', serif;
   margin: 0px; }
@@ -167,7 +202,7 @@ body {
 nav {
   float: right;
   background-color: #FFD9D0;
-  height: 610px; }
+  position: sticky; }
 
 nav ul {
   margin-top: 30%; }

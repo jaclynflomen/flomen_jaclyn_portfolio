@@ -19,3 +19,23 @@ nav h4{
 #backtoTop:hover {
     color: white;
 }
+
+#page3 nav {
+    height: 1650px;
+}
+
+@media screen and (max-width:660px){
+#page3 nav {
+    height: 1830%;
+}
+
+
+#resume {
+    padding-right: 10%;
+}
+
+#page3 nav h4{
+    margin-top: 970%;
+    padding-bottom: 5%;
+}
+}

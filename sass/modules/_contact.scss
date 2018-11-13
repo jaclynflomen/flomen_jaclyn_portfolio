@@ -39,7 +39,6 @@ form label{
 
 #endForm {
     margin-left: 45%;
-    float: left;
 }
 
 #endForm ul {
@@ -66,4 +65,39 @@ form label{
     border: 2px solid #FFD9D0;
     font-size: 120%;
     font-family: 'Didot', 'Times New Roman', serif;
+}
+
+
+@media only screen and (max-width:660px) {
+
+#endForm {
+    margin-left: 45%;
+}
+
+#endForm ul {
+    list-style: none;
+}
+
+#endForm ul li {
+    display: inline;
+}
+
+#submit {
+    background-color: #FFD9D0;
+    height: 40px;
+    width: 40%;
+    border: none;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif;
+}
+
+#clear {
+    background-color: white;
+    height: 40px;
+    width: 40%;
+    border: 2px solid #FFD9D0;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif;
+}
+
 }
