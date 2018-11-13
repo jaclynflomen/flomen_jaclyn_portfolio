@@ -104,28 +104,27 @@ nav ul li a {
     width: 35%; }
 
   nav ul li a {
-    font-size: 150%;
-    text-align: center; }
+    font-size: 150%; }
 
   nav {
     width: 25%; }
 
-  #page3 nav h4 {
-    margin-top: 950%; }
+  nav ul {
+    padding-left: 20%; }
 
   #page3 nav {
-    height: 2000px; }
+    height: 2075px; }
 
-  #page3body {
-    margin-right: 20%; } }
+  #page3 nav h4 {
+    margin-top: 1070%; }
+
+  #resume {
+    padding-right: 10%; } }
 #page3body {
   clear: left;
   margin-top: 5%;
   margin-left: 5%;
   width: 70%; }
-
-#page3 nav {
-  height: 1650px; }
 
 nav h4 {
   text-align: center;
