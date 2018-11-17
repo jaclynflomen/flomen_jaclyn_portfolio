@@ -16,13 +16,13 @@ body
     display: none;
 }
 
-nav {
+.nav {
     float: right;
-    background-color: #FFD9D0;
+    background-color: #FFD0C9;
     position: sticky;
 }
 
-nav ul {
+#nav ul {
     margin-top: 30%;
 }
 
@@ -35,8 +35,8 @@ nav ul li a:hover {
     color: black;
 }
 
-.headerTitle {
-    color: #FFD9D0;
+.headerName {
+    color: #FFD0C9;
     text-shadow: 2px 2px black;
     font-size: 300%;
     float: left;

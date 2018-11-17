@@ -5,7 +5,7 @@
     width: 70%;
 }
 
-nav h4{
+.nav h4{
     text-align: center;
     position: sticky;
     margin-top: 540%;
@@ -20,12 +20,12 @@ nav h4{
     color: white;
 }
 
-#page3 nav {
+#page3 .nav {
     height: 1650px;
 }
 
 @media screen and (max-width:660px){
-#page3 nav {
+#page3 .nav {
     height: 1830%;
 }
 
@@ -34,7 +34,7 @@ nav h4{
     padding-right: 10%;
 }
 
-#page3 nav h4{
+#page3 .nav h4{
     margin-top: 970%;
     padding-bottom: 5%;
 }

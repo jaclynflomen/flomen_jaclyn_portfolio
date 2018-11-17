@@ -21,24 +21,24 @@ body#page1 {
     margin-top: 20%;
 }
 
-nav ul li a {
+.nav ul li a {
     color: white;
     font-size: 200%;
     text-decoration: none;
 }
 
-#page1 nav {
+#page1 .nav {
     background-color: white;
 }
 
-#page1 nav ul li a {
+#page1 .nav ul li a {
     color:#FFD9D0;
 }
 
-#page1 nav ul li a:hover {
+#page1 .nav ul li a:hover {
     color:black;
 }
 
-nav {
+.nav {
     height: 610px;
 }
