@@ -1,4 +1,5 @@
 @media only screen and (max-width:480px){
+    //index page
     #headerName {
         font-size: 210%;
         padding-top: 0%;
@@ -9,12 +10,11 @@
         float: none;
     }
 
-    .nav_mobile {
+    #page1 .nav_mobile {
         width: 100%;
         height: 5%;
         visibility: visible;
         margin-top: 80%;
-        position: sticky;
         background-color: #FFD0C9;
     }
 
@@ -28,21 +28,21 @@
     .nav_mobile ul li {
         display: inline;
         padding-bottom: 0%;
-        padding-left: 15%;
+        padding-left: 16.5%;
         text-align: center;
     }
 
     .nav_mobile ul li a {
-        font-size: 140%;
-        margin-right: 3%;
-        margin-bottom: 10%;
+        font-size: 130%;
+        margin-right: 5%;
+        margin-bottom: 9%;
     }
 
     .nav_mobile #logo {
-        width: 12.5%;
+        width: 12%;
         margin-bottom: 0%;
-        margin-top: 2%;
-        margin-left: 42.5%;
+        margin-top: 1%;
+        margin-left: 5%;
     }
 
     #page1 .nav_mobile ul li a {
@@ -58,6 +58,51 @@
     }
 
 
+    //about page
+
+    #page2 .nav_mobile {
+        width: 100%;
+        height: 4%;
+        visibility: visible;
+        position: sticky;
+        background-color: #FFD9D0;
+        bottom: 0;
+        margin-top: 61%;
+    }
+
+    //portfolio page
+
+    #page4 .nav_mobile {
+        width: 100%;
+        height: 5%;
+        visibility: visible;
+        margin-top: 61%;
+        position: sticky;
+        background-color: #FFD9D0;
+        bottom: 0;
+    }
+
+    //resume page
+
+    #page3 .nav_mobile {
+        width: 100%;
+        height: 5%;
+        visibility: visible;
+        position: sticky;
+        background-color: #FFD9D0;
+        bottom: 0;
+    }
+
+    //contact page
+
+    #page5 .nav_mobile {
+        width: 100%;
+        height: 5%;
+        visibility: visible;
+        position: sticky;
+        background-color: #FFD9D0;
+        bottom: 0;
+    }
 
 
 }
@@ -84,15 +129,15 @@
     display: none;
 }
 
-nav ul li a {
-    font-size: 150%;
+.nav ul li a {
+    font-size: 130%;
 }
 
-nav {
+.nav {
     width: 25%;
 }
 
-nav ul {
+.nav ul {
     padding-left: 20%;
 }
 
@@ -118,7 +163,7 @@ label {
 }
 
 
-#page5 nav {
+#page5 .nav {
     height: 680px;
 }
 
