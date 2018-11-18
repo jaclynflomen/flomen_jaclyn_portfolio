@@ -194,6 +194,17 @@ body#page1 {
     background-color: #FFD9D0;
     bottom: 0; }
 
+  #desktopBreak {
+    display: none; }
+
+  .pics_cont img {
+    display: block;
+    width: 100%;
+    height: 200px; }
+
+  .tabletBreak {
+    display: none; }
+
   #page3 .nav_mobile {
     width: 100%;
     height: 5%;
@@ -245,9 +256,27 @@ body#page1 {
     width: 50%; }
 
   #page5 .nav {
-    height: 680px; } }
+    height: 680px; }
+
+  .pics_cont img {
+    display: block;
+    width: 100%;
+    height: 200px; }
+
+  #portfolio_container label {
+    font-size: 10%;
+    position: relative; }
+
+  .tabletBreak {
+    display: block; }
+
+  .pics_cont img:hover {
+    opacity: 1; } }
 @media only screen and (min-width: 640px) {
   .nav_mobile {
+    display: none; }
+
+  .tabletBreak {
     display: none; } }
 #portfolio_container {
   clear: left;
