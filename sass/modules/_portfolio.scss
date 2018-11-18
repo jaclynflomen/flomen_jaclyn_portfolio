@@ -3,17 +3,9 @@
     margin-left: 10%;
 }
 
-#portfolio_container div {
-    display: inline;
-}
-
-#portfolio_container div:hover {
-    opacity: 0.5;
-}
-
 .pics_cont {
-    margin-left: 10%;
-    margin-left: 0%;
+    margin-left: 2%;
+    display: inline;
 }
 
 .pics_cont img {
@@ -23,9 +15,16 @@
     border-radius: 3px;
 }
 
+.pics_cont img:hover {
+    opacity: 0.25;
+}
+
 #portfolio_container label {
     font-size: 120%;
     align-content: center;
     position: absolute;
-    color: white;
+    color: black;
+    background-color: #FFD0C9;
+    box-shadow: 2px 2px 2px black;
+    padding: 0.5%;
 }
