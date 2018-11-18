@@ -1,0 +1,31 @@
+#portfolio_container {
+    clear: left;
+    margin-left: 10%;
+}
+
+#portfolio_container div {
+    display: inline;
+}
+
+#portfolio_container div:hover {
+    opacity: 0.5;
+}
+
+.pics_cont {
+    margin-left: 10%;
+    margin-left: 0%;
+}
+
+.pics_cont img {
+    width: 20%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+#portfolio_container label {
+    font-size: 120%;
+    align-content: center;
+    position: absolute;
+    color: white;
+}
