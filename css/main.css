@@ -1,3 +1,6 @@
+background-img {
+  background-image: url(/images/background.svg); }
+
 #page2body p {
   clear: left;
   float: left;
@@ -93,14 +96,15 @@ form label {
     font-size: 120%;
     font-family: 'Didot', 'Times New Roman', serif; } }
 body#page1 {
-  background-color: #E8CCBB;
+  background-image: linear-gradient(to right, #AD0000, #2EABFF);
+  background-repeat: no-repeat;
   color: white; }
 
 #headerName {
   font-size: 400%;
-  color: black;
+  color: white;
   float: left;
-  text-shadow: 2.5px 2.5px white;
+  text-shadow: 2.5px 2.5px black;
   margin-left: 5%;
   margin-top: 10%; }
 
@@ -119,10 +123,10 @@ body#page1 {
   background-color: white; }
 
 #page1 .nav ul li a {
-  color: #E8CCBB; }
+  color: #2EABFF; }
 
 #page1 .nav ul li a:hover {
-  color: black; }
+  color: #AD0000; }
 
 .nav {
   height: 610px; }
