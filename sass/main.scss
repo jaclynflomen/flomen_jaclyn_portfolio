@@ -12,13 +12,20 @@ body
     margin: 0px;
 }
 
+body#page1 {
+    background-image: url(/images/DSC_0883copy.jpg);
+    background-repeat:no-repeat; 
+    color: white;
+}
+
+
 .hidden {
     display: none;
 }
 
 .nav {
     float: right;
-    background-color: #E8CCBB;
+    background-color: lightgray;
 }
 
 #nav ul {
@@ -35,7 +42,7 @@ nav ul li a:hover {
 }
 
 .headerName {
-    color: #E8CCBB;
+    color: lightgray;
     text-shadow: 2px 2px black;
     font-size: 300%;
     float: left;

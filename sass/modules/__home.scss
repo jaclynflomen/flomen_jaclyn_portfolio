@@ -1,11 +1,3 @@
-
-body#page1 {
-    background-image: linear-gradient(to right, #AD0000, #2EABFF);
-    background-repeat:no-repeat; 
-    color: white;
-}
-
-
 #headerName {
     font-size: 400%;
     color: white;
@@ -34,7 +26,7 @@ body#page1 {
 }
 
 #page1 .nav ul li a {
-    color:#2EABFF;
+    color:lightgray;
 }
 
 #page1 .nav ul li a:hover {

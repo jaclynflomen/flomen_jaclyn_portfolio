@@ -23,10 +23,10 @@ background-img {
   color: black; }
 
 #contactBio a:hover {
-  color: #E8CCBB; }
+  color: lightgray; }
 
 form input {
-  background-color: #E8CCBB;
+  background-color: lightgray;
   border: none;
   width: 30%;
   height: 25px;
@@ -34,7 +34,7 @@ form input {
   margin-left: 10%; }
 
 #comments {
-  background-color: #E8CCBB;
+  background-color: lightgray;
   border: none;
   width: 30%;
   height: 125px;
@@ -55,7 +55,7 @@ form label {
   display: inline; }
 
 #submit {
-  background-color: #E8CCBB;
+  background-color: lightgray;
   height: 40px;
   width: 40%;
   border: none;
@@ -66,7 +66,7 @@ form label {
   background-color: white;
   height: 40px;
   width: 40%;
-  border: 2px solid #E8CCBB;
+  border: 2px solid lightgray;
   font-size: 120%;
   font-family: 'Didot', 'Times New Roman', serif; }
 
@@ -81,7 +81,7 @@ form label {
     display: inline; }
 
   #submit {
-    background-color: #E8CCBB;
+    background-color: lightgray;
     height: 40px;
     width: 40%;
     border: none;
@@ -92,14 +92,9 @@ form label {
     background-color: white;
     height: 40px;
     width: 40%;
-    border: 2px solid #E8CCBB;
+    border: 2px solid lightgray;
     font-size: 120%;
     font-family: 'Didot', 'Times New Roman', serif; } }
-body#page1 {
-  background-image: linear-gradient(to right, #AD0000, #2EABFF);
-  background-repeat: no-repeat;
-  color: white; }
-
 #headerName {
   font-size: 400%;
   color: white;
@@ -123,7 +118,7 @@ body#page1 {
   background-color: white; }
 
 #page1 .nav ul li a {
-  color: #2EABFF; }
+  color: lightgray; }
 
 #page1 .nav ul li a:hover {
   color: #AD0000; }
@@ -146,7 +141,7 @@ body#page1 {
     height: 5%;
     visibility: visible;
     margin-top: 80%;
-    background-color: #E8CCBB; }
+    background-color: lightgray; }
 
   .nav {
     display: none; }
@@ -175,7 +170,7 @@ body#page1 {
     color: black; }
 
   #page1 .nav_mobile ul li a:hover {
-    color: #E8CCBB; }
+    color: lightgray; }
 
   #page1 .nav_mobile {
     background-color: white; }
@@ -185,7 +180,7 @@ body#page1 {
     height: 4%;
     visibility: visible;
     position: sticky;
-    background-color: #E8CCBB;
+    background-color: lightgray;
     bottom: 0;
     margin-top: 61%; }
 
@@ -194,7 +189,7 @@ body#page1 {
     height: 5%;
     visibility: visible;
     position: sticky;
-    background-color: #E8CCBB;
+    background-color: lightgray;
     bottom: 0; }
 
   #desktopBreak {
@@ -223,7 +218,7 @@ body#page1 {
     height: 5%;
     visibility: visible;
     position: sticky;
-    background-color: #E8CCBB;
+    background-color: lightgray;
     bottom: 0; }
 
   #page5 .nav_mobile {
@@ -231,7 +226,7 @@ body#page1 {
     height: 5%;
     visibility: visible;
     position: sticky;
-    background-color: #E8CCBB;
+    background-color: lightgray;
     bottom: 0; } }
 @media only screen and (min-width: 480px) and (max-width: 640px) {
   #headerName {
@@ -339,7 +334,7 @@ body#page1 {
   align-content: center;
   position: absolute;
   color: black;
-  background-color: #E8CCBB;
+  background-color: lightgray;
   box-shadow: 2px 2px 2px black;
   padding: 0.5%; }
 
@@ -408,12 +403,17 @@ body {
   font-family: 'Didot', 'Times New Roman', serif;
   margin: 0px; }
 
+body#page1 {
+  background-image: url(/images/DSC_0883copy.jpg);
+  background-repeat: no-repeat;
+  color: white; }
+
 .hidden {
   display: none; }
 
 .nav {
   float: right;
-  background-color: #E8CCBB; }
+  background-color: lightgray; }
 
 #nav ul {
   margin-top: 30%; }
@@ -426,7 +426,7 @@ nav ul li a:hover {
   color: black; }
 
 .headerName {
-  color: #E8CCBB;
+  color: lightgray;
   text-shadow: 2px 2px black;
   font-size: 300%;
   float: left;
