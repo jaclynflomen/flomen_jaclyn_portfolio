@@ -20,10 +20,10 @@
   color: black; }
 
 #contactBio a:hover {
-  color: #FFD9D0; }
+  color: #E8CCBB; }
 
 form input {
-  background-color: #FFD9D0;
+  background-color: #E8CCBB;
   border: none;
   width: 30%;
   height: 25px;
@@ -31,7 +31,7 @@ form input {
   margin-left: 10%; }
 
 #comments {
-  background-color: #FFD9D0;
+  background-color: #E8CCBB;
   border: none;
   width: 30%;
   height: 125px;
@@ -52,7 +52,7 @@ form label {
   display: inline; }
 
 #submit {
-  background-color: #FFD9D0;
+  background-color: #E8CCBB;
   height: 40px;
   width: 40%;
   border: none;
@@ -63,7 +63,7 @@ form label {
   background-color: white;
   height: 40px;
   width: 40%;
-  border: 2px solid #FFD9D0;
+  border: 2px solid #E8CCBB;
   font-size: 120%;
   font-family: 'Didot', 'Times New Roman', serif; }
 
@@ -78,7 +78,7 @@ form label {
     display: inline; }
 
   #submit {
-    background-color: #FFD9D0;
+    background-color: #E8CCBB;
     height: 40px;
     width: 40%;
     border: none;
@@ -89,11 +89,11 @@ form label {
     background-color: white;
     height: 40px;
     width: 40%;
-    border: 2px solid #FFD9D0;
+    border: 2px solid #E8CCBB;
     font-size: 120%;
     font-family: 'Didot', 'Times New Roman', serif; } }
 body#page1 {
-  background-color: #FFD9D0;
+  background-color: #E8CCBB;
   color: white; }
 
 #headerName {
@@ -119,7 +119,7 @@ body#page1 {
   background-color: white; }
 
 #page1 .nav ul li a {
-  color: #FFD9D0; }
+  color: #E8CCBB; }
 
 #page1 .nav ul li a:hover {
   color: black; }
@@ -142,7 +142,7 @@ body#page1 {
     height: 5%;
     visibility: visible;
     margin-top: 80%;
-    background-color: #FFD0C9; }
+    background-color: #E8CCBB; }
 
   .nav {
     display: none; }
@@ -165,13 +165,13 @@ body#page1 {
     width: 12%;
     margin-bottom: 0%;
     margin-top: 1%;
-    margin-left: 5%; }
+    margin-left: 6%; }
 
   #page1 .nav_mobile ul li a {
     color: black; }
 
   #page1 .nav_mobile ul li a:hover {
-    color: #FFD0C9; }
+    color: #E8CCBB; }
 
   #page1 .nav_mobile {
     background-color: white; }
@@ -181,7 +181,7 @@ body#page1 {
     height: 4%;
     visibility: visible;
     position: sticky;
-    background-color: #FFD9D0;
+    background-color: #E8CCBB;
     bottom: 0;
     margin-top: 61%; }
 
@@ -189,28 +189,37 @@ body#page1 {
     width: 100%;
     height: 5%;
     visibility: visible;
-    margin-top: 61%;
     position: sticky;
-    background-color: #FFD9D0;
+    background-color: #E8CCBB;
     bottom: 0; }
 
   #desktopBreak {
     display: none; }
 
+  .pics_cont {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%; }
+
   .pics_cont img {
     display: block;
-    width: 100%;
-    height: 200px; }
+    width: 90%;
+    margin-bottom: 5%;
+    height: 100%;
+    overflow: hidden; }
 
   .tabletBreak {
     display: none; }
+
+  #portfolio_container {
+    margin-left: 10%; }
 
   #page3 .nav_mobile {
     width: 100%;
     height: 5%;
     visibility: visible;
     position: sticky;
-    background-color: #FFD9D0;
+    background-color: #E8CCBB;
     bottom: 0; }
 
   #page5 .nav_mobile {
@@ -218,7 +227,7 @@ body#page1 {
     height: 5%;
     visibility: visible;
     position: sticky;
-    background-color: #FFD9D0;
+    background-color: #E8CCBB;
     bottom: 0; } }
 @media only screen and (min-width: 480px) and (max-width: 640px) {
   #headerName {
@@ -238,7 +247,7 @@ body#page1 {
     width: 25%; }
 
   .nav ul {
-    padding-left: 20%; }
+    padding-left: 25%; }
 
   form input {
     margin-left: 22%; }
@@ -259,35 +268,61 @@ body#page1 {
     height: 680px; }
 
   .pics_cont img {
-    display: block;
-    width: 100%;
-    height: 200px; }
+    width: 25%;
+    height: 25%; }
+
+  .pics_cont a {
+    display: inline; }
 
   #portfolio_container label {
     font-size: 10%;
     position: relative; }
 
+  #portfolio_container {
+    margin-left: 8%; }
+
   .tabletBreak {
     display: block; }
 
+  #desktopBreak {
+    display: none; }
+
   .pics_cont img:hover {
-    opacity: 1; } }
+    opacity: 1; }
+
+  .nav {
+    height: 850px; } }
 @media only screen and (min-width: 640px) {
   .nav_mobile {
     display: none; }
 
+  #desktopBreak {
+    display: block; }
+
   .tabletBreak {
-    display: none; } }
+    display: none; }
+
+  .pics_cont img {
+    width: 20%;
+    height: 100%; }
+
+  .pics_cont a {
+    display: inline; }
+
+  #portfolio_container {
+    margin-left: 5%; }
+
+  .nav ul {
+    padding-left: 25%; } }
 #portfolio_container {
-  clear: left;
-  margin-left: 10%; }
+  clear: left; }
 
 .pics_cont {
   margin-left: 2%;
-  display: inline; }
+  display: inline;
+  margin-right: 0%; }
 
 .pics_cont img {
-  width: 20%;
   height: 200px;
   object-fit: cover;
   border-radius: 3px; }
@@ -300,9 +335,39 @@ body#page1 {
   align-content: center;
   position: absolute;
   color: black;
-  background-color: #FFD0C9;
+  background-color: #E8CCBB;
   box-shadow: 2px 2px 2px black;
   padding: 0.5%; }
+
+.personal_img img {
+  display: block;
+  width: 20%;
+  margin-bottom: 3%; }
+
+.work_img img {
+  display: block;
+  width: 20%;
+  margin-bottom: 3%; }
+
+.photog_img img {
+  display: block;
+  width: 20%;
+  margin-bottom: 3%; }
+
+.school_img img {
+  display: block;
+  width: 20%;
+  margin-bottom: 3%; }
+
+.video_img img {
+  display: block;
+  width: 20%;
+  margin-bottom: 3%; }
+
+.other_img img {
+  display: block;
+  width: 20%;
+  margin-bottom: 3%; }
 
 #page3body {
   clear: left;
@@ -344,7 +409,7 @@ body {
 
 .nav {
   float: right;
-  background-color: #FFD0C9; }
+  background-color: #E8CCBB; }
 
 #nav ul {
   margin-top: 30%; }
@@ -357,7 +422,7 @@ nav ul li a:hover {
   color: black; }
 
 .headerName {
-  color: #FFD0C9;
+  color: #E8CCBB;
   text-shadow: 2px 2px black;
   font-size: 300%;
   float: left;

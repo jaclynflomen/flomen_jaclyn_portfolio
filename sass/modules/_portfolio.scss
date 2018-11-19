@@ -1,15 +1,14 @@
 #portfolio_container {
     clear: left;
-    margin-left: 10%;
 }
 
 .pics_cont {
     margin-left: 2%;
     display: inline;
+    margin-right: 0%;
 }
 
 .pics_cont img {
-    width: 20%;
     height: 200px;
     object-fit: cover;
     border-radius: 3px;
@@ -24,7 +23,42 @@
     align-content: center;
     position: absolute;
     color: black;
-    background-color: #FFD0C9;
+    background-color: #E8CCBB;
     box-shadow: 2px 2px 2px black;
     padding: 0.5%;
+}
+
+.personal_img img {
+    display: block;
+    width: 20%;
+    margin-bottom: 3%;
+}
+.work_img img {
+    display: block;
+    width: 20%;
+    margin-bottom: 3%;
+}
+
+.photog_img img {
+    display: block;
+    width: 20%;
+    margin-bottom: 3%;
+}
+
+.school_img img {
+    display: block;
+    width: 20%;
+    margin-bottom: 3%;
+}
+
+.video_img img {
+    display: block;
+    width: 20%;
+    margin-bottom: 3%;
+}
+
+.other_img img {
+    display: block;
+    width: 20%;
+    margin-bottom: 3%;
 }
