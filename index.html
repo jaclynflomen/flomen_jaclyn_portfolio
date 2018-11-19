@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jaclyn Flomen - Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/typewriter.js"></script>
+    <script src="https://unpkg.com/ityped@1.0.2"></script>
 </head>
 <body id="page1">
 
@@ -20,7 +22,11 @@
         </ul>
     </nav>
 
-    <h1 id="headerName">Jaclyn Flomen</h1>
+    <div id="app" class="headerName">
+        <span id="ityped"></span>
+    </div>
+<br>
+       
 
     <nav class="nav_mobile">
         <h1 class="hidden">Nav</h1>
@@ -32,6 +38,22 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+
+
+
+
+
+    <script>
+        ityped.init(document.querySelector("#ityped"), {
+          showCursor: true,
+          strings: ['Jaclyn Flomen', 'Graphic Designer']
+        })
+        ityped.init("#placeholder", {
+          placeholder: false,
+          showCursor: false
+        })
+      </script>
     
 </body>
 </html>

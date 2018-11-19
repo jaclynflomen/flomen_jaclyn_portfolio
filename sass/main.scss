@@ -5,17 +5,12 @@
 @import 'modules/_mediaqueries';
 @import 'modules/_portfolio';
 @import 'modules/_resume';
+@import 'modules/type_animation.scss';
 
 body
 {
     font-family: 'Didot', 'Times New Roman', serif;
     margin: 0px;
-}
-
-body#page1 {
-    background-image: url(/images/DSC_0883copy.jpg);
-    background-repeat:no-repeat; 
-    color: white;
 }
 
 
@@ -25,7 +20,7 @@ body#page1 {
 
 .nav {
     float: right;
-    background-color: lightgray;
+    background-color: #f9c4b6;
 }
 
 #nav ul {
@@ -42,10 +37,17 @@ nav ul li a:hover {
 }
 
 .headerName {
-    color: lightgray;
+    color: #f9c4b6;
     text-shadow: 2px 2px black;
-    font-size: 300%;
+    font-size: 200%;
     float: left;
     margin-left: 5%;
     margin-top: 5%;
+    margin-bottom: 0%;
 }
+
+#page1 .headerName {
+    color: black;
+    text-shadow: 2px 2px white;
+}
+ 

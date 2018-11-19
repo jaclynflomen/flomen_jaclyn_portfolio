@@ -1,6 +1,3 @@
-background-img {
-  background-image: url(/images/background.svg); }
-
 #page2body p {
   clear: left;
   float: left;
@@ -23,10 +20,10 @@ background-img {
   color: black; }
 
 #contactBio a:hover {
-  color: lightgray; }
+  color: #f9c4b6; }
 
 form input {
-  background-color: lightgray;
+  background-color: #f9c4b6;
   border: none;
   width: 30%;
   height: 25px;
@@ -34,7 +31,7 @@ form input {
   margin-left: 10%; }
 
 #comments {
-  background-color: lightgray;
+  background-color: #f9c4b6;
   border: none;
   width: 30%;
   height: 125px;
@@ -55,7 +52,7 @@ form label {
   display: inline; }
 
 #submit {
-  background-color: lightgray;
+  background-color: #f9c4b6;
   height: 40px;
   width: 40%;
   border: none;
@@ -66,7 +63,7 @@ form label {
   background-color: white;
   height: 40px;
   width: 40%;
-  border: 2px solid lightgray;
+  border: 2px solid #f9c4b6;
   font-size: 120%;
   font-family: 'Didot', 'Times New Roman', serif; }
 
@@ -81,7 +78,7 @@ form label {
     display: inline; }
 
   #submit {
-    background-color: lightgray;
+    background-color: #f9c4b6;
     height: 40px;
     width: 40%;
     border: none;
@@ -92,14 +89,14 @@ form label {
     background-color: white;
     height: 40px;
     width: 40%;
-    border: 2px solid lightgray;
+    border: 2px solid #f9c4b6;
     font-size: 120%;
     font-family: 'Didot', 'Times New Roman', serif; } }
 #headerName {
-  font-size: 400%;
-  color: white;
+  font-size: 200%;
+  color: black;
   float: left;
-  text-shadow: 2.5px 2.5px black;
+  text-shadow: 2.5px 2.5px white;
   margin-left: 5%;
   margin-top: 10%; }
 
@@ -118,17 +115,22 @@ form label {
   background-color: white; }
 
 #page1 .nav ul li a {
-  color: lightgray; }
+  color: black; }
 
 #page1 .nav ul li a:hover {
-  color: #AD0000; }
+  color: #f9c4b6; }
 
 .nav {
   height: 610px; }
 
 @media only screen and (max-width: 480px) {
-  #headerName {
-    font-size: 210%;
+  body#page1 {
+    background-image: url(file:///Users/JaclynFlomen/Desktop/flomen_jaclyn_portfolio/images/background_m.jpg);
+    background-repeat: no-repeat;
+    color: white; }
+
+  .headerName {
+    font-size: 100%;
     padding-top: 0%;
     margin-left: 10%;
     margin-right: 0%;
@@ -136,12 +138,18 @@ form label {
     margin-top: 20%;
     float: none; }
 
+  #page1 .headerName {
+    margin-top: 25%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    padding: 0%; }
+
   #page1 .nav_mobile {
     width: 100%;
     height: 5%;
     visibility: visible;
-    margin-top: 80%;
-    background-color: lightgray; }
+    margin-top: 100%;
+    background-color: #f9c4b6; }
 
   .nav {
     display: none; }
@@ -170,7 +178,7 @@ form label {
     color: black; }
 
   #page1 .nav_mobile ul li a:hover {
-    color: lightgray; }
+    color: #f9c4b6; }
 
   #page1 .nav_mobile {
     background-color: white; }
@@ -180,7 +188,7 @@ form label {
     height: 4%;
     visibility: visible;
     position: sticky;
-    background-color: lightgray;
+    background-color: #f9c4b6;
     bottom: 0;
     margin-top: 61%; }
 
@@ -189,7 +197,7 @@ form label {
     height: 5%;
     visibility: visible;
     position: sticky;
-    background-color: lightgray;
+    background-color: #f9c4b6;
     bottom: 0; }
 
   #desktopBreak {
@@ -218,7 +226,7 @@ form label {
     height: 5%;
     visibility: visible;
     position: sticky;
-    background-color: lightgray;
+    background-color: #f9c4b6;
     bottom: 0; }
 
   #page5 .nav_mobile {
@@ -226,11 +234,16 @@ form label {
     height: 5%;
     visibility: visible;
     position: sticky;
-    background-color: lightgray;
+    background-color: #f9c4b6;
     bottom: 0; } }
-@media only screen and (min-width: 480px) and (max-width: 640px) {
-  #headerName {
-    font-size: 250%;
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  body#page1 {
+    background-image: url(file:///Users/JaclynFlomen/Desktop/flomen_jaclyn_portfolio/images/background_t.jpg);
+    background-repeat: no-repeat;
+    color: white; }
+
+  .headerName {
+    font-size: 150%;
     margin-top: 15%; }
 
   #logo {
@@ -291,7 +304,12 @@ form label {
 
   .nav {
     height: 850px; } }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
+  body#page1 {
+    background-image: url(file:///Users/JaclynFlomen/Desktop/flomen_jaclyn_portfolio/images/background.jpg);
+    background-repeat: no-repeat;
+    color: white; }
+
   .nav_mobile {
     display: none; }
 
@@ -312,7 +330,12 @@ form label {
     margin-left: 5%; }
 
   .nav ul {
-    padding-left: 25%; } }
+    padding-left: 25%; }
+
+  #page1 .headerName {
+    font-size: 300%;
+    margin-top: 10%;
+    margin-left: 10%; } }
 #portfolio_container {
   clear: left; }
 
@@ -399,21 +422,33 @@ form label {
   #page3 .nav h4 {
     margin-top: 970%;
     padding-bottom: 5%; } }
+.ityped-cursor {
+  font-size: 2.2rem;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate; }
+
+@keyframes blink {
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0; } }
+@-moz-keyframes blink {
+  100% {
+    opacity: 0; } }
 body {
   font-family: 'Didot', 'Times New Roman', serif;
   margin: 0px; }
-
-body#page1 {
-  background-image: url(/images/DSC_0883copy.jpg);
-  background-repeat: no-repeat;
-  color: white; }
 
 .hidden {
   display: none; }
 
 .nav {
   float: right;
-  background-color: lightgray; }
+  background-color: #f9c4b6; }
 
 #nav ul {
   margin-top: 30%; }
@@ -426,11 +461,16 @@ nav ul li a:hover {
   color: black; }
 
 .headerName {
-  color: lightgray;
+  color: #f9c4b6;
   text-shadow: 2px 2px black;
-  font-size: 300%;
+  font-size: 200%;
   float: left;
   margin-left: 5%;
-  margin-top: 5%; }
+  margin-top: 5%;
+  margin-bottom: 0%; }
+
+#page1 .headerName {
+  color: black;
+  text-shadow: 2px 2px white; }
 
 /*# sourceMappingURL=main.css.map */
