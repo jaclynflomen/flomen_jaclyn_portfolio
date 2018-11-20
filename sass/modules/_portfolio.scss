@@ -11,20 +11,12 @@
 .pics_cont img {
     height: 200px;
     object-fit: cover;
-    border-radius: 3px;
 }
 
-.pics_cont img:hover {
-    opacity: 0.25;
-}
-
-#portfolio_container label {
+#portfolio_container h3 {
     font-size: 120%;
     align-content: center;
-    position: absolute;
     color: black;
-    background-color: lightgray;
-    box-shadow: 2px 2px 2px black;
     padding: 0.5%;
 }
 
