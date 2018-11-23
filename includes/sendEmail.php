@@ -1,7 +1,7 @@
 <?php 
 
-// // var_dump($_GET);
-// function mail($to, $subject, $message, $headers) {
+// // var_dump($_POST);
+// function fake_mail($to, $subject, $message, $headers) {
 //     echo '=== Fake Emails ==='.PHP_EOL;
 //     echo 'Subject: '.$subject.PHP_EOL;
 //     echo 'Email to:'.$to.PHP_EOL;
@@ -11,8 +11,16 @@
 //     return true;
 // }
 
-var_dump($_POST);
 function send_email (){
+    //Email validations: checking required fields
+
+    if(empty($_POST['name'])
+        || empty($_POST['email'])
+        || empty($_POST['comments'])) {
+            echo 'You are missing some required fields';
+            exit;
+        }
+
     $to = 'jaclynflomen@gmail.com';
     $subject = 'This is an email from '.$_POST['name'];
     $message = $_POST['comments'];
