@@ -1,3 +1,11 @@
+#page5 .headerName {
+    margin-bottom: 2%;
+}
+
+#page5 .nav {
+    float: right;
+}
+
 #contactBio {
     clear: left;
     margin-top: 5%;
@@ -10,23 +18,23 @@
 }
 
 #contactBio a:hover {
-    color: #f9c4b6;
+    color: #FFD9D0;
 }
 
 
 form input {
-    background-color: #f9c4b6;
+    background-color: #FFD9D0;
     border: none;
-    width: 30%;
+    width: 100%;
     height: 25px;
     margin-bottom: 2%;
     margin-left: 10%;
 }
 
 #comments {
-    background-color: #f9c4b6;
+    background-color: #FFD9D0;
     border: none;
-    width: 30%;
+    width: 100%;
     height: 125px;
     margin-left: 10%;
 }
@@ -37,8 +45,16 @@ form label{
     display:block;
 }
 
+#formCont {
+    float: left;
+    width: 40%;
+}
+ 
 #endForm {
-    margin-left: 45%;
+    position: relative;
+    width: 50%;
+    margin-left: 48%;
+    padding-top: 10%;
 }
 
 #endForm ul {
@@ -46,11 +62,12 @@ form label{
 }
 
 #endForm ul li {
-    display: inline;
+    display: block;
+    margin-bottom: 2%;
 }
 
 #submit {
-    background-color: #f9c4b6;
+    background-color: #FFD9D0;
     height: 40px;
     width: 40%;
     border: none;
@@ -62,17 +79,13 @@ form label{
     background-color: white;
     height: 40px;
     width: 40%;
-    border: 2px solid #f9c4b6;
+    border: 2px solid #FFD9D0;
     font-size: 120%;
     font-family: 'Didot', 'Times New Roman', serif;
 }
 
 
-@media only screen and (max-width:660px) {
-
-#endForm {
-    margin-left: 45%;
-}
+@media only screen and (max-width:768px) {
 
 #endForm ul {
     list-style: none;
@@ -83,7 +96,7 @@ form label{
 }
 
 #submit {
-    background-color: #f9c4b6;
+    background-color: #FFD9D0;
     height: 40px;
     width: 40%;
     border: none;
@@ -95,9 +108,45 @@ form label{
     background-color: white;
     height: 40px;
     width: 40%;
-    border: 2px solid #f9c4b6;
+    border: 2px solid #FFD9D0;
     font-size: 120%;
     font-family: 'Didot', 'Times New Roman', serif;
+}
+    
+    #endForm {
+        margin-left: 35%;
+        position: block;
+        float: none;
+        width: 80%;
+        margin-left: 15%;
+    }
+
+    #formCont {
+        float: none;
+        width: 100%;
+        margin-left: 17%;
+    }
+
+    #contactBio {
+        margin-right: 7%;
+    }
+
+
+form input {
+    background-color: #FFD9D0;
+    border: none;
+    width: 50%;
+    height: 25px;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+
+#comments {
+    background-color: #FFD9D0;
+    border: none;
+    width: 50%;
+    height: 125px;
+    margin-left: 10%;
 }
 
 }

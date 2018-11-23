@@ -29,7 +29,6 @@
         height: 5%;
         visibility: visible;
         margin-top: 100%;
-        background-color: #f9c4b6;
     }
 
     .nav {
@@ -47,7 +46,7 @@
     }
 
     .nav_mobile ul li a {
-        font-size: 130%;
+        font-size: 120%;
         margin-right: 5%;
         margin-bottom: 9%;
     }
@@ -64,7 +63,7 @@
     }
 
     #page1 .nav_mobile ul li a:hover {
-        color:#f9c4b6;
+        color:#b3b3b3;
     }
 
     #page1 .nav_mobile {
@@ -79,9 +78,10 @@
         height: 4%;
         visibility: visible;
         position: sticky;
-        background-color: #f9c4b6;
+        background-color: #b3b3b3;
         bottom: 0;
         margin-top: 61%;
+        color: white;
     }
 
     //portfolio page
@@ -91,8 +91,9 @@
         height: 5%;
         visibility: visible;
         position: sticky;
-        background-color: #f9c4b6;
+        background-color: #b3b3b3;
         bottom: 0;
+        color: white;
     }
 
     #desktopBreak {
@@ -128,19 +129,22 @@
         height: 5%;
         visibility: visible;
         position: sticky;
-        background-color: #f9c4b6;
+        background-color: #b3b3b3;
         bottom: 0;
+        color: white;
     }
 
     //contact page
 
     #page5 .nav_mobile {
         width: 100%;
-        height: 5%;
+        height: 4%;
         visibility: visible;
         position: sticky;
-        background-color: #f9c4b6;
+        background-color: #b3b3b3;
         bottom: 0;
+        margin-top: 61%;
+        color: white;
     }
 
 
@@ -166,6 +170,7 @@
 #logo
 {
     width: 35%;
+    margin-left: 30%;
 }
 
 .nav_mobile {
@@ -260,6 +265,11 @@ label {
     .nav_mobile {
         display: none;
     } 
+
+    .nav {
+        font-size: 85%;
+        text-align: center;
+    }
     
     #desktopBreak {
         display: block;
@@ -282,9 +292,6 @@ label {
         margin-left: 5%;
     }
 
-    .nav ul {
-        padding-left: 25%;
-    }
 
     #page1 .headerName {
         font-size: 300%;

@@ -10,6 +10,12 @@
   margin-top: 10%;
   margin-left: 5%; }
 
+#page5 .headerName {
+  margin-bottom: 2%; }
+
+#page5 .nav {
+  float: right; }
+
 #contactBio {
   clear: left;
   margin-top: 5%;
@@ -20,20 +26,20 @@
   color: black; }
 
 #contactBio a:hover {
-  color: #f9c4b6; }
+  color: #FFD9D0; }
 
 form input {
-  background-color: #f9c4b6;
+  background-color: #FFD9D0;
   border: none;
-  width: 30%;
+  width: 100%;
   height: 25px;
   margin-bottom: 2%;
   margin-left: 10%; }
 
 #comments {
-  background-color: #f9c4b6;
+  background-color: #FFD9D0;
   border: none;
-  width: 30%;
+  width: 100%;
   height: 125px;
   margin-left: 10%; }
 
@@ -42,17 +48,25 @@ form label {
   margin-left: 10%;
   display: block; }
 
+#formCont {
+  float: left;
+  width: 40%; }
+
 #endForm {
-  margin-left: 45%; }
+  position: relative;
+  width: 50%;
+  margin-left: 48%;
+  padding-top: 10%; }
 
 #endForm ul {
   list-style: none; }
 
 #endForm ul li {
-  display: inline; }
+  display: block;
+  margin-bottom: 2%; }
 
 #submit {
-  background-color: #f9c4b6;
+  background-color: #FFD9D0;
   height: 40px;
   width: 40%;
   border: none;
@@ -63,14 +77,11 @@ form label {
   background-color: white;
   height: 40px;
   width: 40%;
-  border: 2px solid #f9c4b6;
+  border: 2px solid #FFD9D0;
   font-size: 120%;
   font-family: 'Didot', 'Times New Roman', serif; }
 
-@media only screen and (max-width: 660px) {
-  #endForm {
-    margin-left: 45%; }
-
+@media only screen and (max-width: 768px) {
   #endForm ul {
     list-style: none; }
 
@@ -78,7 +89,7 @@ form label {
     display: inline; }
 
   #submit {
-    background-color: #f9c4b6;
+    background-color: #FFD9D0;
     height: 40px;
     width: 40%;
     border: none;
@@ -89,9 +100,39 @@ form label {
     background-color: white;
     height: 40px;
     width: 40%;
-    border: 2px solid #f9c4b6;
+    border: 2px solid #FFD9D0;
     font-size: 120%;
-    font-family: 'Didot', 'Times New Roman', serif; } }
+    font-family: 'Didot', 'Times New Roman', serif; }
+
+  #endForm {
+    margin-left: 35%;
+    position: block;
+    float: none;
+    width: 80%;
+    margin-left: 15%; }
+
+  #formCont {
+    float: none;
+    width: 100%;
+    margin-left: 17%; }
+
+  #contactBio {
+    margin-right: 7%; }
+
+  form input {
+    background-color: #FFD9D0;
+    border: none;
+    width: 50%;
+    height: 25px;
+    margin-bottom: 2%;
+    margin-left: 10%; }
+
+  #comments {
+    background-color: #FFD9D0;
+    border: none;
+    width: 50%;
+    height: 125px;
+    margin-left: 10%; } }
 #headerName {
   font-size: 200%;
   color: black;
@@ -101,8 +142,7 @@ form label {
   margin-top: 10%; }
 
 #logo {
-  width: 45%;
-  margin-left: 30%;
+  width: 40%;
   margin-bottom: 33%;
   margin-top: 20%; }
 
@@ -118,7 +158,7 @@ form label {
   color: black; }
 
 #page1 .nav ul li a:hover {
-  color: #f9c4b6; }
+  color: #FFD9D0; }
 
 .nav {
   height: 610px; }
@@ -148,8 +188,7 @@ form label {
     width: 100%;
     height: 5%;
     visibility: visible;
-    margin-top: 100%;
-    background-color: #f9c4b6; }
+    margin-top: 100%; }
 
   .nav {
     display: none; }
@@ -164,7 +203,7 @@ form label {
     text-align: center; }
 
   .nav_mobile ul li a {
-    font-size: 130%;
+    font-size: 120%;
     margin-right: 5%;
     margin-bottom: 9%; }
 
@@ -178,7 +217,7 @@ form label {
     color: black; }
 
   #page1 .nav_mobile ul li a:hover {
-    color: #f9c4b6; }
+    color: #b3b3b3; }
 
   #page1 .nav_mobile {
     background-color: white; }
@@ -188,17 +227,19 @@ form label {
     height: 4%;
     visibility: visible;
     position: sticky;
-    background-color: #f9c4b6;
+    background-color: #b3b3b3;
     bottom: 0;
-    margin-top: 61%; }
+    margin-top: 61%;
+    color: white; }
 
   #page4 .nav_mobile {
     width: 100%;
     height: 5%;
     visibility: visible;
     position: sticky;
-    background-color: #f9c4b6;
-    bottom: 0; }
+    background-color: #b3b3b3;
+    bottom: 0;
+    color: white; }
 
   #desktopBreak {
     display: none; }
@@ -226,16 +267,19 @@ form label {
     height: 5%;
     visibility: visible;
     position: sticky;
-    background-color: #f9c4b6;
-    bottom: 0; }
+    background-color: #b3b3b3;
+    bottom: 0;
+    color: white; }
 
   #page5 .nav_mobile {
     width: 100%;
-    height: 5%;
+    height: 4%;
     visibility: visible;
     position: sticky;
-    background-color: #f9c4b6;
-    bottom: 0; } }
+    background-color: #b3b3b3;
+    bottom: 0;
+    margin-top: 61%;
+    color: white; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   body#page1 {
     background-image: url(../images/background_t.jpg);
@@ -247,7 +291,8 @@ form label {
     margin-top: 15%; }
 
   #logo {
-    width: 35%; }
+    width: 35%;
+    margin-left: 30%; }
 
   .nav_mobile {
     display: none; }
@@ -313,6 +358,10 @@ form label {
   .nav_mobile {
     display: none; }
 
+  .nav {
+    font-size: 85%;
+    text-align: center; }
+
   #desktopBreak {
     display: block; }
 
@@ -328,9 +377,6 @@ form label {
 
   #portfolio_container {
     margin-left: 5%; }
-
-  .nav ul {
-    padding-left: 25%; }
 
   #page1 .headerName {
     font-size: 300%;
@@ -443,8 +489,9 @@ body {
   float: right;
   background-color: #b3b3b3; }
 
-#nav ul {
-  margin-top: 30%; }
+.nav ul {
+  margin-top: 30%;
+  margin-right: 20%; }
 
 nav ul li {
   list-style: none;

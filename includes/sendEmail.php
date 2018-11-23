@@ -11,13 +11,13 @@
 //     return true;
 // }
 
-//var_dump($_GET);
+var_dump($_POST);
 function send_email (){
     $to = 'jaclynflomen@gmail.com';
-    $subject = 'This is an email from '.$_GET['name'];
-    $message = $_GET['comments'];
+    $subject = 'This is an email from '.$_POST['name'];
+    $message = $_POST['comments'];
     $headers = 'From: noreply@YOURDOMAIN.com';
-    $headers .= 'Reply-To: '.$_GET['email'];
+    $headers .= 'Reply-To: '.$_POST['email'];
 
     mail($to, $subject, $message, $headers);
     //In your server, use the following line instead
