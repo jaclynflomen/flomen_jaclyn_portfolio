@@ -125,7 +125,7 @@ form label {
 
 @media only screen and (max-width: 480px) {
   body#page1 {
-    background-image: url(file:///Users/JaclynFlomen/Desktop/flomen_jaclyn_portfolio/images/background_m.jpg);
+    background-image: url(../images/background_m.jpg);
     background-repeat: no-repeat;
     color: white; }
 
@@ -238,7 +238,7 @@ form label {
     bottom: 0; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   body#page1 {
-    background-image: url(file:///Users/JaclynFlomen/Desktop/flomen_jaclyn_portfolio/images/background_t.jpg);
+    background-image: url(../images/background_t.jpg);
     background-repeat: no-repeat;
     color: white; }
 
@@ -306,7 +306,7 @@ form label {
     height: 850px; } }
 @media only screen and (min-width: 768px) {
   body#page1 {
-    background-image: url(file:///Users/JaclynFlomen/Desktop/flomen_jaclyn_portfolio/images/background.jpg);
+    background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     color: white; }
 
@@ -441,7 +441,7 @@ body {
 
 .nav {
   float: right;
-  background-color: #f9c4b6; }
+  background-color: #b3b3b3; }
 
 #nav ul {
   margin-top: 30%; }
@@ -454,7 +454,7 @@ nav ul li a:hover {
   color: black; }
 
 .headerName {
-  color: #f9c4b6;
+  color: #FFD9D0;
   text-shadow: 2px 2px black;
   font-size: 200%;
   float: left;

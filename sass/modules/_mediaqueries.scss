@@ -2,7 +2,7 @@
     //index page
 
     body#page1 {
-        background-image: url(file:///Users/JaclynFlomen/Desktop/flomen_jaclyn_portfolio/images/background_m.jpg);
+        background-image: url(../images/background_m.jpg);
         background-repeat:no-repeat; 
         color: white;
     }
@@ -153,7 +153,7 @@
 @media only screen and (min-width:480px) and (max-width:768px){
 
     body#page1 {
-        background-image: url(file:///Users/JaclynFlomen/Desktop/flomen_jaclyn_portfolio/images/background_t.jpg);
+        background-image: url(../images/background_t.jpg);
         background-repeat:no-repeat; 
         color: white;
     }
@@ -252,7 +252,7 @@ label {
 @media only screen and (min-width:768px){
 
     body#page1 {
-        background-image: url(file:///Users/JaclynFlomen/Desktop/flomen_jaclyn_portfolio/images/background.jpg);
+        background-image: url(../images/background.jpg);
         background-repeat:no-repeat; 
         color: white;
     }
