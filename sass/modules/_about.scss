@@ -13,18 +13,93 @@
     float: right;
 }
 
-.aboutSvg {
-    clear: left;
-    margin-left: 5%;
-}
-
-
-.aboutSvg object {
+#icons div {
     display: inline;
 }
 
-.about {
-    margin-right: 5%;
-    height: 40px;
+#icons {
+    margin-left: 5%;
+}
+
+.aboutSvg {
+    float: left;
+    margin-left: 5%;
     width: 5%;
+    margin-top: 2%;
+}
+
+
+.aboutSvg img {
+    height: 2.5em;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    #page2body p {
+        clear: left;
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    
+    #selfPic {
+        clear: left;
+        width: 40%;
+        margin-top: 20%;
+        float: none;
+    }
+
+    #icons {
+        margin-left: 5%;
+    }
+    
+    .aboutSvg {
+        float: left;
+        margin-right: 13%;
+        width: 5%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    
+    
+    .aboutSvg img {
+        height: 2.5em;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    #page2body p {
+        clear: left;
+        float: left;
+        width: 30%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    
+    #selfPic {
+        width: 20%;
+        float: right;
+        margin-top: 12%;
+    }
+
+    #icons {
+        clear: left;
+        margin-left: 5%;
+    }
+    
+    .aboutSvg {
+        float: left;
+        margin-right: 5%;
+        width: 5%;
+        margin-bottom: 0%;
+        margin-top: 2%;
+    }
+    
+    
+    .aboutSvg img {
+        height: 2.5em;
+    }
 }
