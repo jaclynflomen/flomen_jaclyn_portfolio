@@ -15,7 +15,7 @@ if (!$conn) {
 if (isset($_GET["Title"])) {
     $aboutme = $_GET["Title"];
 
-     $myQuery = "SELECT * FROM tbl_education WHERE Title='$aboutme'";
+    $myQuery = "SELECT * FROM tbl_about WHERE Title='$aboutme'";
 
     $result = mysqli_query($conn, $myQuery);
     $rows = array();

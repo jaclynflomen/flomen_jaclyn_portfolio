@@ -20,8 +20,8 @@
                 //parse the DB info and put it where it needs to go
                 const { Title, Description } = data; //destructuring assignment => MDN JS destructuring
                 //grab the elements we need, and populate them with data
-                document.querySelector('.Title').textContent = Title;
-                document.querySelector('.Description').textContent = Description;
+                document.querySelector('.Title1').textContent = Title;
+                document.querySelector('.Description1').textContent = Description;
             }
         };
 
