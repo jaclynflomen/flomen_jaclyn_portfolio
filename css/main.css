@@ -13,16 +13,14 @@
 
 .aboutSvg {
   clear: left;
-  list-style: none;
   margin-left: 5%; }
 
-.aboutSvg li {
-  display: inline;
-  margin-right: 5%; }
+.aboutSvg object {
+  margin-right: 5%;
+  height: 40px; }
 
-.aboutSvg li object {
-  height: 40px;
-  margin-top: 2%; }
+.about {
+  display: inline; }
 
 #page5 .headerName {
   margin-bottom: 2%; }
