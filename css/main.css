@@ -8,7 +8,21 @@
 #selfPic {
   width: 25%;
   margin-top: 10%;
+  margin-right: 5%;
+  float: right; }
+
+.aboutSvg {
+  clear: left;
+  list-style: none;
   margin-left: 5%; }
+
+.aboutSvg li {
+  display: inline;
+  margin-right: 5%; }
+
+.aboutSvg li object {
+  height: 40px;
+  margin-top: 2%; }
 
 #page5 .headerName {
   margin-bottom: 2%; }
