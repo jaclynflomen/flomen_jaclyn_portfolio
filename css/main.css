@@ -21,10 +21,14 @@
   float: left;
   margin-left: 5%;
   width: 5%;
-  margin-top: 2%; }
+  margin-top: 2%;
+  margin-bottom: 2%; }
 
 .aboutSvg img {
   height: 2.5em; }
+
+#aboutText p {
+  margin-top: 0px; }
 
 @media only screen and (max-width: 480px) {
   #page2body p {
@@ -506,7 +510,7 @@ form label {
 .nav h4 {
   text-align: center;
   position: sticky;
-  margin-top: 540%; }
+  margin-top: 450%; }
 
 #backtoTop {
   text-decoration: none;

@@ -12,10 +12,10 @@ if (!$conn) {
 }
 
 //get one item from database
-if (isset($_GET["Title"])) {
-    $aboutme = $_GET["Title"];
+if (isset($_GET["ID"])) {
+    $aboutme = $_GET["ID"];
 
-    $myQuery = "SELECT * FROM tbl_about WHERE Title='$aboutme'";
+    $myQuery = "SELECT * FROM tbl_about WHERE ID='$aboutme'";
 
     $result = mysqli_query($conn, $myQuery);
     $rows = array();
