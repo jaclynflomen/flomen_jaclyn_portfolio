@@ -17,8 +17,8 @@
 
 const setProps = ({
   strings = ['Jaclyn Flomen'],
-  typeSpeed = 100,
-  backSpeed = 50,
+  typeSpeed = 50,
+  backSpeed = 25,
   backDelay = 500,
   startDelay = 500,
   cursorChar = '|',
