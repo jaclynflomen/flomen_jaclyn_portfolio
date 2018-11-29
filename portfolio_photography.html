@@ -7,7 +7,7 @@
     <title>Jaclyn Flomen - Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body id="page4">
+<body id="page4_4">
 
     <nav class="nav">
         <h1 class="hidden">Nav</h1>
@@ -22,29 +22,94 @@
 
 
     <h1 class="headerName">Photography</h1>
+    </div>
 
-    <div id="portfolio_container">
+    <div id="container_other" >
+        <div id="portfolio_container" class="row">
+            
+            <div class="column" onclick="openModal();currentSlide(1)">
+                <img src="images/Photography/29.jpg">
+            </div>
+    
+            <div class="column" onclick="openModal();currentSlide(2)">
+                <img src="images/Photography/film6.jpg">
+            </div>
+    
+            <div class="column" onclick="openModal();currentSlide(3)">
+                <img src="images/Photography/flomen_jaclyn-4.jpg">
+            </div>
+           
+            <div class="column" onclick="openModal();currentSlide(4)">
+                <img src="images/Photography/jaclynflomenportfolio-5.jpg">
+            </div>
+
+            <div class="column" onclick="openModal();currentSlide(5)">
+                <img src="images/Photography/portfolio-12.jpg">
+            </div>
+        </div>
+
         
-        <div class="photog_img">
-            <img src="images/Photography/29.jpg">
-        </div>
+        <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="images/Photography/29.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="images/Photography/film6.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="images/Photography/flomen_jaclyn-4.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="images/Photography/jaclynflomenportfolio-5.jpg" style="width:100%">
+                  </div>
 
-        <div class="photog_img">
-            <img src="images/Photography/film6.jpg">
-        </div>
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images/Photography/portfolio-12.jpg" style="width:100%">
+                  </div>
+              
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <!-- Caption text -->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+              
+                  <!-- Thumbnail image controls -->
+                  <div class="column">
+                    <img class="demo" src="images/Photography/29_small.jpg" onclick="currentSlide(1)" alt="All of the Lights">
+                  </div>
+              
+                  <div class="column">
+                    <img class="demo" src="images/Photography/film6_small.jpg" onclick="currentSlide(2)" alt="Mizner">
+                  </div>
+              
+                  <div class="column">
+                    <img class="demo" src="images/Photography/flomen_jaclyn-4_small.jpg" onclick="currentSlide(3)" alt="Threshold">
+                  </div>
+              
+                  <div class="column">
+                    <img class="demo" src="images/Photography/jaclynflomenportfolio-5_small.jpg" onclick="currentSlide(4)" alt="Breaking Free">
+                  </div>
 
-        <div class="photog_img">
-            <img src="images/Photography/flomen_jaclyn-4.jpg">
-        </div>
+                  <div class="column">
+                    <img class="demo" src="images/Photography/portfolio-12_small.jpg" onclick="currentSlide(5)" alt="Model: Stephanie Lanz">
+                  </div>
 
-        <div class="photog_img">
-            <img src="images/Photography/jaclynflomenportfolio-5.jpg">
-        </div>
-
-        <div class="photog_img">
-            <img src="images/Photography/portfolio-12.jpg">
-        </div>
-
+                </div>
+              </div>
     </div>
 
     
@@ -58,6 +123,6 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
+        <script src="js/main.js"></script>
 </body>
 </html>
