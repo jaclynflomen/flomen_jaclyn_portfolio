@@ -7,7 +7,7 @@
     <title>Jaclyn Flomen - Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body id="page4">
+<body id="page4_5">
 
     <nav class="nav">
         <h1 class="hidden">Nav</h1>
@@ -22,15 +22,68 @@
 
 
     <h1 class="headerName">School Work</h1>
-
-    <div id="portfolio_container">
         
-        <div class="video_img">
-            <img src="images/Video/jaclynloganvas1020.gif">
-        </div>
+    <div id="container_other" >
+        <div id="portfolio_container" class="row">
+            
+            <div class="column" onclick="openModal();currentSlide(1)">
+                <img src="images/Video/jaclynloganvas1020.gif">
+            </div>
+    
+            <div class="column" onclick="openModal();currentSlide(2)">
+                <img src="images/Photography/film6.jpg">
+            </div>
+    
+            <div class="column" onclick="openModal();currentSlide(3)">
+                <img src="images/Photography/flomen_jaclyn-4.jpg">
+            </div>
 
         
+        <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/Video/jaclynloganvas1020.gif" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/Photography/film6.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/Photography/flomen_jaclyn-4.jpg" style="width:100%">
+                  </div>
 
+              
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <!-- Caption text -->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+              
+                  <!-- Thumbnail image controls -->
+                  <div class="column">
+                    <img class="demo" src="images/Video/jaclynloganvas1020.jpg" onclick="currentSlide(1)" alt="All of the Lights">
+                  </div>
+              
+                  <div class="column">
+                    <img class="demo" src="images/Photography/film6_small.jpg" onclick="currentSlide(2)" alt="Mizner">
+                  </div>
+              
+                  <div class="column">
+                    <img class="demo" src="images/Photography/flomen_jaclyn-4_small.jpg" onclick="currentSlide(3)" alt="Threshold">
+                  </div>
+
+                </div>
+              </div>
+    </div>
     </div>
 
     
@@ -45,5 +98,6 @@
             </ul>
         </nav>
 
+       
 </body>
 </html>

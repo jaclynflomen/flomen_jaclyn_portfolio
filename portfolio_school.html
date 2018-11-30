@@ -7,7 +7,7 @@
     <title>Jaclyn Flomen - Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body id="page4">
+<body id="page4_3">
 
     <nav class="nav">
         <h1 class="hidden">Nav</h1>
@@ -23,33 +23,107 @@
 
     <h1 class="headerName">School Work</h1>
 
-    <div id="portfolio_container">
+    </div>
+
+    <div id="container_other" >
+        <div id="portfolio_container" class="row">
+            
+            <div class="column" onclick="openModal();currentSlide(1)">
+                <img src="images/School/flomen_jaclyn_mashup.jpg">
+            </div>
+    
+            <div class="column" onclick="openModal();currentSlide(2)">
+                <img src="images/School/img_8493.png">
+            </div>
+    
+            <div class="column" onclick="openModal();currentSlide(3)">
+                <img src="images/School/flomen_jaclyn_finalgraffiti.jpg">
+            </div>
+           
+            <div class="column" onclick="openModal();currentSlide(4)">
+                <img src="images/School/ohm_intro_banner_3.jpg">
+            </div>
+
+            <div class="column" onclick="openModal();currentSlide(5)">
+                <img src="images/School/ohm_rideforcure_event.jpg">
+            </div>
+
+            <div class="column" onclick="openModal();currentSlide(6)">
+                <img src="images/School/LSFC.png">
+            </div>
+        </div>
+
         
-        <div class="school_img">
-            <img src="images/School/flomen_jaclyn_mashup.jpg">
-        </div>
+        <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/School/flomen_jaclyn_mashup.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/School/img_8493.png" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/School/flomen_jaclyn_finalgraffiti.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/School/ohm_intro_banner_3.jpg" style="width:100%">
+                  </div>
 
-        <div class="school_img">
-            <img src="images/School/img_8493.png">
-        </div>
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/School/ohm_rideforcure_event.jpg" style="width:100%">
+                  </div>
 
-        <div class="school_img">
-            <img src="images/School/flomen_jaclyn_finalgraffiti.jpg">
-        </div>
+                  <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/School/LSFC.png" style="width:100%">
+                  </div>
+              
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <!-- Caption text -->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+              
+                  <!-- Thumbnail image controls -->
+                  <div class="column">
+                    <img class="demo" src="images/School/flomen_jaclyn_mashup_small.jpg" onclick="currentSlide(1)" alt="New York, A Dream">
+                  </div>
+              
+                  <div class="column">
+                    <img class="demo" src="images/School/img_8493_small.png" onclick="currentSlide(2)" alt="Chanel, No. Me">
+                  </div>
+              
+                  <div class="column">
+                    <img class="demo" src="images/School/flomen_jaclyn_finalgraffiti_small.jpg" onclick="currentSlide(3)" alt="Two Sides">
+                  </div>
+              
+                  <div class="column">
+                    <img class="demo" src="images/School/ohm_intro_banner_3_small.jpg" onclick="currentSlide(4)" alt="Look Outside the Box">
+                  </div>
 
-        <div class="school_img">
-            <img src="images/School/ohm_intro_banner_3.jpg">
-        </div>
+                  <div class="column">
+                    <img class="demo" src="images/School/ohm_rideforcure_event_small.jpg" onclick="currentSlide(5)" alt="Paint A Picture">
+                  </div>
 
-        <div class="school_img">
-            <img src="images/School/ohm_rideforcure_event.jpg">
-        </div>
+                  <div class="column">
+                    <img class="demo" src="images/School/LSFC_small.png" onclick="currentSlide(6)" alt="Paint A Picture">
+                  </div>
 
-        <div class="school_img">
-            <img src="images/School/LSFC.png">
-        </div>
-        
-
+                </div>
+              </div>
     </div>
 
     
@@ -63,6 +137,6 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
+        <script src="js/main.js"></script>
 </body>
 </html>

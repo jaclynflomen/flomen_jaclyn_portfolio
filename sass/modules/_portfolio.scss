@@ -55,11 +55,29 @@
     margin-bottom: 3%;
 }
 
-#page4_4 #portfolio_container div img {
+#page4_6 #portfolio_container div img {
     width: 70%;
 }
 
+#page4_1 #portfolio_container div img {
+  width: 70%;
+}
 
+#page4_3 #portfolio_container div img {
+  width: 70%;
+}
+
+#page4_4 #portfolio_container div img {
+  width: 70%;
+}
+
+#page4_5 #portfolio_container div img {
+  width: 70%;
+}
+
+#page4_2 #portfolio_container div img {
+  width: 70%;
+}
 
 //lightbox
 .row > .column {
@@ -74,8 +92,7 @@
   
   /* Create four equal columns that floats next to eachother */
 .column {
-    float: left;
-    width: 25%;
+    width: 35%;
   }
   
   /* The Modal (background) */
@@ -98,11 +115,11 @@
     background-color: black;
     margin: auto;
     padding: 0;
-    width: 90%;
+    width: 85%;
     height: 130%;
     max-width: 1200px;
   }
-  
+
   /* The Close Button */
   .close {
     color: white;
@@ -188,3 +205,6 @@
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  //To Do:
+  //make responsive, fix spacing, fix thumbnail sizes
