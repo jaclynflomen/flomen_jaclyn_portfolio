@@ -55,26 +55,17 @@
     margin-bottom: 3%;
 }
 
-#page4_6 #portfolio_container div img {
-    width: 70%;
+#container_other {
+  clear: left;
 }
 
-#page4_1 #portfolio_container div img {
-  width: 70%;
+.galleryDemo img {
+  float: left;
+  padding-right: 5%;
+  margin-top: 2%;
+  height: 150px;
 }
 
-#page4_3 #portfolio_container div img {
-  width: 70%;
-}
-
-#page4_4 #portfolio_container div img {
-  width: 70%;
-}
-
-#page4_5 #portfolio_container div img {
-  width: 70%;
-}
-
-#page4_2 #portfolio_container div img {
-  width: 70%;
+.gallery {
+  margin-left: 5%;
 }
