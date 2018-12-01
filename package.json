@@ -12,6 +12,7 @@
     "baguettebox.js": "^1.11.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",
+    "halkabox": "^1.4.1",
     "photoswipe": "^4.1.2"
   }
 }
