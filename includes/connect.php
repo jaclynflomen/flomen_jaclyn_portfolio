@@ -32,7 +32,7 @@ if (isset($_GET["ID"])) {
 if (isset($_GET["art_id"])) {
     $aboutme = $_GET["art_id"];
 
-    $myQuery = "SELECT * FROM tbl_portfoliowork WHERE art_id='$art'";
+    $myQuery = "SELECT * FROM tbl_portfoliowork WHERE art_id = $art";
 
     $result = mysqli_query($conn, $myQuery);
     $rows = array();
