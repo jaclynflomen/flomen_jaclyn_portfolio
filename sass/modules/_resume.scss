@@ -23,6 +23,15 @@
     height: 1650px;
 }
 
+#resumeLink a {
+    text-decoration-line: none;
+    color: black;
+}
+
+#resumeLink a:hover {
+    color: #FFD9D0;
+}
+
 @media screen and (max-width:660px){
 #page3 .nav {
     height: 1830%;

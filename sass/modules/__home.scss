@@ -35,3 +35,18 @@
 .nav {
     height: 610px;
 }
+
+#socialMedia {
+    clear: left;
+    margin-top: 50%;
+}
+
+#socialMedia ul li {
+    list-style: none;
+    display: inline;
+}
+
+#socialMedia ul li a img {
+    width: 4%;
+    margin-right: 1%;
+}
