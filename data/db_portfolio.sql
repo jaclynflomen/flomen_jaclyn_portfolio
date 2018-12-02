@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 25, 2018 at 12:54 AM
+-- Generation Time: Dec 02, 2018 at 09:57 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.8
 
@@ -42,6 +42,51 @@ INSERT INTO `tbl_about` (`ID`, `Title`, `Description`) VALUES
 (3, 'Inspiration', 'I gain inspiration from various elements. I have produced my personal identity based on a combination of past and present styles. I design work to be clean and modern, yet  have a nostalgic feel to them if analyzed. I believe that my work displays relevant ideologies through my subject matter and through incorporating current trends into my style.'),
 (4, 'Free Time', 'Despite learning about media during the week, I still enjoy being creative in my spare time. Whether through social media, or makeup, any way for me to interact with people in a visually interesting way excites me. Like any other young adult, I connect to the world through social media. Personally, I prefer using Instagram and Snapchat over others for visual purposes as I agree with the notion that an image is worth a thousand words. As well, I have used platforms like Instagram to experiment with makeup techniques and see how other users create different looks. Whether online or in person, I aim to be as creative as possible as everyday life experiences provide inspiration.');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_portfoliowork`
+--
+
+CREATE TABLE `tbl_portfoliowork` (
+  `art_id` int(10) NOT NULL,
+  `art_category` varchar(30) NOT NULL,
+  `art_title` varchar(50) NOT NULL,
+  `art_img` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_portfoliowork`
+--
+
+INSERT INTO `tbl_portfoliowork` (`art_id`, `art_category`, `art_title`, `art_img`) VALUES
+(1, 'Personal', 'New York, A Dream', 'img_7317.jpg'),
+(2, 'Personal', 'Chanel, No. Me', 'chanel.jpg'),
+(3, 'Personal', 'Doubled', 'img_3467.jpg'),
+(4, 'Personal', 'Look Outside the Box', 'img_4515.jpg'),
+(5, 'Personal', 'Paint A Picture For Me', 'img_7403.jpg'),
+(6, 'Work', 'Stay In The Loop', 'SITL.png'),
+(7, 'Work', 'KML Custom Newsblast', 'newsblast_custom_ad_2.jpg'),
+(8, 'Work', 'Pride Day', 'pride_day.jpg'),
+(9, 'Work', 'Thanksgiving', 'thanksgiving.jpg'),
+(10, 'Work', 'National Waffle Day', 'waffle_day.jpg'),
+(11, 'School', 'Aeropostale x Moscato', 'flomen_jaclyn_mashup.jpg'),
+(12, 'School', 'Digital Tattoo', 'img_8493.png'),
+(13, 'School', 'London Squash & Fitness Club', 'LSFC.png'),
+(14, 'School', 'OHM Intro Banner', 'ohm_intro_banner_3.jpg'),
+(15, 'School', 'Digital Graffiti', 'flomen_jaclyn_finalgraffiti.jpg'),
+(16, 'School', 'OHM Ride For The Cure', 'ohm_rideforcure_event.jpg'),
+(17, 'Photography', 'All of the Lights', '29.jpg'),
+(18, 'Photography', 'Mizner', 'film6.jpg'),
+(19, 'Photography', 'Threshold', 'flomen_jaclyn-4.jpg'),
+(20, 'Photography', 'Caged In', 'jaclynflomenportfolio-5.jpg'),
+(21, 'Photography', 'Model: Stephanie Lanz', 'portfolio-12.jpg'),
+(22, 'Video', 'Full(er) House Fantasy', 'jaclynloganvas1020.gif'),
+(23, 'Other', 'FIMS 2018 Welcome Banner', 'fims_banner.jpg'),
+(24, 'Other', 'Ontario Hall Residence Snapchat Geotag', 'ohallgeotag2.png'),
+(25, 'Other', 'Toronto Snapchat Geotag', 'toronto-geotag.png'),
+(26, 'Other', 'Yes Theory Logos', 'yes_theory_logos.jpg');
+
 --
 -- Indexes for dumped tables
 --
@@ -51,6 +96,12 @@ INSERT INTO `tbl_about` (`ID`, `Title`, `Description`) VALUES
 --
 ALTER TABLE `tbl_about`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `tbl_portfoliowork`
+--
+ALTER TABLE `tbl_portfoliowork`
+  ADD PRIMARY KEY (`art_id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
