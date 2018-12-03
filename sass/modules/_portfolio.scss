@@ -2,15 +2,25 @@
     clear: left;
 }
 
+#portfolio_container_main {
+    clear: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .pics_cont {
-    margin-left: 2%;
-    display: inline;
-    margin-right: 0%;
+    margin-bottom: 5%;
+}
+
+.pics_cont h3, p {
+    text-align: left;
+    margin-left: 25%;
 }
 
 .pics_cont img {
     height: 200px;
     object-fit: cover;
+    float: left;
 }
 
 #portfolio_container h3 {
@@ -18,41 +28,6 @@
     align-content: center;
     color: black;
     padding: 0.5%;
-}
-
-.personal_img img {
-    display: block;
-    width: 20%;
-    margin-bottom: 3%;
-}
-.work_img img {
-    display: block;
-    width: 20%;
-    margin-bottom: 3%;
-}
-
-.photog_img img {
-    display: block;
-    width: 20%;
-    margin-bottom: 3%;
-}
-
-.school_img img {
-    display: block;
-    width: 20%;
-    margin-bottom: 3%;
-}
-
-.video_img img {
-    display: block;
-    width: 20%;
-    margin-bottom: 3%;
-}
-
-.other_img img {
-    display: block;
-    width: 20%;
-    margin-bottom: 3%;
 }
 
 #container_other {
