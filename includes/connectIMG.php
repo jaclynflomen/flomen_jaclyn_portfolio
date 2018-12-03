@@ -12,10 +12,10 @@ if (!$conn) {
 }
 
 //get one item from database
-if (isset($_GET["ID"])) {
-    $aboutme = $_GET["ID"];
+if (isset($_GET["art_id"])) {
+    $aboutme = $_GET["art_id"];
 
-    $myQuery = "SELECT * FROM tbl_about WHERE ID='$aboutme'";
+    $myQuery = "SELECT * FROM tbl_portfoliowork WHERE art_id = $art";
 
     $result = mysqli_query($conn, $myQuery);
     $rows = array();
@@ -27,4 +27,3 @@ if (isset($_GET["ID"])) {
 
     echo json_encode($rows);
 }
-?>

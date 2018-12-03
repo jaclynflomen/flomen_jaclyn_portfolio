@@ -52,19 +52,19 @@ CREATE TABLE `tbl_portfoliowork` (
   `art_id` int(10) NOT NULL,
   `art_category` varchar(30) NOT NULL,
   `art_title` varchar(50) NOT NULL,
-  `art_img` varchar(50) NOT NULL
+  `imgPath` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_portfoliowork`
 --
 
-INSERT INTO `tbl_portfoliowork` (`art_id`, `art_category`, `art_title`, `art_img`) VALUES
-(1, 'Personal', 'New York, A Dream', 'images/Personal/img_7317.jpg'),
-(2, 'Personal', 'Chanel, No. Me', 'images/Personal/chanel.jpg'),
-(3, 'Personal', 'Doubled', 'images/Personal/img_3467.jpg'),
-(4, 'Personal', 'Look Outside the Box', 'images/Personal/img_4515.jpg'),
-(5, 'Personal', 'Paint A Picture For Me', 'images/Personal/img_7403.jpg'),
+INSERT INTO `tbl_portfoliowork` (`art_id`, `art_category`, `art_title`, `imgPath`) VALUES
+(1, 'Personal', 'New York, A Dream', 'img_7317.jpg'),
+(2, 'Personal', 'Chanel, No. Me', 'chanel.jpg'),
+(3, 'Personal', 'Doubled', 'img_3467.jpg'),
+(4, 'Personal', 'Look Outside the Box', 'img_4515.jpg'),
+(5, 'Personal', 'Paint A Picture For Me', 'img_7403.jpg'),
 (6, 'Work', 'Stay In The Loop', 'SITL.png'),
 (7, 'Work', 'KML Custom Newsblast', 'newsblast_custom_ad_2.jpg'),
 (8, 'Work', 'Pride Day', 'pride_day.jpg'),
