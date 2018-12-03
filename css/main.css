@@ -587,6 +587,12 @@ body {
 .hidden {
   display: none; }
 
+.hide {
+  visibility: hidden; }
+
+.visible {
+  visibility: visible; }
+
 .nav {
   float: right;
   background-color: #b3b3b3; }

@@ -8,11 +8,11 @@
     ityped.init(document.querySelector("#ityped"), {
       showCursor = true,
       strings: ['Jaclyn Flomen']
-    }
+    })
     ityped.init("#placeholder", {
       placeholder = true,
       showCursor: false
-    }
+    })
   </script>
 
 const setProps = ({
