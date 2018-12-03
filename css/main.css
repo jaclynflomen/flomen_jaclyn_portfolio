@@ -466,6 +466,9 @@ form label {
     font-size: 300%;
     margin-top: 10%;
     margin-left: 10%; } }
+#page4 .headerName {
+  margin-bottom: 2%; }
+
 #portfolio_container {
   clear: left; }
 
@@ -479,7 +482,8 @@ form label {
 
 .pics_cont h3, p {
   text-align: left;
-  margin-left: 25%; }
+  margin-left: 25%;
+  margin-right: 25%; }
 
 .pics_cont img {
   height: 200px;
