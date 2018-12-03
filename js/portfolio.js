@@ -1,32 +1,77 @@
-//JS
 (() => {
+    //init the vue stuff!
+    const vm = new Vue({
+        el : "#app",
 
-    //AJAX call, change for pictures
-    const art = document.querySelectorAll('.artwork');
+        data : {
+            message : '',
+            
+            artdata : [],
+            singledata : [],
 
-function getData(){
-        console.log(this);
-        let targetURL = `includes/connectIMG.php?art_id=${this.id}`; //whenever we click on a thumbnail, pass its id to the php query =${this.id}
-        fetch (targetURL) // go get the data and bring it back! good doggy 
-        .then(res => res.json()) //turn the result into a plain JS object
-        .then(data => {
-            console.log(data);
-            //run a function to parse our data
-            showData(data[0]);
-        }) //lets see what we got
-        .catch(function(error) {
-            console.log(error); //if anything broke, log it to the console
-        });
+            arttitle : "",
+            artsource : "",
 
-        function showData(data) {
-            //debugger;
-            //parse the DB info and put it where it needs to go
-            const { imgPath } = data; //destructuring assignment => MDN JS destructuring
-            //grab the elements we need, and populate them with data
-            document.querySelector('.artwork').src = imgPath;
+            showDetails : false 
+        },
+
+        created : function() {
+            //get all of the art data ib the oage load
+            this.fetchArtData(null); //this is where we would fetch PHP stuff
+        },
+
+        methods : {
+            login() {
+                //stub
+                console.log('login functionality');
+            },
+
+            fetchSingle(e) {
+                //debugger;
+                this.fetchArtData(e.currentTarget.dataset.art);
+            },
+
+            loadArt(e) { //use to open lightbox in portfolio
+                //debugger;
+                e.preventDefault(); //block a page reload (anchor tag default behaviour)
+                
+                dataKey = e.currentTarget.getAttribute('href');
+                currentData = this.artdata.filter(art => art.imgPath === dataKey);
+
+                this.arttitle = currentData[0].art_title;
+                this.artsource = dataKey;
+
+                this.showDetails = true;
+
+                setTimeout(function(){ window.scrollTo(0, 1200)}, 500);
+            },
+
+            fetchArtData(movie) {
+               let url = art ?`./includes/index.php?art_id=${art}` : './includes/index.php'; 
+                //this is a ternary statement, shorthand if else statement. left of : is true, right is false
+            
+                fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+
+                    if (art) {
+                        //store data in the single result above
+                        this.singledata = data;
+                    } else {
+                        //initial data grab, store in the videodata array
+                        this.artdata = data;
+                    }
+                })
+
+                     
+                .catch(function(error){
+                    console.log(error);
+                })
+
+            }
         }
-    };
 
-    art.forEach(art => art.addEventListener("onload", getData));
+    })
 
 })();

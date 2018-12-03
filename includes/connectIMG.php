@@ -1,29 +1,18 @@
-<?php
-$host = "localhost";
+<?php 
+
 $user = "root";
-$password = "root";
-$db = "db_portfolio";
+$pwd = "root";
 
-$conn = mysqli_connect($host, $user, $password, $db);
+try {
+    $conn = new PDO('mysql:host=localhost;dbname=db_portfolio',$user, $pwd);
+    //this is the same thing as going $host = "localhost" etc but just in one line
+    //var_dump($conn); //check connection - instead of doing a var element, use var_dump to 
+                    //show because it is an object
+    
 
-if (!$conn) {
-    echo "something broke... connection isn't working";
-    exit;
+} catch (PDOException $exception) {
+    echo 'connect error!' . $exception->getMessage();
 }
 
-//get one item from database
-if (isset($_GET["art_id"])) {
-    $aboutme = $_GET["art_id"];
 
-    $myQuery = "SELECT * FROM tbl_portfoliowork WHERE art_id = $art";
-
-    $result = mysqli_query($conn, $myQuery);
-    $rows = array();
-
-    //fill the array with the result set and send it to the browser
-    while($row = mysqli_fetch_assoc($result)) {
-        $rows[] = $row;
-    }
-
-    echo json_encode($rows);
-}
+?>
