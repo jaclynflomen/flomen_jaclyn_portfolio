@@ -526,6 +526,9 @@ form label {
 .gallery {
   margin-left: 5%; }
 
+html {
+  scroll-behavior: smooth; }
+
 #page3body {
   clear: left;
   margin-left: 5%;
