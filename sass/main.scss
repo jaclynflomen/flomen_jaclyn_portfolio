@@ -27,7 +27,7 @@ body
 
 .nav {
     float: right;
-    background-color: #b3b3b3;
+    background-color: $my_grey;
 }
 
 .nav ul {
@@ -45,7 +45,7 @@ nav ul li a:hover {
 }
 
 .headerName {
-    color: #FFD9D0; 
+    color: $my_pink; 
     text-shadow: 2px 1px black;
     font-size: 250%;
     float: left;

@@ -2,12 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#page3body {
-    clear: left;
-    margin-left: 5%;
-    width: 70%;
-}
-
 .nav h4{
     text-align: center;
     position: sticky;
@@ -17,14 +11,11 @@ html {
 #backtoTop {
     text-decoration: none;
     color: black;
+    margin-top: 200em;
 }
 
 #backtoTop:hover {
     color: white;
-}
-
-#page3 .nav {
-    height: 1650px;
 }
 
 #resumeLink a {
@@ -33,21 +24,5 @@ html {
 }
 
 #resumeLink a:hover {
-    color: #FFD9D0;
-}
-
-@media screen and (max-width:660px){
-#page3 .nav {
-    height: 1830%;
-}
-
-
-#resume {
-    padding-right: 10%;
-}
-
-#page3 .nav h4{
-    margin-top: 970%;
-    padding-bottom: 5%;
-}
+    color: $my_pink;
 }
