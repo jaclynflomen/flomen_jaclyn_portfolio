@@ -44,3 +44,12 @@
 .gallery {
   margin-left: 5%;
 }
+
+#backtoTop {
+    text-decoration: none;
+    color: black;
+}
+
+#backtoTop:hover {
+    color: $my_pink;
+}

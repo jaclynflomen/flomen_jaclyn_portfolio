@@ -448,29 +448,22 @@ form label {
 
   .pics_cont img {
     width: 25%;
-    height: 25%; }
+    height: 25%;
+    margin-right: 3%; }
 
-  .pics_cont a {
-    display: inline; }
+  .pics_cont {
+    margin-right: 15%; }
 
-  #portfolio_container label {
-    font-size: 10%;
-    position: relative; }
+  .pics_cont h3, p {
+    text-align: left;
+    width: 90%; }
 
-  #page4#portfolio_container {
-    margin-left: 8%; }
+  #page4 .nav {
+    height: 1600px; }
 
-  .tabletBreak {
-    display: block; }
-
-  #desktopBreak {
-    display: none; }
-
-  .pics_cont img:hover {
-    opacity: 1; }
-
-  .nav {
-    height: 850px; }
+  #page4 .nav h4 {
+    text-align: center;
+    margin-top: 73em; }
 
   #page3body {
     clear: left;
@@ -482,7 +475,12 @@ form label {
     width: 70%; }
 
   #page3 .nav {
-    height: 125em; } }
+    height: 125em; }
+
+  #page3 .nav h4 {
+    text-align: center;
+    position: sticky;
+    margin-top: 95em; } }
 @media only screen and (min-width: 768px) {
   body#page1 {
     background-image: url(../images/background.jpg);
@@ -511,6 +509,10 @@ form label {
   #page4 #portfolio_container {
     margin-left: 5%; }
 
+  #backtoTop {
+    background-color: #b3b3b3;
+    padding: 5%; }
+
   #page1 .headerName {
     font-size: 300%;
     margin-top: 10%;
@@ -526,7 +528,12 @@ form label {
     width: 90%; }
 
   #page3 .nav {
-    height: 130em; } }
+    height: 130em; }
+
+  #page3 .nav h4 {
+    text-align: center;
+    position: sticky;
+    margin-top: 450%; } }
 #page4 .headerName {
   margin-bottom: 2%; }
 
@@ -564,13 +571,15 @@ form label {
 .gallery {
   margin-left: 5%; }
 
+#backtoTop {
+  text-decoration: none;
+  color: black; }
+
+#backtoTop:hover {
+  color: #FFD9D0; }
+
 html {
   scroll-behavior: smooth; }
-
-.nav h4 {
-  text-align: center;
-  position: sticky;
-  margin-top: 450%; }
 
 #backtoTop {
   text-decoration: none;
@@ -578,7 +587,7 @@ html {
   margin-top: 200em; }
 
 #backtoTop:hover {
-  color: white; }
+  color: #FFD9D0; }
 
 #resumeLink a {
   text-decoration-line: none;

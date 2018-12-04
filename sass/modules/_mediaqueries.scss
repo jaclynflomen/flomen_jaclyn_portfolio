@@ -267,36 +267,30 @@ label {
 .pics_cont img {
     width: 25%;
     height: 25%;
+    margin-right: 3%;
 }
 
-.pics_cont a {
-    display: inline;
+
+.pics_cont {
+    margin-right: 15%;
 }
 
-#portfolio_container label {
-    font-size: 10%;
-    position: relative;
+.pics_cont h3, p {
+    text-align: left;
+    width: 90%;
 }
 
-#page4#portfolio_container {
-    margin-left: 8%;
+#page4 .nav {
+    height: 1600px;
 }
 
-.tabletBreak {
-    display: block;
+#page4 .nav h4{
+    text-align: center;
+    margin-top: 73em;
 }
 
-#desktopBreak {
-    display: none;
-}
 
-.pics_cont img:hover {
-    opacity: 1;
-}
 
-.nav {
-    height: 850px;
-}
 
 //resume 
 #page3body {
@@ -312,6 +306,12 @@ label {
 
 #page3 .nav {
     height: 125em;
+}
+
+#page3 .nav h4{
+    text-align: center;
+    position: sticky;
+    margin-top: 95em;
 }
 
 }
@@ -352,6 +352,11 @@ label {
     #page4 #portfolio_container {
         margin-left: 5%;
     }
+    
+    #backtoTop {
+        background-color: $my_grey;
+        padding: 5%;
+    }
 
 
     #page1 .headerName {
@@ -375,5 +380,13 @@ label {
     #page3 .nav {
         height: 130em;
     }
+
+    #page3 .nav h4{
+        text-align: center;
+        position: sticky;
+        margin-top: 450%;
+    }
+
+
 
 }

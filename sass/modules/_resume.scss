@@ -2,11 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.nav h4{
-    text-align: center;
-    position: sticky;
-    margin-top: 450%;
-}
 
 #backtoTop {
     text-decoration: none;
@@ -15,7 +10,7 @@ html {
 }
 
 #backtoTop:hover {
-    color: white;
+    color: $my_pink;
 }
 
 #resumeLink a {
