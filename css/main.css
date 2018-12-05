@@ -123,10 +123,6 @@ form label {
 .nav {
   height: 610px; }
 
-#socialMedia {
-  clear: left;
-  margin-top: 50%; }
-
 #socialMedia ul li {
   list-style: none;
   display: inline; }
@@ -136,6 +132,12 @@ form label {
   margin-right: 1%; }
 
 @media only screen and (max-width: 480px) {
+  #socialMedia {
+    clear: left;
+    position: relative;
+    margin-top: 75%;
+    width: 150%; }
+
   body#page1 {
     background-image: url(../images/background_m.jpg);
     background-repeat: no-repeat;
@@ -159,7 +161,7 @@ form label {
   #page1 .nav_mobile {
     width: 100%;
     height: 5%;
-    margin-top: 50%; }
+    margin-top: 20%; }
 
   .nav {
     display: none; }
@@ -359,6 +361,11 @@ form label {
   form label {
     margin-left: 15%; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+  #socialMedia {
+    clear: left;
+    margin-top: 75%;
+    width: 150%; }
+
   body#page1 {
     background-image: url(../images/background_t.jpg);
     background-repeat: no-repeat;
@@ -512,6 +519,10 @@ form label {
     position: sticky;
     margin-top: 95em; } }
 @media only screen and (min-width: 768px) {
+  #socialMedia {
+    clear: left;
+    margin-top: 40%; }
+
   body#page1 {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
