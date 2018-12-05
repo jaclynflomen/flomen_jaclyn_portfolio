@@ -17,7 +17,7 @@
 
         created : function() {
             //get all of the movie data ib the oage load
-            this.fetchArtData(null); //this is where we would fetch PHP stuff
+            this.fetchArtData('category'); //this is where we would fetch PHP stuff
         },
 
         methods : {
@@ -93,7 +93,7 @@
 
                     if (category) {
                         //store data in the single result above
-                        this.singledata = data;
+                        this.artdata = data;
                     } else {
                         //initial data grab, store in the videodata array
                         this.artdata = data;
