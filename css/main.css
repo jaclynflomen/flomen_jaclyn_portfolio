@@ -93,58 +93,6 @@ form label {
   font-size: 120%;
   font-family: 'Didot', 'Times New Roman', serif; }
 
-@media only screen and (max-width: 768px) {
-  #endForm ul {
-    list-style: none; }
-
-  #endForm ul li {
-    display: inline; }
-
-  #submit {
-    background-color: #FFD9D0;
-    height: 40px;
-    width: 40%;
-    border: none;
-    font-size: 120%;
-    font-family: 'Didot', 'Times New Roman', serif; }
-
-  #clear {
-    background-color: white;
-    height: 40px;
-    width: 40%;
-    border: 2px solid #FFD9D0;
-    font-size: 120%;
-    font-family: 'Didot', 'Times New Roman', serif; }
-
-  #endForm {
-    margin-left: 35%;
-    position: block;
-    float: none;
-    width: 80%;
-    margin-left: 15%; }
-
-  #formCont {
-    float: none;
-    width: 100%;
-    margin-left: 17%; }
-
-  #contactBio {
-    margin-right: 7%; }
-
-  form input {
-    background-color: #FFD9D0;
-    border: none;
-    width: 50%;
-    height: 25px;
-    margin-bottom: 2%;
-    margin-left: 10%; }
-
-  #comments {
-    background-color: #FFD9D0;
-    border: none;
-    width: 50%;
-    height: 125px;
-    margin-left: 10%; } }
 #headerName {
   font-size: 200%;
   color: black;
@@ -367,7 +315,49 @@ form label {
 
   #page5 .nav_mobile ul li a:hover {
     text-decoration: none;
-    color: #FFD9D0; } }
+    color: #FFD9D0; }
+
+  #endForm ul {
+    list-style: none; }
+
+  #endForm {
+    position: block;
+    float: none;
+    width: 80%;
+    margin-left: 15%; }
+
+  #formCont {
+    float: left;
+    width: 70%;
+    margin-left: 5%; }
+
+  #contactBio {
+    margin-right: 7%; }
+
+  #submit {
+    margin-top: 5%;
+    width: 70%; }
+
+  #clear {
+    width: 70%; }
+
+  form input {
+    background-color: #FFD9D0;
+    border: none;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 2%;
+    margin-left: 15%; }
+
+  #comments {
+    background-color: #FFD9D0;
+    border: none;
+    width: 100%;
+    height: 125px;
+    margin-left: 15%; }
+
+  form label {
+    margin-left: 15%; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   body#page1 {
     background-image: url(../images/background_t.jpg);
@@ -426,23 +416,62 @@ form label {
   .aboutSvg img {
     height: 2.5em; }
 
-  form input {
-    margin-left: 22%; }
-
-  label {
-    padding-left: 12%; }
-
-  #comments {
-    margin-left: 22%; }
-
-  #endForm {
-    clear: left;
-    margin-left: 13%;
-    padding-top: 2%;
-    width: 50%; }
-
   #page5 .nav {
     height: 680px; }
+
+  form label {
+    margin-left: 15%; }
+
+  #endForm ul {
+    list-style: none; }
+
+  #submit {
+    background-color: #FFD9D0;
+    height: 40px;
+    width: 40%;
+    border: none;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif; }
+
+  #clear {
+    background-color: white;
+    height: 40px;
+    width: 40%;
+    border: 2px solid #FFD9D0;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif; }
+
+  #endForm {
+    position: block;
+    float: none;
+    width: 80%;
+    margin-left: 15%; }
+
+  #formCont {
+    float: left;
+    width: 70%;
+    margin-left: 5%; }
+
+  #contactBio {
+    margin-right: 7%; }
+
+  #submit {
+    margin-top: 5%; }
+
+  form input {
+    background-color: #FFD9D0;
+    border: none;
+    width: 60%;
+    height: 25px;
+    margin-bottom: 2%;
+    margin-left: 15%; }
+
+  #comments {
+    background-color: #FFD9D0;
+    border: none;
+    width: 60%;
+    height: 125px;
+    margin-left: 15%; }
 
   .pics_cont img {
     width: 25%;
@@ -565,7 +594,62 @@ form label {
     margin-top: 5px; }
 
   #aboutText {
-    margin-top: 5px; } }
+    margin-top: 5px; }
+
+  #endForm ul {
+    list-style: none; }
+
+  #endForm ul li {
+    display: inline; }
+
+  #submit {
+    background-color: #FFD9D0;
+    height: 40px;
+    width: 40%;
+    border: none;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif; }
+
+  #clear {
+    background-color: white;
+    height: 40px;
+    width: 40%;
+    border: 2px solid #FFD9D0;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif; }
+
+  #contactBio {
+    margin-right: 7%; }
+
+  form input {
+    background-color: #FFD9D0;
+    border: none;
+    width: 80%;
+    height: 25px;
+    margin-bottom: 2%;
+    margin-left: 15%; }
+
+  #comments {
+    background-color: #FFD9D0;
+    border: none;
+    width: 80%;
+    height: 125px;
+    margin-left: 15%; }
+
+  form label {
+    font-size: 120%;
+    margin-left: 15%;
+    display: block; }
+
+  #formCont {
+    float: left;
+    width: 40%; }
+
+  #endForm {
+    position: relative;
+    width: 50%;
+    margin-left: 48%;
+    padding-top: 10%; } }
 #page4 .headerName {
   margin-bottom: 2%; }
 

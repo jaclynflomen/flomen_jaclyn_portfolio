@@ -229,6 +229,57 @@
         color: $my_pink;
     }
 
+    #endForm ul {
+        list-style: none;
+    }
+  
+        #endForm {
+            position: block;
+            float: none;
+            width: 80%;
+            margin-left: 15%;
+        }
+    
+        #formCont {
+            float: left;
+            width: 70%;
+            margin-left: 5%;
+        }
+    
+        #contactBio {
+            margin-right: 7%;
+        }
+    
+        #submit {
+            margin-top: 5%;
+            width: 70%;
+            
+        }
+
+        #clear {
+            width: 70%;
+        }
+
+        form input {
+            background-color: $my_pink;
+            border: none;
+            width: 100%;
+            height: 25px;
+            margin-bottom: 2%;
+            margin-left: 15%;
+        }
+        
+        #comments {
+            background-color: $my_pink;
+            border: none;
+            width: 100%;
+            height: 125px;
+            margin-left: 15%;
+        }
+
+        form label{
+            margin-left: 15%;
+        }
 
 }
 
@@ -314,28 +365,74 @@
 
 //contact page
 
-form input {
-    margin-left: 22%;
-}
-
-label {
-     padding-left: 12%;
-}
-
-#comments {
-    margin-left: 22%;
-}
-
-#endForm {
-    clear: left;
-    margin-left: 13%;
-    padding-top: 2%;
-    width: 50%;
-}
-
 
 #page5 .nav {
     height: 680px;
+}
+
+form label{
+    margin-left: 15%;
+}
+
+#endForm ul {
+    list-style: none;
+}
+
+#submit {
+    background-color: $my_pink;
+    height: 40px;
+    width: 40%;
+    border: none;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif;
+}
+
+#clear {
+    background-color: white;
+    height: 40px;
+    width: 40%;
+    border: 2px solid $my_pink;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif;
+}
+    
+    #endForm {
+        position: block;
+        float: none;
+        width: 80%;
+        margin-left: 15%;
+    }
+
+    #formCont {
+        float: left;
+        width: 70%;
+        margin-left: 5%;
+    }
+
+    #contactBio {
+        margin-right: 7%;
+    }
+
+    #submit {
+        margin-top: 5%;
+    }
+
+
+form input {
+    background-color: $my_pink;
+    border: none;
+    width: 60%;
+    height: 25px;
+    margin-bottom: 2%;
+    margin-left: 15%;
+}
+
+#comments {
+    background-color: $my_pink;
+    border: none;
+    width: 60%;
+    height: 125px;
+    margin-left: 15%;
 }
 
 //portfolio page
@@ -390,6 +487,8 @@ label {
     position: sticky;
     margin-top: 95em;
 }
+
+
 
 
 }
@@ -505,4 +604,78 @@ label {
         margin-top: 5px;
     }
 
+    //contact
+
+    #endForm ul {
+        list-style: none;
+    }
+    
+    #endForm ul li {
+        display: inline;
+    }
+    
+    #submit {
+        background-color: $my_pink;
+        height: 40px;
+        width: 40%;
+        border: none;
+        font-size: 120%;
+        font-family: 'Didot', 'Times New Roman', serif;
+    }
+    
+    #clear {
+        background-color: white;
+        height: 40px;
+        width: 40%;
+        border: 2px solid $my_pink;
+        font-size: 120%;
+        font-family: 'Didot', 'Times New Roman', serif;
+    }
+    
+        #contactBio {
+            margin-right: 7%;
+        }
+    
+    form input {
+        background-color: $my_pink;
+        border: none;
+        width: 80%;
+        height: 25px;
+        margin-bottom: 2%;
+        margin-left: 15%;
+    }
+    
+    #comments {
+        background-color: $my_pink;
+        border: none;
+        width: 80%;
+        height: 125px;
+        margin-left: 15%;
+    }
+    
+    
+    form label{
+        font-size:120%;
+        margin-left: 15%;
+        display:block;
+    }
+    
+    #formCont {
+        float: left;
+        width: 40%;
+    }
+     
+    #endForm {
+        position: relative;
+        width: 50%;
+        margin-left: 48%;
+        padding-top: 10%;
+    }
+
+
 }
+
+
+
+
+    
