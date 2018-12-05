@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 02, 2018 at 09:57 PM
+-- Generation Time: Dec 05, 2018 at 04:08 AM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.8
 
@@ -52,40 +52,41 @@ CREATE TABLE `tbl_portfoliowork` (
   `art_id` int(10) NOT NULL,
   `art_category` varchar(30) NOT NULL,
   `art_title` varchar(50) NOT NULL,
-  `imgPath` varchar(50) NOT NULL
+  `imgPath` varchar(50) NOT NULL,
+  `art_img` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_portfoliowork`
 --
 
-INSERT INTO `tbl_portfoliowork` (`art_id`, `art_category`, `art_title`, `imgPath`) VALUES
-(1, 'Personal', 'New York, A Dream', 'img_7317.jpg'),
-(2, 'Personal', 'Chanel, No. Me', 'chanel.jpg'),
-(3, 'Personal', 'Doubled', 'img_3467.jpg'),
-(4, 'Personal', 'Look Outside the Box', 'img_4515.jpg'),
-(5, 'Personal', 'Paint A Picture For Me', 'img_7403.jpg'),
-(6, 'Work', 'Stay In The Loop', 'SITL.png'),
-(7, 'Work', 'KML Custom Newsblast', 'newsblast_custom_ad_2.jpg'),
-(8, 'Work', 'Pride Day', 'pride_day.jpg'),
-(9, 'Work', 'Thanksgiving', 'thanksgiving.jpg'),
-(10, 'Work', 'National Waffle Day', 'waffle_day.jpg'),
-(11, 'School', 'Aeropostale x Moscato', 'flomen_jaclyn_mashup.jpg'),
-(12, 'School', 'Digital Tattoo', 'img_8493.png'),
-(13, 'School', 'London Squash & Fitness Club', 'LSFC.png'),
-(14, 'School', 'OHM Intro Banner', 'ohm_intro_banner_3.jpg'),
-(15, 'School', 'Digital Graffiti', 'flomen_jaclyn_finalgraffiti.jpg'),
-(16, 'School', 'OHM Ride For The Cure', 'ohm_rideforcure_event.jpg'),
-(17, 'Photography', 'All of the Lights', '29.jpg'),
-(18, 'Photography', 'Mizner', 'film6.jpg'),
-(19, 'Photography', 'Threshold', 'flomen_jaclyn-4.jpg'),
-(20, 'Photography', 'Caged In', 'jaclynflomenportfolio-5.jpg'),
-(21, 'Photography', 'Model: Stephanie Lanz', 'portfolio-12.jpg'),
-(22, 'Video', 'Full(er) House Fantasy', 'jaclynloganvas1020.gif'),
-(23, 'Other', 'FIMS 2018 Welcome Banner', 'fims_banner.jpg'),
-(24, 'Other', 'Ontario Hall Residence Snapchat Geotag', 'ohallgeotag2.png'),
-(25, 'Other', 'Toronto Snapchat Geotag', 'toronto-geotag.png'),
-(26, 'Other', 'Yes Theory Logos', 'yes_theory_logos.jpg');
+INSERT INTO `tbl_portfoliowork` (`art_id`, `art_category`, `art_title`, `imgPath`, `art_img`) VALUES
+(1, 'Personal', 'New York, A Dream', 'img_7317.jpg', 'img_7317.jpg'),
+(2, 'Personal', 'Chanel, No. Me', 'chanel.jpg', 'chanel.jpg'),
+(3, 'Personal', 'Doubled', 'img_3467.jpg', 'img_3467.jpg'),
+(4, 'Personal', 'Look Outside the Box', 'img_4515.jpg', 'img_4515.jpg'),
+(5, 'Personal', 'Paint A Picture For Me', 'img_7403.jpg', 'img_7403.jpg'),
+(6, 'Work', 'Stay In The Loop', 'SITL.png', 'SITL.png'),
+(7, 'Work', 'KML Custom Newsblast', 'newsblast_custom_ad_2.jpg', 'newsblast_custom_ad_2.jpg'),
+(8, 'Work', 'Pride Day', 'pride_day.jpg', 'pride_day.jpg'),
+(9, 'Work', 'Thanksgiving', 'thanksgiving.jpg', 'thanksgiving.jpg'),
+(10, 'Work', 'National Waffle Day', 'waffle_day.jpg', 'waffle_day.jpg'),
+(11, 'School', 'Aeropostale x Moscato', 'flomen_jaclyn_mashup.jpg', 'flomen_jaclyn_mashup.jpg'),
+(12, 'School', 'Digital Tattoo', 'img_8493.png', 'img_8493.png'),
+(13, 'School', 'London Squash & Fitness Club', 'LSFC.png', 'LSFC.png'),
+(14, 'School', 'OHM Intro Banner', 'ohm_intro_banner_3.jpg', 'ohm_intro_banner_3.jpg'),
+(15, 'School', 'Digital Graffiti', 'flomen_jaclyn_finalgraffiti.jpg', 'flomen_jaclyn_finalgraffiti.jpg'),
+(16, 'School', 'OHM Ride For The Cure', 'ohm_rideforcure_event.jpg', 'ohm_rideforcure_event.jpg'),
+(17, 'Photography', 'All of the Lights', '29.jpg', '29.jpg'),
+(18, 'Photography', 'Mizner', 'film6.jpg', 'film6.jpg'),
+(19, 'Photography', 'Threshold', 'flomen_jaclyn-4.jpg', 'flomen_jaclyn-4.jpg'),
+(20, 'Photography', 'Caged In', 'jaclynflomenportfolio-5.jpg', 'jaclynflomenportfolio-5.jpg'),
+(21, 'Photography', 'Model: Stephanie Lanz', 'portfolio-12.jpg', 'portfolio-12.jpg'),
+(22, 'Video', 'Full(er) House Fantasy', 'jaclynloganvas1020.gif', 'jaclynloganvas1020.gif'),
+(23, 'Other', 'FIMS 2018 Welcome Banner', 'fims_banner.jpg', 'fims_banner.jpg'),
+(24, 'Other', 'Ontario Hall Residence Snapchat Geotag', 'ohallgeotag2.png', 'ohallgeotag2.png'),
+(25, 'Other', 'Toronto Snapchat Geotag', 'toronto-geotag.png', 'toronto-geotag.png'),
+(26, 'Other', 'Yes Theory Logos', 'yes_theory_logos.jpg', 'yes_theory_logos.jpg');
 
 --
 -- Indexes for dumped tables

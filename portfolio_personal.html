@@ -28,27 +28,17 @@
 
     <main id="app" >
       <div id="demo-test-gallery" class="gallery">
-        
-        <div v-for="item in db_portfolio">
-            <a class="galleryDemo" title="New York, A Dream" href="images/img_7317.jpg"></a>
-                <img :src="'images/' + item.imgPath" alt="portfolio piece" class="artwork">
-            </a></div>
-    
-            <a class="galleryDemo" title="Chanel No. Me" href="images/chanel.jpg">
-                <img src="" class="artwork" id="2">
+            <button v-on:click="fetchPersonal" id="Personal">Personal</button>
+            <button v-on:click="fetchWork" id="Work">Work</button>
+            <button v-on:click="fetchSchool" id="School">School</button>
+            <button v-on:click="fetchPhotography" id="Photography">Photography</button>
+            <button v-on:click="fetchVideo" id="Video">3D/Video</button>
+            <button v-on:click="fetchOther" id="Other">Other</button>
+        <div v-for="item in artdata">
+            <a class="galleryDemo" title="New York, A Dream" :href="item.imgPath" v-on:load="loadArt"></a>
+                <img :src="'images/' + item.art_img" alt="portfolio piece" class="artwork">
             </a>
-    
-            <a class="galleryDemo" title="Doubled" href="images/img_3467.jpg">
-                <img src="" class="artwork" id="3">
-            </a>
-           
-            <a class="galleryDemo" title="Look Out of the Box" href="images/img_4515.jpg">
-                <img src="" class="artwork" id="4">
-            </a>
-
-            <a class="galleryDemo" title="Paint A Picture For Me" href="images/img_7403.jpg">
-                <img src="" class="artwork" id="5">
-            </a>
+        </div>
         </div>
     </main>
     
