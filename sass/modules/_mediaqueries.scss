@@ -95,6 +95,38 @@
         color: $my_pink;
     }
 
+    #page2body p {
+        clear: left;
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    
+    #selfPic {
+        clear: left;
+        width: 40%;
+        margin-top: 20%;
+        float: none;
+    }
+
+    #icons {
+        margin-left: 5%;
+    }
+    
+    .aboutSvg {
+        float: left;
+        margin-right: 13%;
+        width: 5%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    
+    
+    .aboutSvg img {
+        height: 2.5em;
+    }
+
     //portfolio page
 
     #page4 .nav_mobile {
@@ -237,6 +269,49 @@
     padding-left: 25%;
 }
 
+//about page
+
+
+.aboutSvg {
+    margin-top: 5%;
+}
+
+#page2body p {
+    clear: left;
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#aboutText {
+    margin-left: 0%;
+}
+
+#selfPic {
+    width: 18%;
+    float: right;
+    margin-top: 15%;
+}
+
+#icons {
+    clear: left;
+    margin-left: 5%;
+}
+
+.aboutSvg {
+    float: left;
+    margin-right: 5%;
+    width: 5%;
+    margin-bottom: 0%;
+    margin-top: 2%;
+}
+
+
+.aboutSvg img {
+    height: 2.5em;
+}
+
 //contact page
 
 form input {
@@ -290,8 +365,6 @@ label {
 }
 
 
-
-
 //resume 
 #page3body {
     clear: left;
@@ -304,6 +377,10 @@ label {
     width: 70%;
 }
 
+#page3body h4 {
+    width: 70%;
+}
+
 #page3 .nav {
     height: 125em;
 }
@@ -313,6 +390,7 @@ label {
     position: sticky;
     margin-top: 95em;
 }
+
 
 }
 
@@ -387,6 +465,44 @@ label {
         margin-top: 450%;
     }
 
+    //about
+    #selfPic {
+        margin-top: 10%;
+        padding-left: 2%;
+    }
 
+    #page2 .headerName {
+        margin-bottom: 5%;
+    }
+
+    #page2body p {
+        clear: left;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    
+    #icons {
+        margin-left: 0%;
+    }
+
+    .aboutSvg {
+        float: left;
+        margin-right: 0%;
+        width: 5%;
+        margin-bottom: 3%;
+        margin-top: 2%;
+    }
+    
+    .aboutSvg img {
+        height: 2.5em;
+    }
+
+    #aboutText {
+        margin-top: 5px;
+    }
+
+    #aboutText {
+        margin-top: 5px;
+    }
 
 }
