@@ -1,13 +1,5 @@
-#page2body p {
-  clear: left;
-  float: left;
-  width: 40%;
-  margin-left: 7%;
-  margin-top: 5%; }
-
 #selfPic {
   width: 25%;
-  margin-top: 10%;
   margin-right: 5%;
   float: right; }
 
@@ -27,61 +19,9 @@
 .aboutSvg img {
   height: 2.5em; }
 
-#aboutText p {
-  margin-top: 0px; }
+.Title1 {
+  margin-top: 15%; }
 
-@media only screen and (max-width: 480px) {
-  #page2body p {
-    clear: left;
-    float: none;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 5%; }
-
-  #selfPic {
-    clear: left;
-    width: 40%;
-    margin-top: 20%;
-    float: none; }
-
-  #icons {
-    margin-left: 5%; }
-
-  .aboutSvg {
-    float: left;
-    margin-right: 13%;
-    width: 5%;
-    margin-bottom: 10%;
-    margin-top: 5%; }
-
-  .aboutSvg img {
-    height: 2.5em; } }
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  #page2body p {
-    clear: left;
-    float: left;
-    width: 30%;
-    margin-left: 10%;
-    margin-top: 5%; }
-
-  #selfPic {
-    width: 20%;
-    float: right;
-    margin-top: 12%; }
-
-  #icons {
-    clear: left;
-    margin-left: 5%; }
-
-  .aboutSvg {
-    float: left;
-    margin-right: 5%;
-    width: 5%;
-    margin-bottom: 0%;
-    margin-top: 2%; }
-
-  .aboutSvg img {
-    height: 2.5em; } }
 #page5 .headerName {
   margin-bottom: 2%; }
 
@@ -153,58 +93,6 @@ form label {
   font-size: 120%;
   font-family: 'Didot', 'Times New Roman', serif; }
 
-@media only screen and (max-width: 768px) {
-  #endForm ul {
-    list-style: none; }
-
-  #endForm ul li {
-    display: inline; }
-
-  #submit {
-    background-color: #FFD9D0;
-    height: 40px;
-    width: 40%;
-    border: none;
-    font-size: 120%;
-    font-family: 'Didot', 'Times New Roman', serif; }
-
-  #clear {
-    background-color: white;
-    height: 40px;
-    width: 40%;
-    border: 2px solid #FFD9D0;
-    font-size: 120%;
-    font-family: 'Didot', 'Times New Roman', serif; }
-
-  #endForm {
-    margin-left: 35%;
-    position: block;
-    float: none;
-    width: 80%;
-    margin-left: 15%; }
-
-  #formCont {
-    float: none;
-    width: 100%;
-    margin-left: 17%; }
-
-  #contactBio {
-    margin-right: 7%; }
-
-  form input {
-    background-color: #FFD9D0;
-    border: none;
-    width: 50%;
-    height: 25px;
-    margin-bottom: 2%;
-    margin-left: 10%; }
-
-  #comments {
-    background-color: #FFD9D0;
-    border: none;
-    width: 50%;
-    height: 125px;
-    margin-left: 10%; } }
 #headerName {
   font-size: 200%;
   color: black;
@@ -235,7 +123,21 @@ form label {
 .nav {
   height: 610px; }
 
+#socialMedia ul li {
+  list-style: none;
+  display: inline; }
+
+#socialMedia ul li a img {
+  width: 4%;
+  margin-right: 1%; }
+
 @media only screen and (max-width: 480px) {
+  #socialMedia {
+    clear: left;
+    position: relative;
+    margin-top: 75%;
+    width: 150%; }
+
   body#page1 {
     background-image: url(../images/background_m.jpg);
     background-repeat: no-repeat;
@@ -259,8 +161,7 @@ form label {
   #page1 .nav_mobile {
     width: 100%;
     height: 5%;
-    visibility: visible;
-    margin-top: 100%; }
+    margin-top: 20%; }
 
   .nav {
     display: none; }
@@ -277,7 +178,8 @@ form label {
   .nav_mobile ul li a {
     font-size: 120%;
     margin-right: 5%;
-    margin-bottom: 9%; }
+    margin-bottom: 9%;
+    text-decoration: none; }
 
   .nav_mobile #logo {
     width: 12%;
@@ -301,8 +203,41 @@ form label {
     position: sticky;
     background-color: #b3b3b3;
     bottom: 0;
-    margin-top: 61%;
-    color: white; }
+    margin-top: 15%; }
+
+  #page2 .nav_mobile ul li a {
+    text-decoration: none;
+    color: black; }
+
+  #page2 .nav_mobile ul li a:hover {
+    text-decoration: none;
+    color: #FFD9D0; }
+
+  #page2body p {
+    clear: left;
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%; }
+
+  #selfPic {
+    clear: left;
+    width: 40%;
+    margin-top: 20%;
+    float: none; }
+
+  #icons {
+    margin-left: 5%; }
+
+  .aboutSvg {
+    float: left;
+    margin-right: 13%;
+    width: 5%;
+    margin-bottom: 10%;
+    margin-top: 5%; }
+
+  .aboutSvg img {
+    height: 2.5em; }
 
   #page4 .nav_mobile {
     width: 100%;
@@ -313,11 +248,8 @@ form label {
     bottom: 0;
     color: white; }
 
-  #desktopBreak {
-    display: none; }
-
   .pics_cont {
-    margin-left: 0%;
+    margin-left: 9%;
     margin-right: 0%;
     margin-bottom: 0%; }
 
@@ -328,11 +260,20 @@ form label {
     height: 100%;
     overflow: hidden; }
 
-  .tabletBreak {
-    display: none; }
-
-  #portfolio_container {
+  #portfolio_container_main {
     margin-left: 10%; }
+
+  #page4 .nav_mobile ul li a {
+    text-decoration: none;
+    color: black; }
+
+  #page4 .nav_mobile ul li a:hover {
+    text-decoration: none;
+    color: #FFD9D0; }
+
+  .pics_cont h3, p {
+    text-align: left;
+    width: 90%; }
 
   #page3 .nav_mobile {
     width: 100%;
@@ -343,6 +284,23 @@ form label {
     bottom: 0;
     color: white; }
 
+  #page3body p {
+    margin-left: 5%;
+    width: 90%; }
+
+  #page3body {
+    clear: left;
+    margin-left: 5%;
+    width: 100%; }
+
+  #page3 .nav_mobile ul li a {
+    text-decoration: none;
+    color: black; }
+
+  #page3 .nav_mobile ul li a:hover {
+    text-decoration: none;
+    color: #FFD9D0; }
+
   #page5 .nav_mobile {
     width: 100%;
     height: 4%;
@@ -350,9 +308,64 @@ form label {
     position: sticky;
     background-color: #b3b3b3;
     bottom: 0;
-    margin-top: 61%;
-    color: white; } }
+    margin-top: 15%;
+    color: white; }
+
+  #page5 .nav_mobile ul li a {
+    text-decoration: none;
+    color: black; }
+
+  #page5 .nav_mobile ul li a:hover {
+    text-decoration: none;
+    color: #FFD9D0; }
+
+  #endForm ul {
+    list-style: none; }
+
+  #endForm {
+    position: block;
+    float: none;
+    width: 80%;
+    margin-left: 15%; }
+
+  #formCont {
+    float: left;
+    width: 70%;
+    margin-left: 5%; }
+
+  #contactBio {
+    margin-right: 7%; }
+
+  #submit {
+    margin-top: 5%;
+    width: 70%; }
+
+  #clear {
+    width: 70%; }
+
+  form input {
+    background-color: #FFD9D0;
+    border: none;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 2%;
+    margin-left: 15%; }
+
+  #comments {
+    background-color: #FFD9D0;
+    border: none;
+    width: 100%;
+    height: 125px;
+    margin-left: 15%; }
+
+  form label {
+    margin-left: 15%; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+  #socialMedia {
+    clear: left;
+    margin-top: 75%;
+    width: 150%; }
+
   body#page1 {
     background-image: url(../images/background_t.jpg);
     background-repeat: no-repeat;
@@ -378,50 +391,138 @@ form label {
   .nav ul {
     padding-left: 25%; }
 
-  form input {
-    margin-left: 22%; }
+  .aboutSvg {
+    margin-top: 5%; }
 
-  label {
-    padding-left: 12%; }
-
-  #comments {
-    margin-left: 22%; }
-
-  #endForm {
+  #page2body p {
     clear: left;
-    margin-left: 13%;
-    padding-top: 2%;
-    width: 50%; }
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 5%; }
+
+  #aboutText {
+    margin-left: 0%; }
+
+  #selfPic {
+    width: 18%;
+    float: right;
+    margin-top: 15%; }
+
+  #icons {
+    clear: left;
+    margin-left: 5%; }
+
+  .aboutSvg {
+    float: left;
+    margin-right: 5%;
+    width: 5%;
+    margin-bottom: 0%;
+    margin-top: 2%; }
+
+  .aboutSvg img {
+    height: 2.5em; }
 
   #page5 .nav {
     height: 680px; }
 
+  form label {
+    margin-left: 15%; }
+
+  #endForm ul {
+    list-style: none; }
+
+  #submit {
+    background-color: #FFD9D0;
+    height: 40px;
+    width: 40%;
+    border: none;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif; }
+
+  #clear {
+    background-color: white;
+    height: 40px;
+    width: 40%;
+    border: 2px solid #FFD9D0;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif; }
+
+  #endForm {
+    position: block;
+    float: none;
+    width: 80%;
+    margin-left: 15%; }
+
+  #formCont {
+    float: left;
+    width: 70%;
+    margin-left: 5%; }
+
+  #contactBio {
+    margin-right: 7%; }
+
+  #submit {
+    margin-top: 5%; }
+
+  form input {
+    background-color: #FFD9D0;
+    border: none;
+    width: 60%;
+    height: 25px;
+    margin-bottom: 2%;
+    margin-left: 15%; }
+
+  #comments {
+    background-color: #FFD9D0;
+    border: none;
+    width: 60%;
+    height: 125px;
+    margin-left: 15%; }
+
   .pics_cont img {
     width: 25%;
-    height: 25%; }
+    height: 25%;
+    margin-right: 3%; }
 
-  .pics_cont a {
-    display: inline; }
+  .pics_cont {
+    margin-right: 15%; }
 
-  #portfolio_container label {
-    font-size: 10%;
-    position: relative; }
+  .pics_cont h3, p {
+    text-align: left;
+    width: 90%; }
 
-  #portfolio_container {
-    margin-left: 8%; }
+  #page4 .nav {
+    height: 1600px; }
 
-  .tabletBreak {
-    display: block; }
+  #page4 .nav h4 {
+    text-align: center;
+    margin-top: 73em; }
 
-  #desktopBreak {
-    display: none; }
+  #page3body {
+    clear: left;
+    margin-left: 5%;
+    width: 90%; }
 
-  .pics_cont img:hover {
-    opacity: 1; }
+  #page3body p {
+    margin-left: 5%;
+    width: 70%; }
 
-  .nav {
-    height: 850px; } }
+  #page3body h4 {
+    width: 70%; }
+
+  #page3 .nav {
+    height: 125em; }
+
+  #page3 .nav h4 {
+    text-align: center;
+    position: sticky;
+    margin-top: 95em; } }
 @media only screen and (min-width: 768px) {
+  #socialMedia {
+    clear: left;
+    margin-top: 40%; }
+
   body#page1 {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
@@ -434,11 +535,10 @@ form label {
     font-size: 85%;
     text-align: center; }
 
-  #desktopBreak {
-    display: block; }
-
-  .tabletBreak {
-    display: none; }
+  .pics_cont h3, p {
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%; }
 
   .pics_cont img {
     width: 20%;
@@ -447,24 +547,138 @@ form label {
   .pics_cont a {
     display: inline; }
 
-  #portfolio_container {
+  #page4 #portfolio_container {
     margin-left: 5%; }
+
+  #backtoTop {
+    background-color: #b3b3b3;
+    padding: 5%; }
 
   #page1 .headerName {
     font-size: 300%;
     margin-top: 10%;
-    margin-left: 10%; } }
+    margin-left: 10%; }
+
+  #page3body {
+    clear: left;
+    margin-left: 5%;
+    width: 70%; }
+
+  #page3body p {
+    margin-left: 5%;
+    width: 90%; }
+
+  #page3 .nav {
+    height: 130em; }
+
+  #page3 .nav h4 {
+    text-align: center;
+    position: sticky;
+    margin-top: 450%; }
+
+  #selfPic {
+    margin-top: 10%;
+    padding-left: 2%; }
+
+  #page2 .headerName {
+    margin-bottom: 5%; }
+
+  #page2body p {
+    clear: left;
+    margin-top: 5%;
+    margin-left: 5%; }
+
+  #icons {
+    margin-left: 0%; }
+
+  .aboutSvg {
+    float: left;
+    margin-right: 0%;
+    width: 5%;
+    margin-bottom: 3%;
+    margin-top: 2%; }
+
+  .aboutSvg img {
+    height: 2.5em; }
+
+  #aboutText {
+    margin-top: 5px; }
+
+  #aboutText {
+    margin-top: 5px; }
+
+  #endForm ul {
+    list-style: none; }
+
+  #endForm ul li {
+    display: inline; }
+
+  #submit {
+    background-color: #FFD9D0;
+    height: 40px;
+    width: 40%;
+    border: none;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif; }
+
+  #clear {
+    background-color: white;
+    height: 40px;
+    width: 40%;
+    border: 2px solid #FFD9D0;
+    font-size: 120%;
+    font-family: 'Didot', 'Times New Roman', serif; }
+
+  #contactBio {
+    margin-right: 7%; }
+
+  form input {
+    background-color: #FFD9D0;
+    border: none;
+    width: 80%;
+    height: 25px;
+    margin-bottom: 2%;
+    margin-left: 15%; }
+
+  #comments {
+    background-color: #FFD9D0;
+    border: none;
+    width: 80%;
+    height: 125px;
+    margin-left: 15%; }
+
+  form label {
+    font-size: 120%;
+    margin-left: 15%;
+    display: block; }
+
+  #formCont {
+    float: left;
+    width: 40%; }
+
+  #endForm {
+    position: relative;
+    width: 50%;
+    margin-left: 48%;
+    padding-top: 10%; } }
+#page4 .headerName {
+  margin-bottom: 2%; }
+
 #portfolio_container {
   clear: left; }
 
+#portfolio_container_main {
+  clear: left;
+  margin-left: 5%;
+  margin-right: 5%; }
+
 .pics_cont {
-  margin-left: 2%;
-  display: inline;
-  margin-right: 0%; }
+  margin-bottom: 5%; }
 
 .pics_cont img {
   height: 200px;
-  object-fit: cover; }
+  object-fit: cover;
+  float: left; }
 
 #portfolio_container h3 {
   font-size: 120%;
@@ -472,193 +686,43 @@ form label {
   color: black;
   padding: 0.5%; }
 
-.personal_img img {
-  display: block;
-  width: 20%;
-  margin-bottom: 3%; }
+#container_other {
+  clear: left; }
 
-.work_img img {
-  display: block;
-  width: 20%;
-  margin-bottom: 3%; }
+.galleryDemo img {
+  float: left;
+  padding-right: 5%;
+  margin-top: 2%;
+  height: 150px; }
 
-.photog_img img {
-  display: block;
-  width: 20%;
-  margin-bottom: 3%; }
-
-.school_img img {
-  display: block;
-  width: 20%;
-  margin-bottom: 3%; }
-
-.video_img img {
-  display: block;
-  width: 20%;
-  margin-bottom: 3%; }
-
-.other_img img {
-  display: block;
-  width: 20%;
-  margin-bottom: 3%; }
-
-#page4_6 #portfolio_container div img {
-  width: 70%; }
-
-#page4_1 #portfolio_container div img {
-  width: 70%; }
-
-#page4_3 #portfolio_container div img {
-  width: 70%; }
-
-#page4_4 #portfolio_container div img {
-  width: 70%; }
-
-#page4_5 #portfolio_container div img {
-  width: 70%; }
-
-#page4_2 #portfolio_container div img {
-  width: 70%; }
-
-.row > .column {
-  padding: 0 8px; }
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/* Create four equal columns that floats next to eachother */
-.column {
-  width: 35%; }
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black; }
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: black;
-  margin: auto;
-  padding: 0;
-  width: 85%;
-  height: 130%;
-  max-width: 1200px; }
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold; }
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer; }
-
-/* Hide the slides by default */
-.mySlides {
-  display: none; }
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none; }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8); }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0; }
-
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white; }
-
-img.demo {
-  opacity: 0.6; }
-
-.active,
-.demo:hover {
-  opacity: 1; }
-
-img.hover-shadow {
-  transition: 0.3s; }
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-#page3body {
-  clear: left;
-  margin-left: 5%;
-  width: 70%; }
-
-.nav h4 {
-  text-align: center;
-  position: sticky;
-  margin-top: 450%; }
+.gallery {
+  margin-left: 5%; }
 
 #backtoTop {
   text-decoration: none;
   color: black; }
 
 #backtoTop:hover {
-  color: white; }
+  color: #FFD9D0; }
 
-#page3 .nav {
-  height: 1650px; }
+html {
+  scroll-behavior: smooth; }
 
-@media screen and (max-width: 660px) {
-  #page3 .nav {
-    height: 1830%; }
+#backtoTop {
+  text-decoration: none;
+  color: black;
+  margin-top: 200em; }
 
-  #resume {
-    padding-right: 10%; }
+#backtoTop:hover {
+  color: #FFD9D0; }
 
-  #page3 .nav h4 {
-    margin-top: 970%;
-    padding-bottom: 5%; } }
+#resumeLink a {
+  text-decoration-line: none;
+  color: black; }
+
+#resumeLink a:hover {
+  color: #FFD9D0; }
+
 .ityped-cursor {
   font-size: 2.2rem;
   opacity: 1;
@@ -683,6 +747,12 @@ body {
 .hidden {
   display: none; }
 
+.hide {
+  visibility: hidden; }
+
+.visible {
+  visibility: visible; }
+
 .nav {
   float: right;
   background-color: #b3b3b3; }
@@ -700,8 +770,8 @@ nav ul li a:hover {
 
 .headerName {
   color: #FFD9D0;
-  text-shadow: 2px 2px black;
-  font-size: 200%;
+  text-shadow: 2px 1px black;
+  font-size: 250%;
   float: left;
   margin-left: 5%;
   margin-top: 5%;

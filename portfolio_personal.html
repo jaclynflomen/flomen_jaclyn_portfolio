@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="css/halkaBox.min.css" rel="stylesheet">
     <script src="js/halkaBox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body id="page4_1">
 
@@ -25,30 +26,31 @@
 
     <h1 class="headerName">Personal Work</h1>
 
-    <div id="container_other" >
+    <main id="app" >
       <div id="demo-test-gallery" class="gallery">
-            
-            <a class="galleryDemo" title="Caption 2" href="images/Personal/img_7317.jpg">
-                <img src="images/Personal/img_7317.jpg">
+        
+        <div v-for="item in db_portfolio">
+            <a class="galleryDemo" title="New York, A Dream" href="images/img_7317.jpg"></a>
+                <img :src="'images/' + item.imgPath" alt="portfolio piece" class="artwork">
+            </a></div>
+    
+            <a class="galleryDemo" title="Chanel No. Me" href="images/chanel.jpg">
+                <img src="" class="artwork" id="2">
             </a>
     
-            <a class="galleryDemo" title="Caption 2" href="images/Personal/chanel.jpg">
-                <img src="images/Personal/chanel.jpg">
-            </a>
-    
-            <a class="galleryDemo" title="Caption 2" href="images/Personal/img_3467.jpg">
-                <img src="images/Personal/img_3467.jpg">
+            <a class="galleryDemo" title="Doubled" href="images/img_3467.jpg">
+                <img src="" class="artwork" id="3">
             </a>
            
-            <a class="galleryDemo" title="Caption 2" href="images/Personal/img_4515.jpg">
-                <img src="images/Personal/img_4515.jpg">
+            <a class="galleryDemo" title="Look Out of the Box" href="images/img_4515.jpg">
+                <img src="" class="artwork" id="4">
             </a>
 
-            <a class="galleryDemo" title="Caption 2" href="images/Personal/img_7403.jpg">
-                <img src="images/Personal/img_7403.jpg">
+            <a class="galleryDemo" title="Paint A Picture For Me" href="images/img_7403.jpg">
+                <img src="" class="artwork" id="5">
             </a>
         </div>
-    </div>
+    </main>
     
 
     
@@ -63,5 +65,6 @@
             </ul>
         </nav>
 <script src="js/main.js"></script>
+<script src="js/portfolio.js"></script>
 </body>
 </html>

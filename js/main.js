@@ -23,5 +23,5 @@ halkaBox.options({
 
   // is zoomable
   isZoomable: true
-       
-});
+});  
+

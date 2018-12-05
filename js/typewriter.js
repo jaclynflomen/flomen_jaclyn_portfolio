@@ -6,7 +6,7 @@
 
 <script>
     ityped.init(document.querySelector("#ityped"), {
-      showCursor = false,
+      showCursor = true,
       strings: ['Jaclyn Flomen']
     })
     ityped.init("#placeholder", {

@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/typewriter.js"></script>
     <script src="https://unpkg.com/ityped@1.0.2"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script src="js/portfolio_waypoints.js"></script>
 </head>
 <body id="page1">
 
-    <nav class="nav">
+    <nav class="nav hide" id="p1nav">
         <h1 class="hidden">Nav</h1>
         <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a>
         <ul>
@@ -26,6 +29,14 @@
         <span id="ityped"></span>
     </div>
 <br>
+
+<div id="socialMedia">  
+        <ul>
+            <li><a href="https://www.instagram.com/makeupbyjflo/" target="_blank"><img src="images/instagram.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/jaclyn-flomen-b81928129/" target="_blank"><img src="images/linkedin.png" alt=""></a></li>
+            <li><a href="https://www.pinterest.ca/flomen1217/" target="_blank"><img src="images/pinterest.png" alt=""></a></li>
+        </ul>
+</div>
        
 
     <nav class="nav_mobile">
@@ -51,9 +62,12 @@
         })
         ityped.init("#placeholder", {
           placeholder: false,
-          showCursor: false
+          showCursor: true
         })
       </script>
+
+      <script src="js/main.js"></script>
+      <script src="js/portfolio.js"></script>
     
 </body>
 </html>

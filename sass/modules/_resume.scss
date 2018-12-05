@@ -1,40 +1,23 @@
-#page3body {
-    clear: left;
-    margin-left: 5%;
-    width: 70%;
+html {
+    scroll-behavior: smooth;
 }
 
-.nav h4{
-    text-align: center;
-    position: sticky;
-    margin-top: 450%;
-}
 
 #backtoTop {
     text-decoration: none;
     color: black;
+    margin-top: 200em;
 }
 
 #backtoTop:hover {
-    color: white;
+    color: $my_pink;
 }
 
-#page3 .nav {
-    height: 1650px;
+#resumeLink a {
+    text-decoration-line: none;
+    color: black;
 }
 
-@media screen and (max-width:660px){
-#page3 .nav {
-    height: 1830%;
-}
-
-
-#resume {
-    padding-right: 10%;
-}
-
-#page3 .nav h4{
-    margin-top: 970%;
-    padding-bottom: 5%;
-}
+#resumeLink a:hover {
+    color: $my_pink;
 }
