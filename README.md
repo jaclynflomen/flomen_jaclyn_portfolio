@@ -18,7 +18,7 @@ From the command line:
 ```
 $ git init
 Clone this repository
-$ git clone https://github.com/spittis/pittis_soraya_pao_allison_flomen_jaclyn_hw4.git
+$ git clone https://github.com/jaclynflomen/flomen_jaclyn_portfolio.git
 $ cd flomen_jaclyn_portfolio
 Open the index.html in a browser, Chrome and Safari work best
 ```
@@ -31,3 +31,5 @@ Open the index.html in a browser, Chrome and Safari work best
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
+## Acknowledgments
+All artwork is original.
