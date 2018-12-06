@@ -248,18 +248,6 @@ form label {
     bottom: 0;
     color: white; }
 
-  .pics_cont {
-    margin-left: 9%;
-    margin-right: 0%;
-    margin-bottom: 0%; }
-
-  .pics_cont img {
-    display: block;
-    width: 90%;
-    margin-bottom: 5%;
-    height: 100%;
-    overflow: hidden; }
-
   #portfolio_container_main {
     margin-left: 10%; }
 
@@ -660,7 +648,27 @@ form label {
     position: relative;
     width: 50%;
     margin-left: 48%;
-    padding-top: 10%; } }
+    padding-top: 10%; }
+
+  #app button {
+    border: #FFD9D0 solid 3px;
+    box-shadow: 2px 2px #b3b3b3;
+    width: 15%;
+    height: 80%;
+    font-family: 'Didot', sans-serif;
+    font-size: 100%;
+    background: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 2%;
+    margin-top: 2%; }
+
+  .buttons {
+    margin-left: 5%; }
+
+  .artwork {
+    margin-right: 5%;
+    margin-top: 5%; } }
 #page4 .headerName {
   margin-bottom: 2%; }
 
@@ -675,10 +683,13 @@ form label {
 .pics_cont {
   margin-bottom: 5%; }
 
-.pics_cont img {
-  height: 200px;
+.artwork {
+  height: 170px;
   object-fit: cover;
   float: left; }
+
+#app {
+  clear: left; }
 
 #portfolio_container h3 {
   font-size: 120%;

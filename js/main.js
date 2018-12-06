@@ -1,10 +1,10 @@
 
-halkaBox.run("galleryDemo");
+halkaBox.run(".galleryDemo");
 
 halkaBox.options({
 
   // hide control buttons on mobile devices
-  hideButtons: true, 
+  hideButtons: false, 
 
   // "slide" or "fade"
   animation: "fade",

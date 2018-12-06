@@ -4,8 +4,8 @@
         el : "#app",
 
         data : {
-            message : '',
-            
+            message : "",
+
             artdata : [],
             singledata : [],
 
@@ -16,8 +16,8 @@
         },
 
         created : function() {
-            //get all of the art data ib the oage load
-            this.fetchArtData(null); //this is where we would fetch PHP stuff
+            //get all of the movie data ib the oage load
+            this.fetchArtData('category'); //this is where we would fetch PHP stuff
         },
 
         methods : {
@@ -28,7 +28,43 @@
 
             fetchSingle(e) {
                 //debugger;
-                this.fetchArtData(e.currentTarget.dataset.art);
+                this.fetchArtData(e.currentTarget.dataset.category);
+
+            },
+            fetchPersonal(e) {
+                //debugger;
+                this.fetchArtData(e.currentTarget.dataset.art_category = 'Personal');
+
+            },
+
+            fetchWork(e) {
+                //debugger;
+                this.fetchArtData(e.currentTarget.dataset.art_category = 'Work');
+
+            },
+
+            fetchSchool(e) {
+                //debugger;
+                this.fetchArtData(e.currentTarget.dataset.art_category = 'School');
+
+            },
+
+            fetchPhotography(e) {
+                //debugger;
+                this.fetchArtData(e.currentTarget.dataset.art_category = 'Photography');
+
+            },
+
+            fetchVideo(e) {
+                //debugger;
+                this.fetchArtData(e.currentTarget.dataset.art_category = 'Video');
+
+            },
+
+            fetchOther(e) {
+                //debugger;
+                this.fetchArtData(e.currentTarget.dataset.art_category = 'Other');
+
             },
 
             loadArt(e) { //use to open lightbox in portfolio
@@ -36,7 +72,7 @@
                 e.preventDefault(); //block a page reload (anchor tag default behaviour)
                 
                 dataKey = e.currentTarget.getAttribute('href');
-                currentData = this.artdata.filter(art => art.imgPath === dataKey);
+                currentData = this.artdata.filter(tbl_portfoliowork => tbl_portfoliowork.imgPath === dataKey);
 
                 this.arttitle = currentData[0].art_title;
                 this.artsource = dataKey;
@@ -46,8 +82,8 @@
                 setTimeout(function(){ window.scrollTo(0, 1200)}, 500);
             },
 
-            fetchArtData(movie) {
-               let url = art ?`./includes/index.php?art_id=${art}` : './includes/index.php'; 
+            fetchArtData(category) {
+               let url = category ?`./includes/index.php?category=${category}` : './includes/index.php'; 
                 //this is a ternary statement, shorthand if else statement. left of : is true, right is false
             
                 fetch(url)
@@ -55,19 +91,18 @@
                 .then(data => {
                     console.log(data);
 
-                    if (art) {
+                    if (category) {
                         //store data in the single result above
-                        this.singledata = data;
+                        this.artdata = data;
                     } else {
                         //initial data grab, store in the videodata array
                         this.artdata = data;
                     }
                 })
 
-                     
                 .catch(function(error){
                     console.log(error);
-                })
+                });
 
             }
         }

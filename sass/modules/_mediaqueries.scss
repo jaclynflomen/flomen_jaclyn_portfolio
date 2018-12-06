@@ -145,19 +145,6 @@
         bottom: 0;
         color: white;
     }
-    .pics_cont {
-        margin-left: 9%;
-        margin-right: 0%;
-        margin-bottom: 0%;
-    }
-
-    .pics_cont img {
-        display: block;
-        width: 90%;
-        margin-bottom: 5%;
-        height: 100%;
-        overflow: hidden;
-    }
 
     #portfolio_container_main {
         margin-left: 10%;
@@ -688,6 +675,31 @@ form input {
         width: 50%;
         margin-left: 48%;
         padding-top: 10%;
+    }
+
+    //portfolio W DATABASE
+
+    #app button {
+        border: $my_pink solid 3px;
+        box-shadow: 2px 2px $my_grey ;
+        width: 15%;
+        height: 80%;
+        font-family: 'Didot', sans-serif;
+        font-size: 100%;
+        background: white;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-right: 2%;
+        margin-top: 2%;
+    }
+
+    .buttons {
+        margin-left: 5%;
+    }
+
+    .artwork {
+        margin-right: 5%;
+        margin-top: 5%;
     }
 
 

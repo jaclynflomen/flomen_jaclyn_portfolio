@@ -2,7 +2,7 @@
     include 'connectIMG.php';
     // get one art first
     function get_single_art($pdo, $art) {
-        $query = "SELECT * FROM tbl_portfoliowork WHERE art_id = $art"; 
+        $query = "SELECT * FROM tbl_portfoliowork WHERE art_category = '$art'"; 
         //attach the id in the thumnail to ensure you are getting the right image
 
         $get_art = $pdo->query($query);
@@ -27,6 +27,7 @@
         
         return $results; 
         }
+
 
 
 ?>

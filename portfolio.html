@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="css/halkaBox.min.css" rel="stylesheet">
     <script src="js/halkaBox.min.js"></script>
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="js/noframework.waypoints.min.js"></script>
-    <script src="js/portfolio_waypoints.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
-<body id="page4">
-    <a id="top"></a>
-    <nav class="nav" id="p4nav">
+<body id="page4_1">
+
+    <nav class="nav">
         <h1 class="hidden">Nav</h1>
         <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a>
         <ul>
@@ -23,70 +21,34 @@
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <h4><a id="backtoTop" href="#top">Back to Top</a></h4>
     </nav>
 
 
     <h1 class="headerName">Portfolio</h1>
-    
-    <div id="portfolio_container_main">
-        
-        <div id="personal" class="pics_cont"><a href="portfolio_personal.html">
-            <img src="images/img_7317.jpg">
-        </a>
-        <h3>Personal</h3>
-        <p>This is some work that has been created to explore different media, methods, and ideas. It is work that I choose to focus on to enhance my personal goals, try new ideas, and be creative in my own respects.</p>
-    </div>
-    <br>
-    <br>
 
-        <div id="work" class="pics_cont"><a href="portfolio_work.html">
-            <img src="images/SITL.png">
-        </a>
-        <h3>Work</h3>
-        <p>This work was created and used in my employment with Kostuch Media Ltd. over the summer of 2018. Through helping with weekly newsblasts and social media advertisements, I learned how the content I was learning in school applies to the real world.</p>
-    </div>
-    <br><br>
-
-
-        <div id="school" class="pics_cont"><a href="portfolio_school.html">
-            <img src="images/ohm_intro_banner_3.jpg">
-        </a>
-        <h3>School </h3>
-        <p>Being at Western University and Fanshawe College simultaneously, I have had the privilege of interacting with different types of poeple and see how they define media. Here are some of the works from both institutions that I have accomplished over my time as a student.</p>
-    </div>
-    <br>
-
-
-        <div id="Photography" class="pics_cont"><a href="portfolio_photography.html">
-            <img src="images/jaclynflomenportfolio-5.jpg">
-        </a>
-            <h3>Photography</h3>
-            <p>My introduction to digital media and graphic design came from exploring photography. Although I have moved on to other forms of creative work, photography will always be my first passion.</p>
+    <main id="app" >
+      <div class="buttons">
+            <button v-on:click="fetchPersonal" id="Personal">Personal</button>
+            <button v-on:click="fetchWork" id="Work">Work</button>
+            <button v-on:click="fetchSchool" id="School">School</button>
+            <button v-on:click="fetchPhotography" id="Photography">Photography</button>
+            <button v-on:click="fetchVideo" id="Video">3D/Video</button>
+            <button v-on:click="fetchOther" id="Other">Other</button>
         </div>
-        <br>
-    <br>
-    <br>
-
-        <div id="video" class="pics_cont"><a href="portfolio_video.html">
-            <img src="images/jaclynloganvas1020.gif">
-        </a>
-        <h3>Video</h3> 
-        <p>Although I prefer static to animated, I have started to explore dynamic forms of media through video, 3D animation, and being limitless through Photoshop.</p>
-    </div>
-    <br>
-    <br>
-<br>
-        <div id="other" class="pics_cont"><a href="portfolio_other.html">
-            <img src="images/fims_banner.jpg">
-        </a> 
-        <h3>Other Designs</h3>
-        <p>Here are some additional works that fit into no distinct category. Although they are varied in topic and media, the work still excited me.</p>
-    </div>
-    <br>
-    <br>
-
-    </div>
+        <div v-for="item in artdata">
+            
+            <div id="demo-test-gallery" class="gallery" v-on:load="loadArt"> 
+                <a class="galleryDemo" title="item.art_title" :href="'images/' + item.imgPath" >
+                    <img :src="'images/' + item.art_img" alt="portfolio piece" class="artwork">
+                </a>
+                
+            </div>
+            <p id="title_art">{{ item.art_title }}</p>
+        
+        </div>
+        
+    </main>
+    
 
     
     <nav class="nav_mobile">
@@ -100,8 +62,7 @@
             </ul>
         </nav>
 
-        <script src="js/portfolio.js"></script>
-        <script src="js/main.js"></script>
-
+<script src="js/portfolio.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
