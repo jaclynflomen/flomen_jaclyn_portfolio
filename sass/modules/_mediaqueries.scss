@@ -500,11 +500,39 @@ form input {
         clear: left;
         margin-top: 40%;
     }
+
+    #reelCont ul li button {
+        border: none;
+        color: $my_grey;
+        box-shadow: none;
+        font-size: 200%;
+        padding-right: 0%;
+        padding-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        width: 10%;
+        height: 10%;
+    }
+
+    #reelCont ul li a video {
+        width: 80%;
+        margin-right: 0%;
+        float: left;
+        display: block;
+    }
+
+    #reelCont ul li a {
+        margin-left: 0%;
+        clear: both;
+        float: left;
+    }
     
     body#page1 {
         background-image: url(../images/background.jpg);
         background-repeat:no-repeat; 
         color: white;
+        width: 100%;
     }
 
     .nav_mobile {

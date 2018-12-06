@@ -1,5 +1,5 @@
 <?php
-    include 'connectIMG.php';
+    include 'connect.php';
     // get one art first
     function get_single_art($pdo, $art) {
         $query = "SELECT * FROM tbl_portfoliowork WHERE art_category = '$art'"; 
