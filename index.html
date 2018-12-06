@@ -9,7 +9,6 @@
     <script src="js/typewriter.js"></script>
     <script src="https://unpkg.com/ityped@1.0.2"></script>
     <link rel="stylesheet" href="css/animate.css">
-    <script src="js/noframework.waypoints.min.js"></script>
     <script src="js/portfolio_waypoints.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link href="css/halkaBox.min.css" rel="stylesheet">
@@ -17,7 +16,7 @@
 </head>
 <body id="page1">
 
-    <nav class="nav hide" id="p1nav">
+    <nav class="nav" id="p1nav">
         <h1 class="hidden">Nav</h1>
         <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a>
         <ul>
@@ -42,17 +41,19 @@
 </div>
 
 <div id="reelCont">
-    <ul>
-        <li id="app">
+        <div id="app">
                 <button v-on:click="fetchReel" id="Reel">Reel</button>
                 <div v-for="item in artdata" id="demo-test-gallery" class="gallery">
                     <a v-on:load="loadArt" :href="'video/' + item.imgPath" class="galleryDemo" title="" id="27">
                         <video :src="'video/' + item.art_img"></video>
                     </a>
                 </div>
-            </li>
-    </ul>
-</div>
+                <div id="videoControls">
+                    <button id='playBtn' class='play btn'
+                    onclick='togglePlayPause();'>PLAY</button>
+                </div>
+            </div>
+        </div>
        
 
     <nav class="nav_mobile">
@@ -84,6 +85,7 @@
 
       <script src="js/main.js"></script>
       <script src="js/portfolio.js"></script>
+      <script src="js/video.js"></script>
     
 </body>
 </html>
