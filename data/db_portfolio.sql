@@ -87,7 +87,7 @@ INSERT INTO `tbl_portfoliowork` (`art_id`, `art_category`, `art_title`, `imgPath
 (24, 'Other', 'Ontario Hall Residence Snapchat Geotag', 'ohallgeotag2.png', 'ohallgeotag2.png'),
 (25, 'Other', 'Toronto Snapchat Geotag', 'toronto-geotag.png', 'toronto-geotag.png'),
 (26, 'Other', 'Yes Theory Logos', 'yes_theory_logos.jpg', 'yes_theory_logos.jpg'),
-(27, 'Video', 'Reel', 'portfolio_reel.mp4', 'portfolio_reel.mp4'),
+(27, 'Reel', 'Reel', 'portfolio_reel.mp4', 'portfolio_reel.mp4'),
 (28, 'Video', 'Infuser Bottle/Pod', 'baile_flomen_infuserbottle.mp4', 'baile_flomen_infuserbottle.mp4'),
 (29, 'Video', 'Soccer Commercial', 'flomen_jaclyn_soccer.mp4', 'flomen_jaclyn_soccer.mp4'),
 (30, 'School', 'TMNT', 'TMNT.jpg', 'TMNT.jpg'),

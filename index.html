@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/animate.css">
     <script src="js/noframework.waypoints.min.js"></script>
     <script src="js/portfolio_waypoints.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="css/halkaBox.min.css" rel="stylesheet">
+    <script src="js/halkaBox.min.js"></script>
 </head>
 <body id="page1">
 
@@ -25,7 +28,7 @@
         </ul>
     </nav>
 
-    <div id="app" class="headerName">
+    <div class="headerName">
         <span id="ityped"></span>
     </div>
 <br>
@@ -36,6 +39,19 @@
             <li><a href="https://www.linkedin.com/in/jaclyn-flomen-b81928129/" target="_blank"><img src="images/linkedin.png" alt=""></a></li>
             <li><a href="https://www.pinterest.ca/flomen1217/" target="_blank"><img src="images/pinterest.png" alt=""></a></li>
         </ul>
+</div>
+
+<div id="reelCont">
+    <ul>
+        <li id="app">
+                <button v-on:click="fetchReel" id="Reel">Reel</button>
+                <div v-for="item in artdata" id="demo-test-gallery" class="gallery">
+                    <a v-on:load="loadArt" :href="'video/' + item.imgPath" class="galleryDemo" title="" id="27">
+                        <video :src="'video/' + item.art_img"></video>
+                    </a>
+                </div>
+            </li>
+    </ul>
 </div>
        
 

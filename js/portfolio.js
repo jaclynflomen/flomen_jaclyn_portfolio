@@ -37,6 +37,12 @@
 
             },
 
+            fetchReel(e) {
+                //debugger;
+                this.fetchArtData(e.currentTarget.dataset.art_category = 'Reel');
+
+            },
+
             fetchWork(e) {
                 //debugger;
                 this.fetchArtData(e.currentTarget.dataset.art_category = 'Work');
