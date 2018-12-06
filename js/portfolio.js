@@ -85,7 +85,6 @@
 
                 this.showDetails = true;
 
-                setTimeout(function(){ window.scrollTo(0, 1200)}, 500);
             },
 
             fetchArtData(category) {
