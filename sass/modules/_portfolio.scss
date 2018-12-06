@@ -17,10 +17,14 @@
 }
 
 
-.pics_cont img {
+.artwork {
     height: 200px;
     object-fit: cover;
     float: left;
+}
+
+#app {
+    clear: left;
 }
 
 #portfolio_container h3 {
@@ -53,3 +57,4 @@
 #backtoTop:hover {
     color: $my_pink;
 }
+
