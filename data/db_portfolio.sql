@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 07, 2018 at 12:26 AM
+-- Generation Time: Dec 07, 2018 at 06:37 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.8
 
@@ -41,30 +41,6 @@ INSERT INTO `tbl_about` (`ID`, `Title`, `Description`) VALUES
 (2, 'School', 'After high school, I set out to further my education with a focus on creating and analyzing media. The Media Theory and Production program with Western University and Fanshawe college has allowed me to do both. At Western University, I have been studying the theoretical side of media, including the evolution, distribution, and production of different forms of media. At Fanshawe College, I have been developing my graphic design skills, as well as being introduced to web development. The combination of the two has allowed me to gain a rounded education and knowledge that will help me in achieving a career in media production.'),
 (3, 'Inspiration', 'I gain inspiration from various elements. I have produced my personal identity based on a combination of past and present styles. I design work to be clean and modern, yet  have a nostalgic feel to them if analyzed. I believe that my work displays relevant ideologies through my subject matter and through incorporating current trends into my style.'),
 (4, 'Free Time', 'Despite learning about media during the week, I still enjoy being creative in my spare time. Whether through social media, or makeup, any way for me to interact with people in a visually interesting way excites me. Like any other young adult, I connect to the world through social media. Personally, I prefer using Instagram and Snapchat over others for visual purposes as I agree with the notion that an image is worth a thousand words. As well, I have used platforms like Instagram to experiment with makeup techniques and see how other users create different looks. Whether online or in person, I aim to be as creative as possible as everyday life experiences provide inspiration.');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_portfolioText`
---
-
-CREATE TABLE `tbl_portfolioText` (
-  `id` int(10) NOT NULL,
-  `category` varchar(30) NOT NULL,
-  `description` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `tbl_portfolioText`
---
-
-INSERT INTO `tbl_portfolioText` (`id`, `category`, `description`) VALUES
-(1, 'Personal', 'This is some work that has been created to explore different media, methods, and ideas. It is work that I choose to focus on to enhance my personal goals, try new ideas, and be creative in my own respects.'),
-(2, 'Work', 'This work was created and used in my employment with Kostuch Media Ltd. over the summer of 2018. Through helping with weekly newsblasts and social media advertisements, I learned how the content I was learning in school applies to the real world.'),
-(3, 'School', 'Being at Western University and Fanshawe College simultaneously, I have had the privilege of interacting with different types of poeple and see how they define media. Here are some of the works from both institutions that I have accomplished over my time as a student.'),
-(4, 'Photography', 'My introduction to digital media and graphic design came from exploring photography. Although I have moved on to other forms of creative work, photography will always be my first passion.'),
-(5, 'Video/3D', 'Although I prefer static to animated, I have started to explore dynamic forms of media through video, 3D animation, and being limitless through Photoshop.'),
-(6, 'Other', 'Here are some additional works that fit into no distinct category. Although they are varied in topic and media, the work still excited me.');
 
 -- --------------------------------------------------------
 
@@ -111,9 +87,9 @@ INSERT INTO `tbl_portfoliowork` (`art_id`, `art_category`, `art_title`, `imgPath
 (24, 'Other', 'Ontario Hall Residence Snapchat Geotag', 'ohallgeotag2.png', 'ohallgeotag2.png'),
 (25, 'Other', 'Toronto Snapchat Geotag', 'toronto-geotag.png', 'toronto-geotag.png'),
 (26, 'Other', 'Yes Theory Logos', 'yes_theory_logos.jpg', 'yes_theory_logos.jpg'),
-(27, 'Reel', 'Reel', 'portfolio_reel.mp4', 'portfolio_reel.mp4'),
-(28, 'Video', 'Infuser Bottle/Pod', 'baile_flomen_infuserbottle.mp4', 'baile_flomen_infuserbottle.mp4'),
-(29, 'Video', 'Soccer Commercial', 'flomen_jaclyn_soccer.mp4', 'flomen_jaclyn_soccer.mp4'),
+(27, 'Reel', 'Reel', 'portfolio_reel.mp4', 'portfolio_reel.jpg'),
+(28, 'Video', 'Infuser Bottle/Pod', 'baile_flomen_infuserbottle.mp4', 'baile_flomen_infuserbottle.jpg'),
+(29, 'Video', 'Soccer Commercial', 'flomen_jaclyn_soccer.mp4', 'flomen_jaclyn_soccer.jpg'),
 (30, 'School', 'TMNT', 'TMNT.jpg', 'TMNT.jpg'),
 (31, 'School', 'Car Build', 'car_build.jpg', 'car_build.jpg');
 
@@ -126,12 +102,6 @@ INSERT INTO `tbl_portfoliowork` (`art_id`, `art_category`, `art_title`, `imgPath
 --
 ALTER TABLE `tbl_about`
   ADD PRIMARY KEY (`ID`);
-
---
--- Indexes for table `tbl_portfolioText`
---
-ALTER TABLE `tbl_portfolioText`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `tbl_portfoliowork`

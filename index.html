@@ -9,7 +9,6 @@
     <script src="js/typewriter.js"></script>
     <script src="https://unpkg.com/ityped@1.0.2"></script>
     <link rel="stylesheet" href="css/animate.css">
-    <script src="js/portfolio_waypoints.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link href="css/halkaBox.min.css" rel="stylesheet">
     <script src="js/halkaBox.min.js"></script>
@@ -43,23 +42,28 @@
 <div id="reelCont">
         <main id="app">
                 <button v-on:click="fetchReel" id="Reel">Reel</button>
-                <div v-for="item in artdata" id="demo-test-gallery" class="gallery">
-                    <a v-on:load="loadArt" :href="'video/' + item.imgPath" class="galleryDemo" title="" id="27">
-                        <video :src="'video/' + item.art_img"></video>
+                <div v-for="item in artdata">
+                    <a v-on:load="loadArt" :href="'video/' + item.art_img" title="" id="27">
+                        <video :src="'video/' + item.imgPath" controls autoplay></video>
                     </a>
                 </div>
-        </main>
-        <section id="eventVids" class="hidden-movies" :class="{ 'show-movie' : showDetails }"> <!--bind to the class here-->
+        
+        <!-- <section id="eventVids" class="hidden-movies" :class="{ 'show-movie' : showDetails }"> 
+            
             <h3 class="movie-title">{{ videotitle }}</h3>
-            <video id="eventVid" :src="'video/' + videosource"></video> <!--colons are for shorthand binding with vue-->
+            <a v-on:load="loadArt" :href="'video/' + item.imgPath" class="galleryDemo" title="">
+                <video :src="'video/' + item.art_img"></video>
+            </a> 
             <div class="movie-details">
                 <p>{{ videodescription }}</p>
             </div>
             <div id="controls">
-                <img id="playPause" src="images/play.svg" width="100px" style="cursor:pointer;text-shadow:black;" onclick='playVideo();'>
+                <img id="playPause" src="images/play.svg" width="100px" style="cursor:pointer;text-shadow:black;" onclick='playVideo()'>
             </div>
+        </section> -->
 
-        </section>
+        
+        </main>
 </div>
        
 
@@ -82,7 +86,7 @@
     <script>
         ityped.init(document.querySelector("#ityped"), {
           showCursor: true,
-          strings: ['Jaclyn Flomen', 'Graphic Designer']
+          strings: ['Jaclyn Flomen', 'Graphic Designer', 'Front-End Developer', 'Creator', 'Photographer']
         })
         ityped.init("#placeholder", {
           placeholder: false,
@@ -90,9 +94,9 @@
         })
       </script>
 
-      <script src="js/main.js"></script>
+
+      <!-- <script src="js/video.js"></script> -->
       <script src="js/portfolio.js"></script>
-      <script src="js/video.js"></script>
-    
+      <script src="js/main.js"></script>
 </body>
 </html>

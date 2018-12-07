@@ -4,7 +4,7 @@
 //video controls
 
 //variables
-    var video = document.querySelector("27");
+    var video = document.querySelector("#27");
     // var playSwitch = document.querySelector("#playPause");
     var btn = document.getElementById("playPause");
 	var trailers = document.querySelector("eventVid");
