@@ -245,11 +245,9 @@ form label {
     visibility: visible;
     position: sticky;
     background-color: #b3b3b3;
-    bottom: 0;
-    color: white; }
-
-  #portfolio_container_main {
-    margin-left: 10%; }
+    bottom: 1;
+    color: white;
+    margin-top: 90%; }
 
   #page4 .nav_mobile ul li a {
     text-decoration: none;
@@ -259,9 +257,8 @@ form label {
     text-decoration: none;
     color: #FFD9D0; }
 
-  .pics_cont h3, p {
-    text-align: left;
-    width: 90%; }
+  #navBreak {
+    height: 50%; }
 
   #page3 .nav_mobile {
     width: 100%;
@@ -679,7 +676,7 @@ form label {
   #app button {
     border: #FFD9D0 solid 3px;
     box-shadow: 2px 2px #b3b3b3;
-    width: 15%;
+    width: 10%;
     height: 80%;
     font-family: 'Didot', sans-serif;
     font-size: 100%;
@@ -741,6 +738,14 @@ form label {
 
 #backtoTop:hover {
   color: #FFD9D0; }
+
+#select {
+  clear: left;
+  margin-top: 5%;
+  margin-left: 5%; }
+
+#descrip {
+  margin-left: 5%; }
 
 html {
   scroll-behavior: smooth; }

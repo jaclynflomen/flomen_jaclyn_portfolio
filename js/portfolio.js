@@ -11,6 +11,8 @@
 
             arttitle : "",
             artsource : "",
+            artdesc : "",
+            artheader : "",
 
             showDetails : false 
         },
@@ -81,6 +83,8 @@
                 currentData = this.artdata.filter(tbl_portfoliowork => tbl_portfoliowork.imgPath === dataKey);
 
                 this.arttitle = currentData[0].art_title;
+                this.artdesc = currentData[0].art_desc;
+                this.artheader = currentData[0].art_category;
                 this.artsource = dataKey;
 
                 this.showDetails = true;

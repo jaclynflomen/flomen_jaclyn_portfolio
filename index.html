@@ -41,19 +41,26 @@
 </div>
 
 <div id="reelCont">
-        <div id="app">
+        <main id="app">
                 <button v-on:click="fetchReel" id="Reel">Reel</button>
                 <div v-for="item in artdata" id="demo-test-gallery" class="gallery">
                     <a v-on:load="loadArt" :href="'video/' + item.imgPath" class="galleryDemo" title="" id="27">
                         <video :src="'video/' + item.art_img"></video>
                     </a>
                 </div>
-                <div id="videoControls">
-                    <button id='playBtn' class='play btn'
-                    onclick='togglePlayPause();'>PLAY</button>
-                </div>
+        </main>
+        <section id="eventVids" class="hidden-movies" :class="{ 'show-movie' : showDetails }"> <!--bind to the class here-->
+            <h3 class="movie-title">{{ videotitle }}</h3>
+            <video id="eventVid" :src="'video/' + videosource"></video> <!--colons are for shorthand binding with vue-->
+            <div class="movie-details">
+                <p>{{ videodescription }}</p>
             </div>
-        </div>
+            <div id="controls">
+                <img id="playPause" src="images/play.svg" width="100px" style="cursor:pointer;text-shadow:black;" onclick='playVideo();'>
+            </div>
+
+        </section>
+</div>
        
 
     <nav class="nav_mobile">
