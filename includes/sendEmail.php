@@ -14,21 +14,20 @@
 function send_email (){
     //Email validations: checking required fields
 
-    if(empty($_GET['name'])
-        ||empty($_GET['email'])
-        ||empty($_GET['comments'])) {
+    if(empty($_POST['name'])
+        ||empty($_POST['email'])
+        ||empty($_POST['comments'])) {
             echo 'You are missing some required fields';
             exit;
         }
 
     $to = 'jaclyn@jaclynflomen.com';
-    $subject = 'This is an email from '.$_GET['name'];
-    $message = $_GET['comments'];
-    $phone = $_GET['phone'];
-    $headers = 'From: noreply@YOURDOMAIN.com';
-    $headers .= 'Reply-To: '.$_GET['email'];
+    $subject = 'This is an email from '.$_POST['name'];
+    $message = $_POST['comments']."\r\n".'Phone: '.$_POST['phone'];
+    $headers = 'From: '.$_POST['email'];
+    // $headers .= 'Reply-To: '.$_POST['email'];
 
-    mail($to, $subject, $message, $phone, $headers);
+    mail($to, $subject, $message, $headers);
     //In your server, use the following line instead
     //mail($to, $subject, $message);
     echo 'Thanks for contacting me! I will get back to you soon.';
