@@ -1,4 +1,5 @@
 (() => {
+
     //init the vue stuff!
     const vm = new Vue({
         el : "#app",
@@ -15,6 +16,8 @@
             artheader : "",
 
             showDetails : false
+
+            
         },
 
         created : function() {
