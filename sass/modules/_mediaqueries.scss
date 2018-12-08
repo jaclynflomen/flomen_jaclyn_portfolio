@@ -177,11 +177,15 @@
         background-color: $my_grey;
         bottom: 0;
         color: $my_grey;
+        clear: both;
+        padding-top: 0%;
     }
 
     #page4 .nav_mobile ul li a{
         text-decoration: none;
         color: black;
+        margin-top: -10%;
+        padding-top: -10%;
     }
 
     #page4 .nav_mobile ul li a:hover{
