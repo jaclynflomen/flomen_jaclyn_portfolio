@@ -132,6 +132,31 @@ form label {
   margin-right: 1%; }
 
 @media only screen and (max-width: 480px) {
+  #reelCont main button {
+    border: 0px;
+    color: #b3b3b3;
+    box-shadow: none;
+    font-size: 100%;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    width: 10%;
+    height: 10%; }
+
+  #reelCont main div a video {
+    width: 100%;
+    margin-left: 0%;
+    float: left;
+    display: block; }
+
+  #reelCont main div a {
+    margin-left: 0%;
+    clear: both;
+    float: left; }
+
   #socialMedia {
     clear: left;
     position: relative;
@@ -139,7 +164,7 @@ form label {
     width: 150%; }
 
   body#page1 {
-    background-image: url(../images/background_m.jpg);
+    background-image: url(/images/background_m.jpg);
     background-repeat: no-repeat;
     color: white; }
 
@@ -250,11 +275,15 @@ form label {
     position: -webkit-sticky;
     background-color: #b3b3b3;
     bottom: 0;
-    color: #b3b3b3; }
+    color: #b3b3b3;
+    clear: both;
+    padding-top: 0%; }
 
   #page4 .nav_mobile ul li a {
     text-decoration: none;
-    color: black; }
+    color: black;
+    margin-top: -10%;
+    padding-top: -10%; }
 
   #page4 .nav_mobile ul li a:hover {
     text-decoration: none;
@@ -349,15 +378,61 @@ form label {
     margin-left: 15%; }
 
   form label {
-    margin-left: 15%; } }
+    margin-left: 15%; }
+
+  #app button {
+    border: #FFD9D0 solid 3px;
+    box-shadow: 2px 2px #b3b3b3;
+    width: 40%;
+    height: 80%;
+    font-family: 'Didot', sans-serif;
+    font-size: 100%;
+    background: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-left: 3.5%; }
+
+  .buttons {
+    margin-left: 5%; }
+
+  .artwork {
+    margin-right: 5%;
+    margin-top: 5%; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+  #reelCont main button {
+    border: 0px;
+    color: #b3b3b3;
+    box-shadow: none;
+    font-size: 100%;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    width: 10%;
+    height: 10%; }
+
+  #reelCont main div a video {
+    width: 100%;
+    margin-left: 0%;
+    float: left;
+    display: block; }
+
+  #reelCont main div a {
+    margin-left: 0%;
+    clear: both;
+    float: left; }
+
   #socialMedia {
     clear: left;
     margin-top: 75%;
     width: 150%; }
 
   body#page1 {
-    background-image: url(../images/background_t.jpg);
+    background-image: url(/images/background_t.jpg);
     background-repeat: no-repeat;
     color: white; }
 
@@ -507,7 +582,27 @@ form label {
   #page3 .nav h4 {
     text-align: center;
     position: sticky;
-    margin-top: 95em; } }
+    margin-top: 95em; }
+
+  #app button {
+    border: #FFD9D0 solid 3px;
+    box-shadow: 2px 2px #b3b3b3;
+    width: 30%;
+    height: 80%;
+    font-family: 'Didot', sans-serif;
+    font-size: 100%;
+    background: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 2%;
+    margin-top: 2%; }
+
+  .buttons {
+    margin-left: 5%; }
+
+  .artwork {
+    margin-right: 5%;
+    margin-top: 5%; } }
 @media only screen and (min-width: 768px) {
   #socialMedia {
     clear: left;
@@ -539,7 +634,7 @@ form label {
     float: left; }
 
   body#page1 {
-    background-image: url(../images/background.jpg);
+    background-image: url(/images/background.jpg);
     background-repeat: no-repeat;
     align-content: center;
     color: white;

@@ -1,6 +1,34 @@
 @media only screen and (max-width:480px){
     //index page
 
+    #reelCont main button {
+        border: 0px;
+        color: $my_grey;
+        box-shadow: none;
+        font-size: 100%;
+        padding-right: 0%;
+        padding-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+        margin-left: 5%;
+        margin-bottom: 0%;
+        width: 10%;
+        height: 10%;
+    }
+
+    #reelCont main div a video {
+        width: 100%;
+        margin-left: 0%;
+        float: left;
+        display: block;
+    }
+
+    #reelCont main div a {
+        margin-left: 0%;
+        clear: both;
+        float: left;
+    }
+
     #socialMedia {
         clear: left;
         position: relative;
@@ -9,7 +37,7 @@
     }
     
     body#page1 {
-        background-image: url(../images/background_m.jpg);
+        background-image: url(/images/background_m.jpg);
         background-repeat:no-repeat; 
         color: white;
     }
@@ -149,11 +177,15 @@
         background-color: $my_grey;
         bottom: 0;
         color: $my_grey;
+        clear: both;
+        padding-top: 0%;
     }
 
     #page4 .nav_mobile ul li a{
         text-decoration: none;
         color: black;
+        margin-top: -10%;
+        padding-top: -10%;
     }
 
     #page4 .nav_mobile ul li a:hover{
@@ -275,12 +307,67 @@
             margin-left: 15%;
         }
 
+        //portfolio W DATABASE
+
+    #app button {
+        border: $my_pink solid 3px;
+        box-shadow: 2px 2px $my_grey ;
+        width: 40%;
+        height: 80%;
+        font-family: 'Didot', sans-serif;
+        font-size: 100%;
+        background: white;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-right: 2%;
+        margin-top: 2%;
+        margin-left: 3.5%;
+    }
+
+    .buttons {
+        margin-left: 5%;
+    }
+
+    .artwork {
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+
 }
 
 
 
 @media only screen and (min-width:480px) and (max-width:768px){
 
+    #reelCont main button {
+        border: 0px;
+        color: $my_grey;
+        box-shadow: none;
+        font-size: 100%;
+        padding-right: 0%;
+        padding-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+        margin-left: 5%;
+        margin-bottom: 0%;
+        width: 10%;
+        height: 10%;
+    }
+
+    #reelCont main div a video {
+        width: 100%;
+        margin-left: 0%;
+        float: left;
+        display: block;
+    }
+
+    #reelCont main div a {
+        margin-left: 0%;
+        clear: both;
+        float: left;
+    }
+
+    
     #socialMedia {
         clear: left;
         margin-top: 75%;
@@ -288,7 +375,7 @@
     }
     
     body#page1 {
-        background-image: url(../images/background_t.jpg);
+        background-image: url(/images/background_t.jpg);
         background-repeat:no-repeat; 
         color: white;
     }
@@ -488,7 +575,30 @@ form input {
     margin-top: 95em;
 }
 
+//portfolio W DATABASE
 
+#app button {
+    border: $my_pink solid 3px;
+    box-shadow: 2px 2px $my_grey ;
+    width: 30%;
+    height: 80%;
+    font-family: 'Didot', sans-serif;
+    font-size: 100%;
+    background: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.buttons {
+    margin-left: 5%;
+}
+
+.artwork {
+    margin-right: 5%;
+    margin-top: 5%;
+}
 
 
 }
@@ -530,7 +640,7 @@ form input {
     }
     
     body#page1 {
-        background-image: url(../images/background.jpg);
+        background-image: url(/images/background.jpg);
         background-repeat:no-repeat; 
         align-content: center;
         color: white;
