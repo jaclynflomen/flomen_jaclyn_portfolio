@@ -14,7 +14,7 @@
             artdesc : "",
             artheader : "",
 
-            showDetails : false 
+            showDetails : false
         },
 
         created : function() {
@@ -42,6 +42,7 @@
             fetchReel(e) {
                 //debugger;
                 this.fetchArtData(e.currentTarget.dataset.art_category = 'Reel');
+                setTimeout(function(){ window.scrollTo(0, 1200)});
 
             },
 
@@ -88,6 +89,7 @@
                 this.artsource = dataKey;
 
                 this.showDetails = true;
+
 
             },
 

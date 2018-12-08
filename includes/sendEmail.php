@@ -30,7 +30,7 @@ function send_email (){
     mail($to, $subject, $message, $headers);
     //In your server, use the following line instead
     //mail($to, $subject, $message);
-    echo 'Thanks for contacting me! I will get back to you soon.';
+    header('Location: ../index.html');
 }
 
 send_email();

@@ -15,21 +15,20 @@ if (!$conn) {
 if (isset($_GET["ID"])) {
     $aboutme = $_GET["ID"];
 
-    $myQuery = "SELECT * FROM tbl_about WHERE ID='$aboutme'";
+    $myQuery = "SELECT * FROM tbl_about WHERE ID = '$aboutme'";
 
     $result = mysqli_query($conn, $myQuery);
     $rows = array();
 
     //fill the array with the result set and send it to the browser
-    while($row = mysqli_fetch_assoc($result)) {
+    while ($row = mysql_fetch_assoc($result)) {
         $rows[] = $row;
     }
 
     echo json_encode($rows);
 }
 ?>
-
-<?php 
+<?php
 
 $user = "jaclynfl_jflo";
 $pwd = "jaclynflomen";
