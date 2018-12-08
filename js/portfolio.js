@@ -11,8 +11,10 @@
 
             arttitle : "",
             artsource : "",
+            artdesc : "",
+            artheader : "",
 
-            showDetails : false 
+            showDetails : false
         },
 
         created : function() {
@@ -40,6 +42,7 @@
             fetchReel(e) {
                 //debugger;
                 this.fetchArtData(e.currentTarget.dataset.art_category = 'Reel');
+                setTimeout(function(){ window.scrollTo(0, 1200)});
 
             },
 
@@ -81,11 +84,13 @@
                 currentData = this.artdata.filter(tbl_portfoliowork => tbl_portfoliowork.imgPath === dataKey);
 
                 this.arttitle = currentData[0].art_title;
+                this.artdesc = currentData[0].art_desc;
+                this.artheader = currentData[0].art_category;
                 this.artsource = dataKey;
 
                 this.showDetails = true;
 
-                setTimeout(function(){ window.scrollTo(0, 1200)}, 500);
+
             },
 
             fetchArtData(category) {

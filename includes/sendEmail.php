@@ -1,6 +1,6 @@
 <?php 
 
-// // var_dump($_POST);
+//  var_dump($_POST);
 // function fake_mail($to, $subject, $message, $headers) {
 //     echo '=== Fake Emails ==='.PHP_EOL;
 //     echo 'Subject: '.$subject.PHP_EOL;
@@ -15,21 +15,22 @@ function send_email (){
     //Email validations: checking required fields
 
     if(empty($_POST['name'])
-        || empty($_POST['email'])
-        || empty($_POST['comments'])) {
+        ||empty($_POST['email'])
+        ||empty($_POST['comments'])) {
             echo 'You are missing some required fields';
             exit;
         }
 
-    $to = 'jaclynflomen@gmail.com';
+    $to = 'jaclyn@jaclynflomen.com';
     $subject = 'This is an email from '.$_POST['name'];
-    $message = $_POST['comments'];
-    $headers = 'From: noreply@YOURDOMAIN.com';
-    $headers .= 'Reply-To: '.$_POST['email'];
+    $message = $_POST['comments']."\r\n".'Phone: '.$_POST['phone'];
+    $headers = 'From: '.$_POST['email'];
+    // $headers .= 'Reply-To: '.$_POST['email'];
 
     mail($to, $subject, $message, $headers);
     //In your server, use the following line instead
     //mail($to, $subject, $message);
+    header('Location: ../index.html');
 }
 
 send_email();

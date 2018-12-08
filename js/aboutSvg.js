@@ -18,9 +18,9 @@
             function showData(data) {
                 //debugger;
                 //parse the DB info and put it where it needs to go
-                const { Title, Description } = data; //destructuring assignment => MDN JS destructuring
+                const { Title1, Description } = data; //destructuring assignment => MDN JS destructuring
                 //grab the elements we need, and populate them with data
-                document.querySelector('.Title1').textContent = Title;
+                document.querySelector('.Title1').textContent = Title1;
                 document.querySelector('.Description1').textContent = Description;
             }
         };

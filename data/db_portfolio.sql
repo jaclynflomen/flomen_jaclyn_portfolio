@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:8889
--- Generation Time: Dec 06, 2018 at 05:40 PM
--- Server version: 5.7.23
--- PHP Version: 7.2.8
+-- Host: localhost:3306
+-- Generation Time: Dec 07, 2018 at 06:21 PM
+-- Server version: 5.6.41-84.1
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_portfolio`
+-- Database: `jaclynfl_portfolio`
 --
 
 -- --------------------------------------------------------
@@ -28,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tbl_about` (
   `ID` int(10) NOT NULL,
-  `Title` varchar(30) NOT NULL,
+  `Title1` varchar(30) NOT NULL,
   `Description` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -36,11 +38,11 @@ CREATE TABLE `tbl_about` (
 -- Dumping data for table `tbl_about`
 --
 
-INSERT INTO `tbl_about` (`ID`, `Title`, `Description`) VALUES
+INSERT INTO `tbl_about` (`ID`, `Title1`, `Description`) VALUES
 (1, 'History', 'I started my journey through photography. I had always loved taking mental images of the world around me, and then when I got my first camera, they became physical. Being able to capture moments and preserve memories inspired me. It also allowed me to gain inspiration from others who I wanted to emulate; photographers such as Annie Leibovitz. My final two years in high school, I enrolled in an Interdisciplinary Studies course, which introduced me to the world of graphic design. Up until then, I had no definite plan for what I wanted to do with my career past high school, but once I took this course, my future goals were set. From there, I learned basic skills in multiple Adobe softwares and further advanced my skills. I ultimately ended up leading the production of my school’s yearbook before my post secondary send-off. These events shaped how I view and produce media today.'),
-(2, 'School', 'After high school, I set out to further my education with a focus on creating and analyzing media. The Media Theory and Production program with Western University and Fanshawe college has allowed me to do both. At Western University, I have been studying the theoretical side of media, including the evolution, distribution, and production of different forms of media. At Fanshawe College, I have been developing my graphic design skills, as well as being introduced to web development. The combination of the two has allowed me to gain a rounded education and knowledge that will help me in achieving a career in media production.'),
-(3, 'Inspiration', 'I gain inspiration from various elements. I have produced my personal identity based on a combination of past and present styles. I design work to be clean and modern, yet  have a nostalgic feel to them if analyzed. I believe that my work displays relevant ideologies through my subject matter and through incorporating current trends into my style.'),
-(4, 'Free Time', 'Despite learning about media during the week, I still enjoy being creative in my spare time. Whether through social media, or makeup, any way for me to interact with people in a visually interesting way excites me. Like any other young adult, I connect to the world through social media. Personally, I prefer using Instagram and Snapchat over others for visual purposes as I agree with the notion that an image is worth a thousand words. As well, I have used platforms like Instagram to experiment with makeup techniques and see how other users create different looks. Whether online or in person, I aim to be as creative as possible as everyday life experiences provide inspiration.');
+(2, 'Inspiration', 'I gain inspiration from various elements. I have produced my personal identity based on a combination of past and present styles. I design work to be clean and modern, yet  have a nostalgic feel to them if analyzed. I believe that my work displays relevant ideologies through my subject matter and through incorporating current trends into my style.'),
+(3, 'Free Time', 'Despite learning about media during the week, I still enjoy being creative in my spare time. Whether through social media, or makeup, any way for me to interact with people in a visually interesting way excites me. Like any other young adult, I connect to the world through social media. Personally, I prefer using Instagram and Snapchat over others for visual purposes as I agree with the notion that an image is worth a thousand words. As well, I have used platforms like Instagram to experiment with makeup techniques and see how other users create different looks. Whether online or in person, I aim to be as creative as possible as everyday life experiences provide inspiration.'),
+(4, 'School', 'After high school, I set out to further my education with a focus on creating and analyzing media. The Media Theory and Production program with Western University and Fanshawe college has allowed me to do both. At Western University, I have been studying the theoretical side of media, including the evolution, distribution, and production of different forms of media. At Fanshawe College, I have been developing my graphic design skills, as well as being introduced to web development. The combination of the two has allowed me to gain a rounded education and knowledge that will help me in achieving a career in media production.');
 
 -- --------------------------------------------------------
 
@@ -53,45 +55,46 @@ CREATE TABLE `tbl_portfoliowork` (
   `art_category` varchar(30) NOT NULL,
   `art_title` varchar(50) NOT NULL,
   `imgPath` varchar(50) NOT NULL,
-  `art_img` varchar(50) NOT NULL
+  `art_img` varchar(50) NOT NULL,
+  `art_desc` varchar(400) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_portfoliowork`
 --
 
-INSERT INTO `tbl_portfoliowork` (`art_id`, `art_category`, `art_title`, `imgPath`, `art_img`) VALUES
-(1, 'Personal', 'New York, A Dream', 'img_7317.jpg', 'img_7317.jpg'),
-(2, 'Personal', 'Chanel, No. Me', 'chanel.jpg', 'chanel.jpg'),
-(3, 'Personal', 'Doubled', 'img_3467.jpg', 'img_3467.jpg'),
-(4, 'Personal', 'Look Outside the Box', 'img_4515.jpg', 'img_4515.jpg'),
-(5, 'Personal', 'Paint A Picture For Me', 'img_7403.jpg', 'img_7403.jpg'),
-(6, 'Work', 'Stay In The Loop', 'SITL.png', 'SITL.png'),
-(7, 'Work', 'KML Custom Newsblast', 'newsblast_custom_ad_2.jpg', 'newsblast_custom_ad_2.jpg'),
-(8, 'Work', 'Pride Day', 'pride_day.jpg', 'pride_day.jpg'),
-(9, 'Work', 'Thanksgiving', 'thanksgiving.jpg', 'thanksgiving.jpg'),
-(10, 'Work', 'National Waffle Day', 'waffle_day.jpg', 'waffle_day.jpg'),
-(11, 'School', 'Aeropostale x Moscato', 'flomen_jaclyn_mashup.jpg', 'flomen_jaclyn_mashup.jpg'),
-(12, 'School', 'Digital Tattoo', 'img_8493.png', 'img_8493.png'),
-(13, 'School', 'London Squash & Fitness Club', 'LSFC.png', 'LSFC.png'),
-(14, 'School', 'OHM Intro Banner', 'ohm_intro_banner_3.jpg', 'ohm_intro_banner_3.jpg'),
-(15, 'School', 'Digital Graffiti', 'flomen_jaclyn_finalgraffiti.jpg', 'flomen_jaclyn_finalgraffiti.jpg'),
-(16, 'School', 'OHM Ride For The Cure', 'ohm_rideforcure_event.jpg', 'ohm_rideforcure_event.jpg'),
-(17, 'Photography', 'All of the Lights', '29.jpg', '29.jpg'),
-(18, 'Photography', 'Mizner', 'film6.jpg', 'film6.jpg'),
-(19, 'Photography', 'Threshold', 'flomen_jaclyn-4.jpg', 'flomen_jaclyn-4.jpg'),
-(20, 'Photography', 'Caged In', 'jaclynflomenportfolio-5.jpg', 'jaclynflomenportfolio-5.jpg'),
-(21, 'Photography', 'Model: Stephanie Lanz', 'portfolio-12.jpg', 'portfolio-12.jpg'),
-(22, 'Video', 'Full(er) House Fantasy', 'jaclynloganvas1020.gif', 'jaclynloganvas1020.gif'),
-(23, 'Other', 'FIMS 2018 Welcome Banner', 'fims_banner.jpg', 'fims_banner.jpg'),
-(24, 'Other', 'Ontario Hall Residence Snapchat Geotag', 'ohallgeotag2.png', 'ohallgeotag2.png'),
-(25, 'Other', 'Toronto Snapchat Geotag', 'toronto-geotag.png', 'toronto-geotag.png'),
-(26, 'Other', 'Yes Theory Logos', 'yes_theory_logos.jpg', 'yes_theory_logos.jpg'),
-(27, 'Reel', 'Reel', 'portfolio_reel.mp4', 'portfolio_reel.mp4'),
-(28, 'Video', 'Infuser Bottle/Pod', 'baile_flomen_infuserbottle.mp4', 'baile_flomen_infuserbottle.mp4'),
-(29, 'Video', 'Soccer Commercial', 'flomen_jaclyn_soccer.mp4', 'flomen_jaclyn_soccer.mp4'),
-(30, 'School', 'TMNT', 'TMNT.jpg', 'TMNT.jpg'),
-(31, 'School', 'Car Build', 'car_build.jpg', 'car_build.jpg');
+INSERT INTO `tbl_portfoliowork` (`art_id`, `art_category`, `art_title`, `imgPath`, `art_img`, `art_desc`) VALUES
+(1, 'Personal', 'New York, A Dream', 'img_7317.jpg', 'img_7317.jpg', 'This is some work that has been created to explore different media, methods, and ideas. It is work that I choose to focus on to enhance my personal goals, try new ideas, and be creative in my own respects.'),
+(2, 'Personal', 'Chanel, No. Me', 'chanel.jpg', 'chanel.jpg', ''),
+(3, 'Personal', 'Doubled', 'img_3467.jpg', 'img_3467.jpg', ''),
+(4, 'Personal', 'Look Outside the Box', 'img_4515.jpg', 'img_4515.jpg', ''),
+(5, 'Personal', 'Paint A Picture For Me', 'img_7403.jpg', 'img_7403.jpg', ''),
+(6, 'Work', 'Stay In The Loop', 'SITL.png', 'SITL.png', 'This work was created and used in my employment with Kostuch Media Ltd. over the summer of 2018. Through helping with weekly newsblasts and social media advertisements, I learned how the content I was learning in school applies to the real world.'),
+(7, 'Work', 'KML Custom Newsblast', 'newsblast_custom_ad_2.jpg', 'newsblast_custom_ad_2.jpg', ''),
+(8, 'Work', 'Pride Day', 'pride_day.jpg', 'pride_day.jpg', ''),
+(9, 'Work', 'Thanksgiving', 'thanksgiving.jpg', 'thanksgiving.jpg', ''),
+(10, 'Work', 'National Waffle Day', 'waffle_day.jpg', 'waffle_day.jpg', ''),
+(11, 'School', 'Aeropostale x Moscato', 'flomen_jaclyn_mashup.jpg', 'flomen_jaclyn_mashup.jpg', 'Being at Western University and Fanshawe College simultaneously, I have had the privilege of interacting with different types of poeple and see how they define media. Here are some of the works from both institutions that I have accomplished over my time as a student.'),
+(12, 'School', 'Digital Tattoo', 'img_8493.png', 'img_8493.png', ''),
+(13, 'School', 'London Squash & Fitness Club', 'LSFC.png', 'LSFC.png', ''),
+(14, 'School', 'OHM Intro Banner', 'ohm_intro_banner_3.jpg', 'ohm_intro_banner_3.jpg', ''),
+(15, 'School', 'Digital Graffiti', 'flomen_jaclyn_finalgraffiti.jpg', 'flomen_jaclyn_finalgraffiti.jpg', ''),
+(16, 'School', 'OHM Ride For The Cure', 'ohm_rideforcure_event.jpg', 'ohm_rideforcure_event.jpg', ''),
+(17, 'Photography', 'All of the Lights', '29.jpg', '29.jpg', 'My introduction to digital media and graphic design came from exploring photography. Although I have moved on to other forms of creative work, photography will always be my first passion.'),
+(18, 'Photography', 'Mizner', 'film6.jpg', 'film6.jpg', ''),
+(19, 'Photography', 'Threshold', 'flomen_jaclyn-4.jpg', 'flomen_jaclyn-4.jpg', ''),
+(20, 'Photography', 'Caged In', 'jaclynflomenportfolio-5.jpg', 'jaclynflomenportfolio-5.jpg', ''),
+(21, 'Photography', 'Model: Stephanie Lanz', 'portfolio-12.jpg', 'portfolio-12.jpg', ''),
+(22, 'Video', 'Full(er) House Fantasy', 'jaclynloganvas1020.gif', 'jaclynloganvas1020.gif', 'Although I prefer static to animated, I have started to explore dynamic forms of media through video, 3D animation, and being limitless through Photoshop.'),
+(23, 'Other', 'FIMS 2018 Welcome Banner', 'fims_banner.jpg', 'fims_banner.jpg', 'Here are some additional works that fit into no distinct category. Although they are varied in topic and media, the work still excited me.'),
+(24, 'Other', 'Ontario Hall Residence Snapchat Geotag', 'ohallgeotag2.png', 'ohallgeotag2.png', ''),
+(25, 'Other', 'Toronto Snapchat Geotag', 'toronto-geotag.png', 'toronto-geotag.png', ''),
+(26, 'Other', 'Yes Theory Logos', 'yes_theory_logos.jpg', 'yes_theory_logos.jpg', ''),
+(27, 'Reel', 'Reel', 'portfolio_reel.mp4', 'portfolio_reel.jpg', ''),
+(28, 'Video', 'Infuser Bottle/Pod', 'baile_flomen_infuserbottle.mp4', 'baile_flomen_infuserbottle.jpg', ''),
+(29, 'Video', 'Soccer Commercial', 'flomen_jaclyn_soccer.mp4', 'flomen_jaclyn_soccer.jpg', ''),
+(30, 'School', 'TMNT', 'TMNT.jpg', 'TMNT.jpg', ''),
+(31, 'School', 'Car Build', 'car_build.jpg', 'car_build.jpg', '');
 
 --
 -- Indexes for dumped tables
@@ -108,6 +111,7 @@ ALTER TABLE `tbl_about`
 --
 ALTER TABLE `tbl_portfoliowork`
   ADD PRIMARY KEY (`art_id`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

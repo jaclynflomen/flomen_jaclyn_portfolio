@@ -1,44 +1,50 @@
-var videoPlayer, playbtn, timeline, curtimetext, totalTime, mute, volume, fullscreenbtn;
-
-//Initialise
-function initialisevideoPlayer() {
-    videoPlayer = document.getElementById("animationReel");
-    videoPlayer.controls = false;
-
-    timeline = document.getElementById("timeline");
-    timeline.addEventListener("change",vidSeek,false);
-    videoPlayer.addEventListener("timeupdate",seektimeupdate,false);
-    curTime = document.getElementById("curTime");
-    totalTime = document.getElementById("totalTime");
-    
-    mutebtn = document.getElementById("mute");
-    mutebtn.addEventListener("click",vidmute,false);
-
-    volume = document.getElementById("volume");
-    volume.addEventListener("change",setvolume,false);
+(function() {
+	"use strict";
 	
-	fullscreenbtn = document.getElementById("fullscreenbtn");
-	fullscreenbtn.addEventListener("click",toggleFullScreen,false);
- }
+//video controls
 
- window.onload = initialisevideoPlayer;
+//variables
+    var video = document.querySelector("#27");
+    // var playSwitch = document.querySelector("#playPause");
+    var btn = document.getElementById("playPause");
+	var trailers = document.querySelector("eventVid");
+	var muteVideo = document.querySelector("muteVideo");
+	var videoPlace = document.querySelector("videoTime");
+	var volumeSlider = document.querySelector("volumeSlider");
+	var trail = document.querySelector("eventVid");
 
- //Play and Pause (switching button from play to pause)
-function togglePlayPause() {
-    var btn = document.getElementById('playBtn');
-    if (videoPlayer.paused || videoPlayer.ended) {
-       btn.title = 'PAUSE';
-       btn.innerHTML = 'PAUSE';
-       btn.className = 'PAUSE';
-       videoPlayer.play();
-    }
-    else {
-       btn.title = 'PLAY';
-       btn.innerHTML = 'PLAY';
-       btn.className = 'PLAY';
-       videoPlayer.pause();
-    }
+
+//functions
+
+//switch images
+function playVideo() {
+	//console.log("playing video");
+	if (video.paused || video.ended) {
+		video.play();
+		btn.src = "images/pause.svg";
+		//console.log("image switch");
+	}else{
+		video.pause();
+		btn.src = "images/play.svg";
+	}
 }
+
+// //alli
+// function togglePlayPause() {
+    
+//     if (video.paused || video.ended) {
+//        btn.title = 'PAUSE';
+//        btn.innerHTML = 'PAUSE';
+//        btn.className = 'PAUSE';
+//        video.play();
+//     }
+//     else {
+//        btn.title = 'PLAY';
+//        btn.innerHTML = 'PLAY';
+//        btn.className = 'PLAY';
+//        video.pause();
+//     }
+// }
 
 function changeButtonType(btn, value) {
     btn.title = value;
@@ -46,59 +52,71 @@ function changeButtonType(btn, value) {
     btn.className = value;
 }
 
-//Stop
-function stopPlayer() {
-    videoPlayer.pause();
-    videoPlayer.currentTime = 0;
+//hide buttons
+function showHide() {
+	//console.log("hide");
+	btn.style.display = 'none';
 }
 
-//Timeline
-function vidSeek(){
-	var seekto = videoPlayer.duration * (timeline.value / 100);
-	videoPlayer.currentTime = seekto;
+//show play and pause button
+function show() {
+	btn.style.display = 'block';
+	btn.classList.add("fadeIn");
+    btn.classList.add("animated");
 }
-function seektimeupdate(){
-	var nt = videoPlayer.currentTime * (100 / videoPlayer.duration);
-	timeline.value = nt;
-	var curmins = Math.floor(videoPlayer.currentTime / 60);
-	var cursecs = Math.floor(videoPlayer.currentTime - curmins * 60);
-	var durmins = Math.floor(videoPlayer.duration / 60);
-	var dursecs = Math.floor(videoPlayer.duration - durmins * 60);
-	if(cursecs < 10){ cursecs = "0"+cursecs; }
-	if(dursecs < 10){ dursecs = "0"+dursecs; }
-	if(curmins < 10){ curmins = "0"+curmins; }
-	if(durmins < 10){ durmins = "0"+durmins; }
-	curTime.innerHTML = curmins+":"+cursecs;
-	totalTime.innerHTML = durmins+":"+dursecs;
+
+function shownoAnimate() {
+	btn.style.display = 'block';
 }
-function vidmute(){
-	if(videoPlayer.muted){
-		videoPlayer.muted = false;
-		mutebtn.innerHTML = "MUTE";
+
+function vidReset() {
+	trailers.currentTime = 0;
+	btn.src = "images/play.svg";
+}
+
+
+
+
+
+//to edit below
+
+function vidmute () {
+	if(trailers.muted) {
+		trailers.muted = false;
+		muteVideo.innerHTML = "MUTE"; //if not mute, this will show
 	} else {
-		videoPlayer.muted = true;
-		mutebtn.innerHTML = "UNMUTE";
-	}
-}
-function setvolume(){
-	videoPlayer.volume = volume.value / 100;
-}
-function toggleFullScreen(){
-	if(videoPlayer.requestFullScreen){
-		videoPlayer.requestFullScreen();
-	} else if(videoPlayer.webkitRequestFullScreen){
-		videoPlayer.webkitRequestFullScreen();
-	} else if(videoPlayer.mozRequestFullScreen){
-		videoPlayer.mozRequestFullScreen();
+		trailers.muted = true;
+		muteVideo.innerHTML = "UNMUTE"; //if muted, this will show... maybe put pictures instead of words
 	}
 }
 
- 
- document.addEventListener("DOMContentLoaded", function() { initialisevideoPlayer(); }, false);
+function vidSeek (){
+	var seekto = trailers.duration * (videoPlace.value / 100);
+	trailers.currentTime = seekto;
+}
 
- videoPlayer.addEventListener('volumechange', function(e) {
-    var btn = document.getElementById('mute-button');
-    if (videoPlayer.muted) changeButtonType(btn, 'unmute');
-    else changeButtonType(btn, 'mute');
- }, false);
+function seektimeupdate () {
+	var nt = trailers.currentTime * (100 / trailers.duration);
+	videoPlace.value = nt; //time is equivalent to the slider
+}
+
+function volumeCtrl () {
+	trailers.volume = volumeSlider.value; //volume is equivalent to the slider
+}
+
+
+//listeners
+	btn.addEventListener("click", playVideo, false);
+	//muteVideo.addEventListener("click", vidmute, false);
+	//videoPlace.addEventListener("change", vidSeek, false);
+	//trailers.addEventListener("timeupdate", seektimeupdate, false);
+	//volumeSlider.addEventListener("change", volumeCtrl, false);
+	trail.addEventListener("mouseout", showHide, false);
+	trail.addEventListener("mouseover", show, false);
+	trailers.addEventListener("ended", vidReset, false);
+	btn.addEventListener("mouseover", shownoAnimate, false);
+
+
+})();
+
 

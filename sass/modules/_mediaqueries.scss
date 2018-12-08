@@ -73,10 +73,13 @@
 
     #page1 .nav_mobile ul li a:hover {
         color:$my_grey;
+        
     }
 
     #page1 .nav_mobile {
         background-color:white;
+        position: -webkit-sticky;
+        position: sticky;
     }
 
 
@@ -87,6 +90,7 @@
         height: 4%;
         visibility: visible;
         position: sticky;
+        position: -webkit-sticky;
         background-color:$my_grey;
         bottom: 0;
         margin-top: 15%;
@@ -141,13 +145,10 @@
         height: 5%;
         visibility: visible;
         position: sticky;
+        position: -webkit-sticky;
         background-color: $my_grey;
         bottom: 0;
-        color: white;
-    }
-
-    #portfolio_container_main {
-        margin-left: 10%;
+        color: $my_grey;
     }
 
     #page4 .nav_mobile ul li a{
@@ -160,12 +161,9 @@
         color: $my_pink;
     }
 
-    .pics_cont h3, p {
-        text-align: left;
-        width: 90%;
+    #navBreak {
+        height: 50%;
     }
-
-    
 
     //resume page
 
@@ -174,6 +172,7 @@
         height: 5%;
         visibility: visible;
         position: sticky;
+        position: -webkit-sticky;
         background-color: $my_grey;
         bottom: 0;
         color: white;
@@ -207,6 +206,7 @@
         height: 4%;
         visibility: visible;
         position: sticky;
+        position: -webkit-sticky;
         background-color: $my_grey;
         bottom: 0;
         margin-top: 15%;
@@ -501,8 +501,8 @@ form input {
         margin-top: 40%;
     }
 
-    #reelCont ul li button {
-        border: none;
+    #reelCont main button {
+        border: 0px;
         color: $my_grey;
         box-shadow: none;
         font-size: 200%;
@@ -510,19 +510,20 @@ form input {
         padding-left: 0%;
         margin-right: 0%;
         margin-top: 0%;
+        margin-left: 5%;
         margin-bottom: 0%;
         width: 10%;
         height: 10%;
     }
 
-    #reelCont ul li a video {
-        width: 80%;
-        margin-right: 0%;
+    #reelCont main div a video {
+        width: 100%;
+        margin-left: 0%;
         float: left;
         display: block;
     }
 
-    #reelCont ul li a {
+    #reelCont main div a {
         margin-left: 0%;
         clear: both;
         float: left;
@@ -531,6 +532,7 @@ form input {
     body#page1 {
         background-image: url(../images/background.jpg);
         background-repeat:no-repeat; 
+        align-content: center;
         color: white;
         width: 100%;
     }
@@ -710,7 +712,7 @@ form input {
     #app button {
         border: $my_pink solid 3px;
         box-shadow: 2px 2px $my_grey ;
-        width: 15%;
+        width: 10%;
         height: 80%;
         font-family: 'Didot', sans-serif;
         font-size: 100%;

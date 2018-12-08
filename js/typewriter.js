@@ -4,23 +4,14 @@
 @return {Promise}
 */
 
-<script>
-    ityped.init(document.querySelector("#ityped"), {
-      showCursor = true,
-      strings: ['Jaclyn Flomen']
-    })
-    ityped.init("#placeholder", {
-      placeholder = true,
-      showCursor: false
-    })
-  </script>
+
 
 const setProps = ({
-  strings = ['Jaclyn Flomen'],
-  typeSpeed = 50,
-  backSpeed = 25,
-  backDelay = 500,
-  startDelay = 500,
+  strings = ['Jaclyn Flomen', 'Graphic Designer', 'Front-End Developer', 'Creator', 'Photographer'],
+  typeSpeed = 15,
+  backSpeed = 15,
+  backDelay = 100,
+  startDelay = 100,
   cursorChar = '|',
   placeholder = false,
   showCursor = true,
