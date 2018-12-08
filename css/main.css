@@ -164,7 +164,7 @@ form label {
     width: 150%; }
 
   body#page1 {
-    background-image: url(../images/background_m.jpg);
+    background-image: url(/images/background_m.jpg);
     background-repeat: no-repeat;
     color: white; }
 
@@ -432,7 +432,7 @@ form label {
     width: 150%; }
 
   body#page1 {
-    background-image: url(../images/background_t.jpg);
+    background-image: url(/images/background_t.jpg);
     background-repeat: no-repeat;
     color: white; }
 
@@ -634,7 +634,7 @@ form label {
     float: left; }
 
   body#page1 {
-    background-image: url(../images/background.jpg);
+    background-image: url(/images/background.jpg);
     background-repeat: no-repeat;
     align-content: center;
     color: white;
