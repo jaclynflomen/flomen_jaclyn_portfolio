@@ -201,14 +201,6 @@
         height: 50%;
     }
 
-    .artwork {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        align-items: center;
-        margin-left: 7%;
-
-    }
-
     //resume page
 
     #page3 .nav_mobile {
@@ -341,9 +333,18 @@
     }
 
     .artwork {
-        margin-right: 5%;
-        margin-top: 5%;
+        margin-right: 3%;
+        display: inline;
     }
+
+    #page4 .galleryDemo img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+
 
 }
 
@@ -540,16 +541,10 @@ form input {
 }
 
 //portfolio page
-.pics_cont img {
-    width: 25%;
-    height: 25%;
-    margin-right: 3%;
-}
 
-
-.pics_cont {
-    margin-right: 15%;
-}
+// .pics_cont {
+//     margin-right: 10%;
+// }
 
 .pics_cont h3, p {
     text-align: left;
@@ -563,6 +558,18 @@ form input {
 #page4 .nav h4{
     text-align: center;
     margin-top: 73em;
+}
+
+#page4 .galleryDemo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 0%;
+}
+
+.artwork {
+    margin-right: 3%;
+    display: inline;
 }
 
 
@@ -613,7 +620,7 @@ form input {
 }
 
 .artwork {
-    margin-right: 5%;
+    margin-right: 3%;
     margin-top: 5%;
 }
 
@@ -856,13 +863,35 @@ form input {
         margin-top: 2%;
     }
 
+    #page4 .galleryDemo img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-right: 0%;
+    }
+
+    #page4 .galleryDemo img:hover {
+        filter: grayscale(100%);
+    }
+
     .buttons {
         margin-left: 5%;
     }
 
     .artwork {
-        margin-right: 5%;
+        margin-right: 3%;
         display: inline;
+    }
+
+
+    #page4 .nav {
+        height: 60em;;
+    }
+
+    #imgTitle {
+        position: relative;
+        display: block;
+        color: $my_pink;
     }
 
 
