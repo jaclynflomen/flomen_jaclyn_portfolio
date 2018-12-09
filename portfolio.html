@@ -43,7 +43,7 @@
             <p id="descrip">{{ item.art_desc }}</p>
             
             <div class="gallery" v-on:load="loadArt"> 
-                    <a id="LBoverlay" class="galleryDemo">
+                    <a id="LBoverlay" class="galleryDemo" :href="'images/' + item.art_img">
                     <img :src="'images/' + item.art_img" alt="portfolio piece" class="artwork">
                 </a>
             </div> 
