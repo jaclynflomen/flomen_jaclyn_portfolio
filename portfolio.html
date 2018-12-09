@@ -32,7 +32,7 @@
     <h3 id="select">Select a category!</h3>
     <main id="app">
       <div class="buttons">
-            <button v-on:click="fetchPersonal" id="1" class="textClick">Personal</button>
+            <button v-on:click="fetchPersonal" active id="1" class="textClick">Personal</button>
             <button v-on:click="fetchWork" id="2" class="textClick">Work</button>
             <button v-on:click="fetchSchool" id="3" class="textClick">School</button>
             <button v-on:click="fetchPhotography" id="4" class="textClick">Photography</button>
@@ -41,9 +41,9 @@
         </div>
         <div v-for="item in artdata" id="imgCont"> 
             <p id="descrip">{{ item.art_desc }}</p>
-            
-            <div class="gallery" v-on:load="loadArt"> 
-                    <a id="LBoverlay" class="galleryDemo" :href="'images/' + item.art_img">
+             
+            <div class="gallery" v-on:load="loadArt">   
+                <a class="galleryDemo" :href="'images/' + item.imgPath">
                     <img :src="'images/' + item.art_img" alt="portfolio piece" class="artwork">
                 </a>
             </div> 

@@ -294,12 +294,6 @@ form label {
   #navBreak {
     height: 50%; }
 
-  .artwork {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    align-items: center;
-    margin-left: 7%; }
-
   #page3 .nav_mobile {
     width: 100%;
     height: 5%;
@@ -406,8 +400,15 @@ form label {
     margin-left: 5%; }
 
   .artwork {
-    margin-right: 5%;
-    margin-top: 5%; } }
+    margin-right: 3%;
+    display: inline; }
+
+  #page4 .galleryDemo img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin-right: 0%;
+    margin-bottom: 5%; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   #reelButton {
     margin-left: 7%;
@@ -558,14 +559,6 @@ form label {
     height: 125px;
     margin-left: 15%; }
 
-  .pics_cont img {
-    width: 25%;
-    height: 25%;
-    margin-right: 3%; }
-
-  .pics_cont {
-    margin-right: 15%; }
-
   .pics_cont h3, p {
     text-align: left;
     width: 90%; }
@@ -576,6 +569,16 @@ form label {
   #page4 .nav h4 {
     text-align: center;
     margin-top: 73em; }
+
+  #page4 .galleryDemo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 0%; }
+
+  .artwork {
+    margin-right: 3%;
+    display: inline; }
 
   #page3body {
     clear: left;
@@ -614,7 +617,7 @@ form label {
     margin-left: 5%; }
 
   .artwork {
-    margin-right: 5%;
+    margin-right: 3%;
     margin-top: 5%; } }
 @media only screen and (min-width: 768px) {
   #socialMedia {
@@ -802,12 +805,29 @@ form label {
     margin-right: 2%;
     margin-top: 2%; }
 
+  #page4 .galleryDemo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 0%; }
+
+  #page4 .galleryDemo img:hover {
+    filter: grayscale(100%); }
+
   .buttons {
     margin-left: 5%; }
 
   .artwork {
-    margin-right: 5%;
-    display: inline; } }
+    margin-right: 3%;
+    display: inline; }
+
+  #page4 .nav {
+    height: 60em; }
+
+  #imgTitle {
+    position: relative;
+    display: block;
+    color: #FFD9D0; } }
 #page4 .headerName {
   margin-bottom: 2%; }
 

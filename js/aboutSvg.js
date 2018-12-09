@@ -3,7 +3,7 @@
     
     function getData(){
             console.log(this);
-            let targetURL = `includes/connect.php?ID=${this.id}`; //whenever we click on a thumbnail, pass its id to the php query
+            let targetURL = `/includes/index.php?ID=${this.id}`; //whenever we click on a thumbnail, pass its id to the php query
             fetch (targetURL) // go get the data and bring it back! good doggy
             .then(res => res.json()) //turn the result into a plain JS object
             .then(data => {
