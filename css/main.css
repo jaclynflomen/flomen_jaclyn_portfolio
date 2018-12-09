@@ -1,3 +1,15 @@
+#LBoutline {
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  z-index: 500;
+}
+
+.show-lightbox {
+  display: block !important;
+}
+
 #selfPic {
   width: 25%;
   margin-right: 5%;

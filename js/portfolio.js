@@ -80,10 +80,10 @@
             },
 
             loadArt(e) { //use to open lightbox in portfolio
-                //debugger;
-                e.preventDefault(); //block a page reload (anchor tag default behaviour)
+                debugger;
+                //e.preventDefault(); //block a page reload (anchor tag default behaviour)
                 
-                dataKey = e.currentTarget.getAttribute('href');
+                dataKey = e.currentTarget.getAttribute('href').split("/")[1];
                 currentData = this.artdata.filter(tbl_portfoliowork => tbl_portfoliowork.imgPath === dataKey);
 
                 this.arttitle = currentData[0].art_title;
@@ -93,7 +93,12 @@
 
                 this.showDetails = true;
 
+                // this was opening the light box but the functionality is broken - not sure why
+                //halkaBox.run("galleryDemo"); 
+            },
 
+            closeLB() {
+                this.showDetails = false;
             },
 
             fetchArtData(category) {
