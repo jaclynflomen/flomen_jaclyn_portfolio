@@ -10,5 +10,13 @@ window.onload = function(){
     }
   })
 
+  // var waypoint = new Waypoint({
+  //   element:document.getElementsByClassName("galleryDemo"),
+  //   handler:function(direction){
+  //       this.element.classList.add("fadeIn");
+  //       this.element.classList.add("animated");
+  //   }
+  // })
+
   
 };

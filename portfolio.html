@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jaclyn Flomen - Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="css/halkaBox.min.css" rel="stylesheet">
     <script src="js/halkaBox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/noframework.waypoints.min.js"></script>
+    <script src="js/waypoint.js"></script>
 </head>
 <body id="page4">
 
@@ -36,14 +39,28 @@
             <button v-on:click="fetchVideo" id="5" class="textClick">3D/Video</button>
             <button v-on:click="fetchOther" id="6" class="textClick">Other</button>
         </div>
-        <div v-for="item in artdata">
+        <div v-for="item in artdata" id="imgCont"> 
             <p id="descrip">{{ item.art_desc }}</p>
-            <div id="demo-test-gallery" class="gallery" v-on:load="loadArt"> 
-                <a class="galleryDemo" title="item.art_title" :href="'images/' + item.imgPath" >
+            
+            <div class="gallery" v-on:load="loadArt"> 
+                    <a id="LBoverlay" class="galleryDemo">
                     <img :src="'images/' + item.art_img" alt="portfolio piece" class="artwork">
                 </a>
-                
-            </div>            
+            </div> 
+            
+              <!--Lightbox-->
+        <!-- <div id="LBoutline">
+                <span class="close">&times;</span>
+                <div id="lboxImage" class="lightbox">
+                    <ul>
+                        <li><a :href="'images/' + item.imgPath"><img :src="'images/' + item.art_img"></a></li>
+                    </ul>
+                </div>
+                <div id="lbText">
+                    <h3>{{ item.art_title}}</h3>
+                </div>
+            </div> -->
+
             </div> 
     </main>
     
@@ -63,5 +80,6 @@
         
 <script src="js/portfolio.js"></script>
 <script src="js/main.js"></script>
+<!-- <script src="js/portfolio_waypoints.js"></script> -->
 </body>
 </html>

@@ -1,5 +1,6 @@
 (() => {
 
+
     //init the vue stuff!
     const vm = new Vue({
         el : "#app",
@@ -15,8 +16,7 @@
             artdesc : "",
             artheader : "",
 
-            showDetails : false
-
+            showDetails : false,
             
         },
 
@@ -45,7 +45,7 @@
             fetchReel(e) {
                 //debugger;
                 this.fetchArtData(e.currentTarget.dataset.art_category = 'Reel');
-                setTimeout(function(){ window.scrollTo(0, 1200)});
+                setTimeout(function(){ window.scrollTo(0, 1200)}, 500);
 
             },
 
@@ -122,5 +122,10 @@
         }
 
     })
+
+    // function openLB() {
+    //     document.getElementById("LBoutline").innerHTML.style.display = 'block';
+    // }
+    
 
 })();

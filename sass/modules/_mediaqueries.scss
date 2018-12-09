@@ -1,19 +1,9 @@
 @media only screen and (max-width:480px){
     //index page
 
-    #reelCont main button {
-        border: 0px;
-        color: $my_grey;
-        box-shadow: none;
-        font-size: 100%;
-        padding-right: 0%;
-        padding-left: 0%;
-        margin-right: 0%;
-        margin-top: 0%;
-        margin-left: 5%;
-        margin-bottom: 0%;
-        width: 10%;
-        height: 10%;
+    #reelButton {
+        margin-left: 14%;
+        width: 7%;
     }
 
     #reelCont main div a video {
@@ -309,7 +299,7 @@
 
         //portfolio W DATABASE
 
-    #app button {
+    #page4 #app button {
         border: $my_pink solid 3px;
         box-shadow: 2px 2px $my_grey ;
         width: 40%;
@@ -339,19 +329,9 @@
 
 @media only screen and (min-width:480px) and (max-width:768px){
 
-    #reelCont main button {
-        border: 0px;
-        color: $my_grey;
-        box-shadow: none;
-        font-size: 100%;
-        padding-right: 0%;
-        padding-left: 0%;
-        margin-right: 0%;
-        margin-top: 0%;
-        margin-left: 5%;
-        margin-bottom: 0%;
-        width: 10%;
-        height: 10%;
+    #reelButton {
+        margin-left: 7%;
+        width: 4%;
     }
 
     #reelCont main div a video {
@@ -577,7 +557,7 @@ form input {
 
 //portfolio W DATABASE
 
-#app button {
+#page4 #app button {
     border: $my_pink solid 3px;
     box-shadow: 2px 2px $my_grey ;
     width: 30%;
@@ -611,19 +591,9 @@ form input {
         margin-top: 40%;
     }
 
-    #reelCont main button {
-        border: 0px;
-        color: $my_grey;
-        box-shadow: none;
-        font-size: 200%;
-        padding-right: 0%;
-        padding-left: 0%;
-        margin-right: 0%;
-        margin-top: 0%;
-        margin-left: 5%;
-        margin-bottom: 0%;
-        width: 10%;
-        height: 10%;
+    #reelButton {
+        margin-left: 3%;
+        width: 4%;
     }
 
     #reelCont main div a video {
@@ -819,7 +789,7 @@ form input {
 
     //portfolio W DATABASE
 
-    #app button {
+    #page4#app button {
         border: $my_pink solid 3px;
         box-shadow: 2px 2px $my_grey ;
         width: 10%;
