@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$user = "jaclynfl_jflo";
-$password = "jaclynflomen";
+$user = "root";
+$password = "root";
 $db = "jaclynfl_portfolio";
 
 $conn = mysqli_connect($host, $user, $password, $db);
@@ -30,8 +30,8 @@ if (isset($_GET["ID"])) {
 ?>
 <?php
 
-$user = "jaclynfl_jflo";
-$pwd = "jaclynflomen";
+$user = "root";
+$pwd = "root";
 
 try {
     $conn = new PDO('mysql:host=localhost;dbname=jaclynfl_portfolio',$user, $pwd);

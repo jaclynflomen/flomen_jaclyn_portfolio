@@ -10,10 +10,17 @@
   "license": "MIT",
   "dependencies": {
     "baguettebox.js": "^1.11.0",
+    "basiclightbox": "^5.0.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",
     "halkabox": "^1.4.1",
+    "perfundo": "^4.0.4",
     "photoswipe": "^4.1.2",
-    "vlightbox": "^2.0.2"
+    "vlightbox": "^2.0.2",
+    "vue-gallery-slideshow": "^1.2.10",
+    "vue-silentbox": "^0.1.2"
+  },
+  "devDependencies": {
+    "node-sass-magic-importer": "^5.2.0"
   }
 }

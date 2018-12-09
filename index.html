@@ -15,6 +15,34 @@
 </head>
 <body id="page1">
 
+    <section>
+        <div class="set">
+            <div><img src="images/star_1.png" alt=""></div>
+            <div><img src="images/star_2.png" alt=""></div>
+            <div><img src="images/star_3.png" alt=""></div>
+            <div><img src="images/star_4.png" alt=""></div>
+            <div><img src="images/star_5.png" alt=""></div>
+            <div><img src="images/star_1.png" alt=""></div>
+            <div><img src="images/star_2.png" alt=""></div>
+            <div><img src="images/star_3.png" alt=""></div>
+            <div><img src="images/star_4.png" alt=""></div>
+            <div><img src="images/star_5.png" alt=""></div>
+        </div>
+
+        <div class="set set2">
+                <div><img src="images/star_1.png" alt=""></div>
+                <div><img src="images/star_2.png" alt=""></div>
+                <div><img src="images/star_3.png" alt=""></div>
+                <div><img src="images/star_4.png" alt=""></div>
+                <div><img src="images/star_5.png" alt=""></div>
+                <div><img src="images/star_1.png" alt=""></div>
+                <div><img src="images/star_2.png" alt=""></div>
+                <div><img src="images/star_3.png" alt=""></div>
+                <div><img src="images/star_4.png" alt=""></div>
+                <div><img src="images/star_5.png" alt=""></div>
+            </div>
+    </section>
+
     <nav class="nav" id="p1nav">
         <h1 class="hidden">Nav</h1>
         <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a>
@@ -33,7 +61,7 @@
 
 <div id="socialMedia">  
         <ul>
-            <li><a href="https://www.instagram.com/makeupbyjflo/" target="_blank"><img src="images/instagram.png" alt=""></a></li>
+            <li><a href="https://github.com/jaclynflomen" target="_blank"><img src="images/github_icon.png" alt=""></a></li>
             <li><a href="https://www.linkedin.com/in/jaclyn-flomen-b81928129/" target="_blank"><img src="images/linkedin.png" alt=""></a></li>
             <li><a href="https://www.pinterest.ca/flomen1217/" target="_blank"><img src="images/pinterest.png" alt=""></a></li>
         </ul>
@@ -41,26 +69,13 @@
 
 <div id="reelCont">
         <main id="app">
-                <button v-on:click="fetchReel" id="Reel">Reel</button>
+                <img src="images/reel_icon.png" alt="" id="reelButton" v-on:click="fetchReel">
                 <div v-for="item in artdata">
                     <a v-on:load="loadArt" :href="'video/' + item.art_img" title="" id="27">
                         <video :src="'video/' + item.imgPath" controls autoplay></video>
                     </a>
                 </div>
-        
-        <!-- <section id="eventVids" class="hidden-movies" :class="{ 'show-movie' : showDetails }"> 
-            
-            <h3 class="movie-title">{{ videotitle }}</h3>
-            <a v-on:load="loadArt" :href="'video/' + item.imgPath" class="galleryDemo" title="">
-                <video :src="'video/' + item.art_img"></video>
-            </a> 
-            <div class="movie-details">
-                <p>{{ videodescription }}</p>
-            </div>
-            <div id="controls">
-                <img id="playPause" src="images/play.svg" width="100px" style="cursor:pointer;text-shadow:black;" onclick='playVideo()'>
-            </div>
-        </section> -->
+    
 
         
         </main>

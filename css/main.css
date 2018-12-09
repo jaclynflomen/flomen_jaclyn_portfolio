@@ -121,7 +121,7 @@ form label {
   color: #FFD9D0; }
 
 .nav {
-  height: 610px; }
+  height: 650px; }
 
 #socialMedia ul li {
   list-style: none;
@@ -132,19 +132,9 @@ form label {
   margin-right: 1%; }
 
 @media only screen and (max-width: 480px) {
-  #reelCont main button {
-    border: 0px;
-    color: #b3b3b3;
-    box-shadow: none;
-    font-size: 100%;
-    padding-right: 0%;
-    padding-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-left: 5%;
-    margin-bottom: 0%;
-    width: 10%;
-    height: 10%; }
+  #reelButton {
+    margin-left: 11%;
+    width: 8%; }
 
   #reelCont main div a video {
     width: 100%;
@@ -160,8 +150,8 @@ form label {
   #socialMedia {
     clear: left;
     position: relative;
-    margin-top: 75%;
-    width: 150%; }
+    margin-top: 70%;
+    width: 230%; }
 
   body#page1 {
     background-image: url(/images/background_m.jpg);
@@ -380,7 +370,7 @@ form label {
   form label {
     margin-left: 15%; }
 
-  #app button {
+  #page4 #app button {
     border: #FFD9D0 solid 3px;
     box-shadow: 2px 2px #b3b3b3;
     width: 40%;
@@ -401,19 +391,9 @@ form label {
     margin-right: 5%;
     margin-top: 5%; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-  #reelCont main button {
-    border: 0px;
-    color: #b3b3b3;
-    box-shadow: none;
-    font-size: 100%;
-    padding-right: 0%;
-    padding-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-left: 5%;
-    margin-bottom: 0%;
-    width: 10%;
-    height: 10%; }
+  #reelButton {
+    margin-left: 7%;
+    width: 5%; }
 
   #reelCont main div a video {
     width: 100%;
@@ -428,7 +408,7 @@ form label {
 
   #socialMedia {
     clear: left;
-    margin-top: 75%;
+    margin-top: 65%;
     width: 150%; }
 
   body#page1 {
@@ -584,7 +564,7 @@ form label {
     position: sticky;
     margin-top: 95em; }
 
-  #app button {
+  #page4 #app button {
     border: #FFD9D0 solid 3px;
     box-shadow: 2px 2px #b3b3b3;
     width: 30%;
@@ -606,21 +586,11 @@ form label {
 @media only screen and (min-width: 768px) {
   #socialMedia {
     clear: left;
-    margin-top: 40%; }
+    margin-top: 30%; }
 
-  #reelCont main button {
-    border: 0px;
-    color: #b3b3b3;
-    box-shadow: none;
-    font-size: 200%;
-    padding-right: 0%;
-    padding-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-left: 5%;
-    margin-bottom: 0%;
-    width: 10%;
-    height: 10%; }
+  #reelButton {
+    margin-left: 3%;
+    width: 4%; }
 
   #reelCont main div a video {
     width: 100%;
@@ -774,7 +744,7 @@ form label {
     margin-left: 48%;
     padding-top: 10%; }
 
-  #app button {
+  #page4#app button {
     border: #FFD9D0 solid 3px;
     box-shadow: 2px 2px #b3b3b3;
     width: 10%;
@@ -885,7 +855,8 @@ html {
     opacity: 0; } }
 body {
   font-family: 'Didot', 'Times New Roman', serif;
-  margin: 0px; }
+  margin: 0px;
+  overflow: hidden; }
 
 .hidden {
   display: none; }
@@ -923,5 +894,102 @@ nav ul li a:hover {
 #page1 .headerName {
   color: black;
   text-shadow: 2px 2px white; }
+
+#page1 section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -99; }
+
+.set {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -99; }
+
+.set div {
+  position: absolute;
+  display: block;
+  z-index: -99; }
+
+.set div:nth-child(1) {
+  left: 20%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7s; }
+
+.set div:nth-child(2) {
+  left: 50%;
+  animation: animate 20s linear infinite;
+  animation-delay: -5s; }
+
+.set div:nth-child(3) {
+  left: 70%;
+  animation: animate 25s linear infinite;
+  animation-delay: -7s; }
+
+.set div:nth-child(4) {
+  left: 0%;
+  animation: animate 10s linear infinite; }
+
+.set div:nth-child(5) {
+  left: 85%;
+  animation: animate 10s linear infinite; }
+
+.set div:nth-child(6) {
+  left: 10%;
+  animation: animate 10s linear infinite; }
+
+.set div:nth-child(7) {
+  left: 15%;
+  animation: animate 10s linear infinite; }
+
+.set div:nth-child(8) {
+  left: 60%;
+  animation: animate 10s linear infinite; }
+
+.set div:nth-child(9) {
+  left: 95%;
+  animation: animate 10s linear infinite; }
+
+@keyframes animate {
+  0% {
+    top: -10%;
+    opacity: 0;
+    transform: translateX(20px) rotate(0deg); }
+  10% {
+    opacity: 1; }
+  20% {
+    transform: translateX(-20px) rotate(45deg); }
+  40% {
+    transform: translateX(-20px) rotate(90deg); }
+  60% {
+    transform: translateX(-20px) rotate(135deg); }
+  80% {
+    transform: translateX(-20px) rotate(180deg); }
+  100% {
+    top: 110%;
+    transform: translateX(-20px) rotate(225deg); } }
+.set2 {
+  transform: scale(0.5) rotateY(180deg);
+  filter: blur(2px); }
+
+.lightbox {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.164); }
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%; }
 
 /*# sourceMappingURL=main.css.map */
