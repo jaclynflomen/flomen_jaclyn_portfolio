@@ -1,5 +1,5 @@
 
-halkaBox.run(".galleryDemo");
+halkaBox.run("galleryDemo");
 
 halkaBox.options({
 

@@ -53,7 +53,7 @@
         width: 100%;
         height: 5%;
         // visibility: visible;
-        margin-top: 20%;
+        margin-top: 50%;
     }
 
     .nav {
@@ -156,6 +156,20 @@
         height: 2.5em;
     }
 
+    #demo-test-gallery {
+        width: 90%;
+        margin-bottom: 15%;
+        margin-top: 10%;
+        clear: left;
+        margin-left: 10%;
+    }
+    
+    #demo-test-gallery img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+
     //portfolio page
 
     #page4 .nav_mobile {
@@ -185,6 +199,14 @@
 
     #navBreak {
         height: 50%;
+    }
+
+    .artwork {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        align-items: center;
+        margin-left: 7%;
+
     }
 
     //resume page
@@ -389,7 +411,6 @@
 
 //about page
 
-
 .aboutSvg {
     margin-top: 5%;
 }
@@ -415,6 +436,7 @@
 #icons {
     clear: left;
     margin-left: 5%;
+    margin-top: 5%;
 }
 
 .aboutSvg {
@@ -428,6 +450,21 @@
 
 .aboutSvg img {
     height: 2.5em;
+}
+#demo-test-gallery {
+    height: 50%;
+    width: 60%;
+    margin-bottom: 15%;
+    margin-top: 10%;
+    clear: left;
+    margin-left: 10%;
+}
+
+#demo-test-gallery img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 0%;
 }
 
 //contact page
@@ -685,10 +722,6 @@ form input {
         padding-left: 2%;
     }
 
-    #page2 .headerName {
-        margin-bottom: 5%;
-    }
-
     #page2body p {
         clear: left;
         margin-top: 5%;
@@ -717,6 +750,17 @@ form input {
 
     #aboutText {
         margin-top: 5px;
+    }
+
+    #demo-test-gallery {
+        width: 75%;
+        clear: left;
+    }
+    
+    #demo-test-gallery img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
     }
 
     //contact
@@ -781,15 +825,23 @@ form input {
     }
      
     #endForm {
-        position: relative;
+        position: absolute;
+        display: block;
         width: 50%;
         margin-left: 48%;
-        padding-top: 10%;
+        margin-top: 0%;
+        z-index: -1;
+    }
+
+    #endForm button {
+        
+        display: block;
+        
     }
 
     //portfolio W DATABASE
 
-    #page4#app button {
+    #page4 #app button {
         border: $my_pink solid 3px;
         box-shadow: 2px 2px $my_grey ;
         width: 10%;
@@ -809,7 +861,7 @@ form input {
 
     .artwork {
         margin-right: 5%;
-        margin-top: 5%;
+        display: inline;
     }
 
 
