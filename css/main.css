@@ -667,7 +667,8 @@ form label {
 
   #backtoTop {
     background-color: #b3b3b3;
-    padding: 5%; }
+    padding: 5%;
+    font-size: 120%; }
 
   #page1 .headerName {
     font-size: 300%;
@@ -684,7 +685,7 @@ form label {
     width: 90%; }
 
   #page3 .nav {
-    height: 130em; }
+    height: 120em; }
 
   #page3 .nav h4 {
     text-align: center;
