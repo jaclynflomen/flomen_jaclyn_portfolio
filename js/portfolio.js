@@ -17,6 +17,8 @@
             artheader : "",
 
             showDetails : false,
+
+            isHidden: true
             
         },
 
@@ -83,7 +85,7 @@
                 //debugger;
                 e.preventDefault(); //block a page reload (anchor tag default behaviour)
                 
-                dataKey = e.currentTarget.getAttribute('href');
+                dataKey = e.currentTarget.getAttribute('href').split("/")[1];
                 currentData = this.artdata.filter(tbl_portfoliowork => tbl_portfoliowork.imgPath === dataKey);
 
                 this.arttitle = currentData[0].art_title;
@@ -94,6 +96,10 @@
                 this.showDetails = true;
 
 
+            },
+
+            closeLB() {
+                this.showDetails = false;
             },
 
             fetchArtData(category) {
@@ -123,9 +129,12 @@
 
     })
 
-    // function openLB() {
-    //     document.getElementById("LBoutline").innerHTML.style.display = 'block';
+
+    // document.getElementById("gall"),
+    // function loadLB (){
+    //     this.element.classList.add("portfolioModal");
     // }
+
     
 
 })();

@@ -1,7 +1,7 @@
 <?php
 
-$user = "jaclynfl_jflo";
-$pwd = "jaclynflomen";
+$user = "jaclynfl_jflo"; //
+$pwd = "jaclynflomen"; //
 
 try {
     $pdo = new PDO('mysql:host=localhost;dbname=jaclynfl_portfolio',$user, $pwd);

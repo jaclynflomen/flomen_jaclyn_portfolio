@@ -38,30 +38,27 @@
             <button v-on:click="fetchPhotography" id="4" class="textClick">Photography</button>
             <button v-on:click="fetchVideo" id="5" class="textClick">3D/Video</button>
             <button v-on:click="fetchOther" id="6" class="textClick">Other</button>
-        </div>
-        <div v-for="item in artdata" id="imgCont"> 
-            <p id="descrip">{{ item.art_desc }}</p>
-             
-            <div class="gallery" v-on:load="loadArt">   
-                <a class="galleryDemo" :href="'images/' + item.imgPath">
-                    <img :src="'images/' + item.art_img" alt="portfolio piece" class="artwork">
-                </a>
+        </div>            
+            <div v-for="item in artdata" id="imgCont"> <!-- v-for="item in artdata" -->
+                <p id="descrip">{{ item.art_desc }}</p>
+                
+                <div class="gallery"> 
+                        <a v-on:click.prevent="loadArt" id="LBoverlay" class="galleryDemo" :href="'images/' + item.art_img">
+                        <img :src="'images/' + item.art_img" alt="portfolio piece" class="artwork">
+                    </a>
+                </div> 
             </div> 
-            
-              <!--Lightbox-->
-        <!-- <div id="LBoutline">
-                <span class="close">&times;</span>
-                <div id="lboxImage" class="lightbox">
-                    <ul>
-                        <li><a :href="'images/' + item.imgPath"><img :src="'images/' + item.art_img"></a></li>
-                    </ul>
-                </div>
-                <div id="lbText">
-                    <h3>{{ item.art_title}}</h3>
-                </div>
-            </div> -->
+    
+            <!--Lightbox-->
+            <div id="LBoutline" :class="{ 'show-lightbox' : showDetails }">
+                <span class="close" v-on:click="closeLB">&times;</span>
+                <div id="lboxImage" class="lightbox-img">
+                    <h4 id="lbText">{{arttitle}}</h4>
+                    <img :src="'images/' + artsource" alt="some alternate text">
 
-            </div> 
+                </div>
+            </div>
+    
     </main>
     
     <div id="navBreak">
