@@ -132,6 +132,13 @@ form label {
   margin-right: 1%; }
 
 @media only screen and (max-width: 480px) {
+  .gallery2 {
+    display: block;
+    margin-left: 5%; }
+
+  .gallery {
+    display: none; }
+
   #reelButton {
     margin-left: 11%;
     width: 8%; }
@@ -176,7 +183,7 @@ form label {
   #page1 .nav_mobile {
     width: 100%;
     height: 5%;
-    margin-top: 50%; }
+    margin-top: 20%; }
 
   .nav {
     display: none; }
@@ -256,18 +263,6 @@ form label {
 
   .aboutSvg img {
     height: 2.5em; }
-
-  #demo-test-gallery {
-    width: 90%;
-    margin-bottom: 15%;
-    margin-top: 10%;
-    clear: left;
-    margin-left: 10%; }
-
-  #demo-test-gallery img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover; }
 
   #page4 .nav_mobile {
     width: 100%;
@@ -410,6 +405,12 @@ form label {
     margin-right: 0%;
     margin-bottom: 5%; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+  .gallery2 {
+    display: none; }
+
+  .gallery {
+    display: block; }
+
   #reelButton {
     margin-left: 7%;
     width: 5%; }
@@ -487,20 +488,6 @@ form label {
 
   .aboutSvg img {
     height: 2.5em; }
-
-  #demo-test-gallery {
-    height: 50%;
-    width: 60%;
-    margin-bottom: 15%;
-    margin-top: 10%;
-    clear: left;
-    margin-left: 10%; }
-
-  #demo-test-gallery img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin: 0%; }
 
   #page5 .nav {
     height: 680px; }
@@ -723,15 +710,6 @@ form label {
   #aboutText {
     margin-top: 5px; }
 
-  #demo-test-gallery {
-    width: 75%;
-    clear: left; }
-
-  #demo-test-gallery img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover; }
-
   #endForm ul {
     list-style: none; }
 
@@ -827,7 +805,13 @@ form label {
   #imgTitle {
     position: relative;
     display: block;
-    color: #FFD9D0; } }
+    color: #FFD9D0; }
+
+  .gallery2 {
+    display: none; }
+
+  .gallery {
+    display: block; } }
 #page4 .headerName {
   margin-bottom: 2%; }
 
@@ -918,6 +902,7 @@ form label {
 .close {
   width: 300%;
   margin-bottom: 0%;
+  margin-top: 10%;
   margin-left: 20%; }
 
 #lbText {
