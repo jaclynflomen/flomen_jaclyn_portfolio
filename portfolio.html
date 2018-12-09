@@ -7,8 +7,6 @@
     <title>Jaclyn Flomen - Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link href="css/halkaBox.min.css" rel="stylesheet">
-    <script src="js/halkaBox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/noframework.waypoints.min.js"></script>
     <script src="js/waypoint.js"></script>
@@ -43,7 +41,7 @@
                 <p id="descrip">{{ item.art_desc }}</p>
                 
                 <div class="gallery"> 
-                        <a v-on:click.prevent="loadArt" id="LBoverlay" class="galleryDemo" :href="'images/' + item.art_img">
+                        <a v-on:click.prevent="loadArt" id="LBoverlay" class="galleryDemo" :href="'images/' + item.imgPath">
                         <img :src="'images/' + item.art_img" alt="portfolio piece" class="artwork">
                     </a>
                 </div> 
