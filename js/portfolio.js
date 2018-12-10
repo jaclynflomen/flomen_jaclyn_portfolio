@@ -1,6 +1,4 @@
 (() => {
-
-
     //init the vue stuff!
     const vm = new Vue({
         el : "#app",
@@ -15,6 +13,7 @@
             artsource : "",
             artdesc : "",
             artheader : "",
+            artinfo : "",
 
             showDetails : false,
 
@@ -90,6 +89,7 @@
 
                 this.arttitle = currentData[0].art_title;
                 this.artdesc = currentData[0].art_desc;
+                this.artinfo = currentData[0].art_info;
                 this.artheader = currentData[0].art_category;
                 this.artsource = dataKey;
 

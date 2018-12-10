@@ -74,7 +74,7 @@
 #LBoutline {
     position: absolute;
     display: none;
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(255, 255, 255, 0.945);
     color: black;
     width: 100%;
     height: 135%;
@@ -96,7 +96,7 @@
     text-align: center;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.877); 
+    background: rgba(255, 255, 255, 0.945); 
     
 }
   
@@ -118,4 +118,8 @@
     #lbText {
         text-align: center;
         margin-top: 1%;
+    }
+
+    #lbText2 {
+        font-size: 60%;
     }

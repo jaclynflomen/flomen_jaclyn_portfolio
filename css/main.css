@@ -287,7 +287,7 @@ form label {
     color: #FFD9D0; }
 
   #navBreak {
-    height: 50%; }
+    height: 100em; }
 
   #page3 .nav_mobile {
     width: 100%;
@@ -870,7 +870,7 @@ form label {
 #LBoutline {
   position: absolute;
   display: none;
-  background-color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(255, 255, 255, 0.945);
   color: black;
   width: 100%;
   height: 135%;
@@ -890,7 +890,7 @@ form label {
   text-align: center;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.877); }
+  background: rgba(255, 255, 255, 0.945); }
 
 .lightbox-img img {
   max-width: 50%;
@@ -908,6 +908,9 @@ form label {
 #lbText {
   text-align: center;
   margin-top: 1%; }
+
+#lbText2 {
+  font-size: 60%; }
 
 html {
   scroll-behavior: smooth; }
