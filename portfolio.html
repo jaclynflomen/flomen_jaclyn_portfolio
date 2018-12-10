@@ -36,6 +36,7 @@
             <button v-on:click="fetchPhotography" id="4" class="textClick">Photography</button>
             <button v-on:click="fetchVideo" id="5" class="textClick">3D/Video</button>
             <button v-on:click="fetchOther" id="6" class="textClick">Other</button>
+            
         </div>            
             <div v-for="item in artdata" id="imgCont"> <!-- v-for="item in artdata" -->
                 <p id="descrip">{{ item.art_desc }}</p>
@@ -81,7 +82,6 @@
         </nav>
         
 <script src="js/portfolio.js"></script>
-<script src="js/main.js"></script>
 <!-- <script src="js/portfolio_waypoints.js"></script> -->
 </body>
 </html>

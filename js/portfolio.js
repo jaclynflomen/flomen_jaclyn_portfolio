@@ -52,7 +52,7 @@
 
             fetchWork(e) {
                 //debugger;
-                this.fetchArtData(e.currentTarget.dataset.art_category = 'Work');
+                this.fetchArtData(e.currentTarget.dataset.art_category = 'Works');
 
             },
 
