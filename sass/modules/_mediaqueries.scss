@@ -1,6 +1,15 @@
 @media only screen and (max-width:480px){
     //index page
 
+    .gallery2 {
+        display: block;
+        margin-left: 5%;
+    }
+
+    .gallery{
+        display: none;
+    }
+
     #reelButton {
         margin-left: 11%;
         width: 8%;
@@ -53,7 +62,7 @@
         width: 100%;
         height: 5%;
         // visibility: visible;
-        margin-top: 50%;
+        margin-top: 20%;
     }
 
     .nav {
@@ -154,20 +163,6 @@
     
     .aboutSvg img {
         height: 2.5em;
-    }
-
-    #demo-test-gallery {
-        width: 90%;
-        margin-bottom: 15%;
-        margin-top: 10%;
-        clear: left;
-        margin-left: 10%;
-    }
-    
-    #demo-test-gallery img {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
     }
 
     //portfolio page
@@ -352,6 +347,15 @@
 
 @media only screen and (min-width:480px) and (max-width:768px){
 
+
+    .gallery2 {
+        display: none;
+    }
+
+    .gallery{
+        display: block;
+    }
+
     #reelButton {
         margin-left: 7%;
         width: 5%;
@@ -452,21 +456,7 @@
 .aboutSvg img {
     height: 2.5em;
 }
-#demo-test-gallery {
-    height: 50%;
-    width: 60%;
-    margin-bottom: 15%;
-    margin-top: 10%;
-    clear: left;
-    margin-left: 10%;
-}
 
-#demo-test-gallery img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin: 0%;
-}
 
 //contact page
 
@@ -760,17 +750,6 @@ form input {
         margin-top: 5px;
     }
 
-    #demo-test-gallery {
-        width: 75%;
-        clear: left;
-    }
-    
-    #demo-test-gallery img {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-    }
-
     //contact
 
     #endForm ul {
@@ -894,7 +873,18 @@ form input {
         color: $my_pink;
     }
 
+    .gallery2 {
+        display: none;
+    }
 
+    .gallery{
+        display: block;
+    }
+
+}
+
+.nav {
+    box-shadow: -7px 0 15px -4px rgba(0, 0, 0, 0.8);
 }
 
 

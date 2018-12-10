@@ -1,6 +1,4 @@
 (() => {
-
-
     //init the vue stuff!
     const vm = new Vue({
         el : "#app",
@@ -15,8 +13,11 @@
             artsource : "",
             artdesc : "",
             artheader : "",
+            artinfo : "",
 
             showDetails : false,
+
+            isHidden: true
             
         },
 
@@ -51,7 +52,7 @@
 
             fetchWork(e) {
                 //debugger;
-                this.fetchArtData(e.currentTarget.dataset.art_category = 'Work');
+                this.fetchArtData(e.currentTarget.dataset.art_category = 'Works');
 
             },
 
@@ -83,17 +84,22 @@
                 //debugger;
                 e.preventDefault(); //block a page reload (anchor tag default behaviour)
                 
-                dataKey = e.currentTarget.getAttribute('href');
+                dataKey = e.currentTarget.getAttribute('href').split("/")[1];
                 currentData = this.artdata.filter(tbl_portfoliowork => tbl_portfoliowork.imgPath === dataKey);
 
                 this.arttitle = currentData[0].art_title;
                 this.artdesc = currentData[0].art_desc;
+                this.artinfo = currentData[0].art_info;
                 this.artheader = currentData[0].art_category;
                 this.artsource = dataKey;
 
                 this.showDetails = true;
 
 
+            },
+
+            closeLB() {
+                this.showDetails = false;
             },
 
             fetchArtData(category) {
@@ -123,9 +129,12 @@
 
     })
 
-    // function openLB() {
-    //     document.getElementById("LBoutline").innerHTML.style.display = 'block';
+
+    // document.getElementById("gall"),
+    // function loadLB (){
+    //     this.element.classList.add("portfolioModal");
     // }
+
     
 
 })();
