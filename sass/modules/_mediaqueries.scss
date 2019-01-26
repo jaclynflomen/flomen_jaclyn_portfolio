@@ -32,13 +32,18 @@
         clear: left;
         position: relative;
         margin-top: 70%;
-        width: 230%;
+        width: 50%;
+    }
+
+    #socialMedia ul li a img {
+        width: 20%;
     }
     
     body#page1 {
         background-image: url(/images/background_m.jpg);
         background-repeat:no-repeat; 
         color: white;
+        width: 100%;
     }
 
     .headerName {
@@ -63,6 +68,8 @@
         height: 5%;
         // visibility: visible;
         margin-top: 20%;
+        position: sticky;
+        bottom: 0;
     }
 
     .nav {
@@ -70,6 +77,7 @@
     }
     .nav_mobile ul {
         margin-top: 0%;
+        margin-bottom: 0%;
         
     }
 
@@ -217,7 +225,7 @@
     #page3body {
         clear: left;
         margin-left: 5%;
-        width: 100%;
+        width: 95%;
     }
 
     #page3 .nav_mobile ul li a{
@@ -242,6 +250,7 @@
         bottom: 0;
         margin-top: 15%;
         color: white;
+        z-index: 2000;
     }
 
     #page5 .nav_mobile ul li a{
@@ -269,6 +278,8 @@
             float: left;
             width: 70%;
             margin-left: 5%;
+            position: relative;
+            z-index: 1000;
         }
     
         #contactBio {
@@ -362,7 +373,7 @@
     }
 
     #reelCont main div a video {
-        width: 100%;
+        width: 99%;
         margin-left: 0%;
         float: left;
         display: block;
@@ -502,6 +513,8 @@ form label{
         float: left;
         width: 70%;
         margin-left: 5%;
+        position: relative;
+        z-index: 1000;
     }
 
     #contactBio {
@@ -809,6 +822,8 @@ form input {
     #formCont {
         float: left;
         width: 40%;
+        position: relative;
+        z-index: 1000;
     }
      
     #endForm {

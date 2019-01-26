@@ -6,23 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jaclyn Flomen - Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/typewriter.js"></script>
+    <script src="https://unpkg.com/ityped@1.0.2"></script>
     <link rel="stylesheet" href="css/animate.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
-<body id="page2">
+<body id="page1">
 
-    <nav class="nav" id="p2nav">
+    <section>
+    <nav class="nav" id="p1nav">
         <h1 class="hidden">Nav</h1>
-        <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a>
+        <!-- <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a> -->
         <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#page2body">ABOUT</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
 
+    <img src="images/JF_Logo_blue.svg" alt="logoWhite" id="logoWhite">
+    <img id="background" src="images/background.jpg" alt="background">
+    <!-- ABOUT -->
+
+
+    <div class="headerName">
+        <span id="ityped"></span>
+    </div>
     
-    <div id="page2body">
+
+
+<div id="page2body">
     <h1 class="headerName">About</h1>
         <img id="selfPic" src="images/JF_About.JPG" alt="Me!">
 
@@ -59,18 +73,22 @@
 
 
 </div>
+       
 
-<nav class="nav_mobile">
-        <h1 class="hidden">Nav</h1>
-        <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <script src="js/aboutSvg.js"></script>
+
+    <script>
+        ityped.init(document.querySelector("#ityped"), {
+          showCursor: true,
+          strings: ['Jaclyn Flomen', 'Graphic Designer', 'Front-End Developer', 'Creator', 'Photographer']
+        })
+        ityped.init("#placeholder", {
+          placeholder: false,
+          showCursor: true
+        })
+      </script>
+
+
+      <!-- <script src="js/video.js"></script> -->
+      <script src="js/portfolio.js"></script>
 </body>
 </html>
