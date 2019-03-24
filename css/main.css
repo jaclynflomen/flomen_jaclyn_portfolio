@@ -1,5 +1,3 @@
-
-
 #selfPic {
   width: 25%;
   margin-right: 5%;
@@ -7,7 +5,6 @@
 
 #icons div {
   display: inline; }
-
 
 .aboutSvg {
   float: left;
@@ -23,9 +20,18 @@
   margin-top: 15%; }
 
 #page5 .headerName {
+    clear: both;
   margin-bottom: 2%; }
 
+  #page5 .nav h4 {
+    text-align: center;
+    position: sticky;
+    margin-top: 95em; 
+}
+
 #page5 .nav {
+    clear: both;
+    width: 100%;
   float: right; }
 
 #contactBio {
@@ -102,25 +108,23 @@ form label {
   margin-top: 10%; }
 
 #logo {
-  width: 40%;
-  margin-bottom: 33%;
-  margin-top: 20%; }
+    margin-top: -1em;
+    width: 40%;
+}
 
 .nav ul li a {
-  color: white;
+  color: black;
   font-size: 140%;
-  text-decoration: none; 
+  text-decoration: none;
   float: left;
   padding-right: 7%;
   padding-bottom: 2%;
   padding-top: 1.5%;
-  margin-left: 7.5%;
-}
+  margin-left: 7.5%; }
 
 #page1 .nav {
   background-color: white;
-  box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.1);
-}
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); }
 
 #logoWhite {
   width: 50%;
@@ -128,12 +132,21 @@ form label {
   position: absolute;
   filter: invert(100%);
   margin-top: 12.5%;
-  margin-left: 25%;
-}
+  margin-left: 25%; }
 
 #page1 .nav ul li a {
-  color: black; 
-}
+  color: black; }
+
+  #page1 .nav ul li a {
+     margin-left: 3em;
+     margin-right: 3em;
+     margin-bottom: 1.5em;
+     margin-top: 0.5em;
+  }
+
+  #page1 .nav {
+      text-align: center;
+  }
 
 #page1 .nav ul li a:hover {
   color: #FFD9D0; }
@@ -146,28 +159,22 @@ form label {
   .gallery {
     display: none; }
 
-
   .headerName {
     font-size: 100%;
     padding-top: 0%;
     margin-left: 10%;
     margin-right: 0%;
     margin-bottom: 0%;
-    margin-top: 5%;
-  }
+    margin-top: 20%; }
 
   #page2body p {
     clear: both;
     margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    color: black;
-}
+    color: black; }
 
   #selfPic {
     width: 40%;
-    margin-top: 10%;
-    margin-left: 30%;
+    margin-top: 20%;
     float: none; }
 
   #icons {
@@ -182,40 +189,6 @@ form label {
   .aboutSvg img {
     height: 2.5em; }
 
-  #page4 .nav_mobile {
-    width: 100%;
-    height: 5%;
-    visibility: visible;
-    position: sticky;
-    position: -webkit-sticky;
-    background-color: #b3b3b3;
-    bottom: 0;
-    color: #b3b3b3;
-    clear: both;
-    padding-top: 0%; }
-
-  #page4 .nav_mobile ul li a {
-    text-decoration: none;
-    color: black;
-    margin-top: -10%;
-    padding-top: -10%; }
-
-  #page4 .nav_mobile ul li a:hover {
-    text-decoration: none;
-    color: #FFD9D0; }
-
-  #navBreak {
-    height: 50%; }
-
-  #page3 .nav_mobile {
-    width: 100%;
-    height: 5%;
-    visibility: visible;
-    position: sticky;
-    position: -webkit-sticky;
-    background-color: #b3b3b3;
-    bottom: 0;
-    color: white; }
 
   #page3body p {
     margin-left: 5%;
@@ -225,34 +198,6 @@ form label {
     clear: left;
     margin-left: 5%;
     width: 95%; }
-
-  #page3 .nav_mobile ul li a {
-    text-decoration: none;
-    color: black; }
-
-  #page3 .nav_mobile ul li a:hover {
-    text-decoration: none;
-    color: #FFD9D0; }
-
-  #page5 .nav_mobile {
-    width: 100%;
-    height: 4%;
-    visibility: visible;
-    position: sticky;
-    position: -webkit-sticky;
-    background-color: #b3b3b3;
-    bottom: 0;
-    margin-top: 15%;
-    color: white;
-    z-index: 2000; }
-
-  #page5 .nav_mobile ul li a {
-    text-decoration: none;
-    color: black; }
-
-  #page5 .nav_mobile ul li a:hover {
-    text-decoration: none;
-    color: #FFD9D0; }
 
   #endForm ul {
     list-style: none; }
@@ -324,113 +269,8 @@ form label {
     height: 130px;
     object-fit: cover;
     margin-right: 0%;
-    margin-bottom: 5%; } 
-  
-    footer {
-      position: absolute;
-    }
-  
-    footer #logo2 {
-      width: 15%;
-      float: left;
-      margin-top: 10%;
-      margin-left: 10%;
-    }
-  
-    footer ul li a {
-    color: black;
-    font-size: 120%;
-    text-decoration: none; 
-    text-align: left;
-    }
-  
-    footer #nav2 {
-      list-style: none;
-      float: left;
-      margin-top: 5%;
-      margin-left: 5%;
-    }
-
-    footer #nav2 li {
-      margin-bottom: 5%;
-    }
-  
-    footer #nav2 li a:hover {
-      color: white;
-    }
-  
-    footer #socialMedia {
-      list-style: none;
-      clear: both;
-      margin-right: 10%;
-    }
-  
-    #Footerbackground {
-      width: 100%;
-      opacity: 0.5;
-      height: 200px;
-      object-fit: cover;
-      z-index: -1000;
-      position: relative;
-      padding-bottom: 0px;
-    }
-  
-    footer #socialMedia li a img {
-      width: 10%;
-      margin-bottom: 1%;
-      margin-right: 10%;
-      padding-right: 5%;
-      float: left;
-    }
-
-    footer #socialMedia {
-      margin-left: 25%;
-    }
-   
-    #footerNav {
-      padding-top: 7%;
-      padding-bottom: 0px;
-      margin-bottom: 0px;
-  
-    } 
-  
-    #background {
-      position: relative;
-      z-index: -100;
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-    }
-
-    #logoWhite {
-      margin-top: 45%;
-      width: 70%;
-      margin-left: 12.5%;
-    }
-
-    #ityped {
-      margin-top: 5%;
-      font-size: 80%;
-    }  
-  
-  }
-
-
+    margin-bottom: 5%; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-  #logoWhite {
-    margin-top: 20%;
-    width: 70%;
-    margin-left: 12.5%; }
-
-    
-  #background {
-    position: relative;
-    z-index: -100;
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-  }
-
   .gallery2 {
     display: none; }
 
@@ -458,29 +298,16 @@ form label {
 
   #logo {
     width: 35%;
-    margin-left: 30%; }
+ }
 
   .nav ul li a {
-    font-size: 120%; }
+    font-size: 1.5em;
+    color: black;
+}
 
-  .nav ul {
-    padding-left: 12.5%; }
-
-    .nav ul li a {
-      color: white;
-      font-size: 140%;
-      text-decoration: none; 
-      float: left;
-      padding-right: 7%;
-      padding-bottom: 2%;
-      padding-top: 1.5%;
-      margin-left: 0%;
-    }
-    
-    #page1 .nav {
-      background-color: white;
-      box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.1);
-    }
+.nav ul li a:hover {
+    color: #FFD9D0;
+}
 
   .aboutSvg {
     margin-top: 5%; }
@@ -496,9 +323,9 @@ form label {
     margin-left: 0%; }
 
   #selfPic {
-    width: 25%;
+    width: 18%;
     float: right;
-    margin-top: 0%; }
+    margin-top: 15%; }
 
   #icons {
     clear: left;
@@ -516,7 +343,7 @@ form label {
     height: 2.5em; }
 
   #page5 .nav {
-    height: 680px; }
+    height: 8em; }
 
   form label {
     margin-left: 15%; }
@@ -578,9 +405,6 @@ form label {
     text-align: left;
     width: 90%; }
 
-  #page4 .nav {
-    height: 1600px; }
-
   #page4 .nav h4 {
     text-align: center;
     margin-top: 73em; }
@@ -608,7 +432,16 @@ form label {
     width: 70%; }
 
   #page3 .nav {
-    height: 125em; }
+    height: 8em; }
+
+    #page4 .nav {
+        height: 8em; }
+
+    #page4 .nav h4 {
+        text-align: center;
+        position: sticky;
+        margin-top: 95em; 
+    }
 
   #page3 .nav h4 {
     text-align: center;
@@ -628,160 +461,41 @@ form label {
     margin-right: 2%;
     margin-top: 2%; }
 
+    #page5 #app button {
+        border: #FFD9D0 solid 3px;
+        box-shadow: 2px 2px #b3b3b3;
+        width: 30%;
+        height: 80%;
+        font-family: 'Didot', sans-serif;
+        font-size: 100%;
+        background: white;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-right: 2%;
+        margin-top: 2%; }
+
   .buttons {
     margin-left: 5%; }
 
   .artwork {
     margin-right: 3%;
-    margin-top: 5%; } 
-  
-  
-    footer {
-      position: absolute;
-    }
-  
-    footer #logo2 {
-      width: 15%;
-      float: left;
-      margin-top: 25%;
-      margin-left: 15%;
-    }
-  
-    footer ul li a {
-    color: black;
-    font-size: 100%;
-    text-decoration: none; 
-    text-align: left;
-    }
-  
-    footer #nav2 {
-      list-style: none;
-      float: left;
-      margin-top: 25%;
-    }
-  
-    footer #nav2 li a:hover {
-      color: white;
-    }
-  
-    footer #socialMedia {
-      list-style: none;
-      clear: right;
-      text-align: right;
-      margin-top: 25%;
-      margin-right: 10%;
-    }
-  
-    #Footerbackground {
-      width: 100%;
-      opacity: 0.5;
-      height: 170px;
-      object-fit: cover;
-      z-index: -1000;
-      position: relative;
-      padding-bottom: 0px;
-    }
-  
-    footer #socialMedia li a img {
-      width: 3.5%;
-      margin-bottom: 1%;
-      margin-right: -7px;
-    }
-   
-    #footerNav {
-      padding-top: 7%;
-      padding-bottom: 0px;
-      margin-bottom: 0px;
-  
-    } 
-    .nav {
-      font-size: 85%;
-      text-align: left;
-      margin-left: 0%;
-    }
-
-    #page1 .headerName {
-      margin-top: 5%;
-    }
-  
-  
-  }
+    margin-top: 5%; } }
 @media only screen and (min-width: 768px) {
-  footer {
-    position: absolute;
-  }
-
-  footer #logo2 {
-    width: 10%;
-    float: left;
-    margin-top: 5%;
-    margin-left: 10%;
-  }
-
-  footer ul li a {
-  color: black;
-  font-size: 100%;
-  text-decoration: none; 
-  text-align: left;
-  }
-
-  footer #nav2 {
-    list-style: none;
-    float: left;
-    margin-top: 5%;
-  }
-
-  footer #nav2 li a:hover {
-    color: white;
-  }
-
-  footer #socialMedia {
-    list-style: none;
-    clear: right;
-    text-align: right;
-    margin-top: 2.5%;
-    margin-right: 10%;
-  }
-
-  #Footerbackground {
-    width: 100%;
-    opacity: 0.5;
-    height: 170px;
-    object-fit: cover;
-    z-index: -1000;
-    position: relative;
-    padding-bottom: 0px;
-  }
-
-  footer #socialMedia li a img {
-    width: 3.5%;
-    margin-bottom: 1%;
-    margin-right: -7px;
-  }
- 
-  #footerNav {
-    padding-top: 7%;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-
-  } 
-  
   body#page1 {
     /* background-image: url(/images/background.jpg);
     background-repeat: no-repeat; */
-  text-align: center;
+    text-align: center;
     width: 100%; }
 
-    #background {
-      position: relative;
-      z-index: -100;
-      width: 100%;
-      height: 550px;
-      object-fit: cover;
-    }
+  #background {
+    position: relative;
+    z-index: -100;
+    width: 100%;
+    height: 550px;
+    object-fit: cover; }
 
   .nav {
-    font-size: 85%;
+    font-size: 1.1em;
     text-align: center; }
 
   .pics_cont h3, p {
@@ -805,11 +519,11 @@ form label {
     font-size: 120%; }
 
   #page1 .headerName {
+      clear: both;
     font-size: 200%;
     margin-top: 5%;
     margin-left: 10%;
-    float: left;
-  }
+    float: left; }
 
   #page3body {
     clear: left;
@@ -821,7 +535,7 @@ form label {
     width: 90%; }
 
   #page3 .nav {
-    height: 120em; }
+    height: 5em; }
 
   #page3 .nav h4 {
     text-align: center;
@@ -836,11 +550,11 @@ form label {
     margin-top: 5%;
     margin-left: 10%; }
 
-    #page2body .headerName {
-      clear: left;
-      float: left;
-      margin-top: 5%;
-    }
+  #page2body .headerName {
+    clear: left;
+    float: left;
+    margin-top: 5%; }
+
   #icons {
     margin-left: 5%; }
 
@@ -951,9 +665,6 @@ form label {
     margin-right: 3%;
     display: inline; }
 
-  #page4 .nav {
-    height: 60em; }
-
   #imgTitle {
     position: relative;
     display: block;
@@ -965,10 +676,15 @@ form label {
   .gallery {
     display: block; } }
 .nav {
-  box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); }
+
+  #page3 .headerName {
+    clear: both;
+    margin-bottom: 2%; }
 
 #page4 .headerName {
-  margin-bottom: 2%; }
+    clear: both;
+    margin-bottom: 2%; }
 
 #portfolio_container {
   clear: left; }
@@ -988,7 +704,6 @@ form label {
 
 /* #app {
   clear: left; } */
-
 #portfolio_container h3 {
   font-size: 120%;
   align-content: center;
@@ -1104,8 +819,7 @@ html {
     opacity: 0; } }
 body {
   font-family: 'Didot', 'Times New Roman', serif;
-  margin: 0px; 
-}
+  margin: 0px; }
 
 .hidden {
   display: none; }
@@ -1119,11 +833,27 @@ body {
 .nav {
   background-color: white; }
 
-nav ul li {
-  list-style: none;}
+.nav ul li a {
+    font-size: 1em;
+    color: black;
+    padding: 0%;
+    margin-top: 1.25em;
+}
 
-nav ul li a:hover {
-  color: black; }
+.nav ul li a img {
+    float: left;
+    margin-left: 0px;
+}
+
+
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a:hover {
+    color: #FFD9D0;
+}
 
 .headerName {
   color: #FFD9D0;
@@ -1141,7 +871,6 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
   z-index: -99; } */
-
 .lightbox {
   display: none;
   position: absolute;
@@ -1159,17 +888,65 @@ nav ul li a:hover {
   max-height: 80%;
   margin-top: 2%; }
 
-  #archive {
-    clear: left;
-    margin-top: 5%;
-    margin-left: 5%;
-  }
+#archive {
+  clear: left;
+  margin-top: 5%;
+  margin-left: 5%; }
 
-  #archive a {
-    color: #b3b3b3;
-    text-shadow: 1px 1px 2px #FFD9D0;
-  }
+#archive a {
+  color: #b3b3b3;
+  text-shadow: 1px 1px 2px #FFD9D0; }
 
-  
+footer {
+  position: absolute; }
+
+footer #logo2 {
+  width: 10%;
+  float: left;
+  margin-top: 5%;
+  margin-left: 10%; }
+
+footer ul li a {
+  color: black;
+  font-size: 100%;
+  text-decoration: none;
+  text-align: left; }
+
+footer #nav2 {
+  list-style: none;
+  float: left;
+  margin-top: 5%; }
+
+footer #nav2 li a:hover {
+  color: white;
+  text-shadow: 1px 1px 1px black; }
+
+footer #socialMedia {
+  list-style: none;
+  clear: right;
+  text-align: right;
+  margin-top: 2%;
+  margin-right: 0px; }
+
+#Footerbackground {
+  width: 100%;
+  opacity: 0.5;
+  height: 170px;
+  object-fit: cover;
+  z-index: -1000;
+  position: relative;
+  padding-bottom: 0px; }
+
+footer #socialMedia li a img {
+  width: 3.5%;
+  margin-bottom: 1%;
+  margin-right: -7px; }
+
+#footerNav {
+  padding-top: 7%;
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+
 /*# sourceMappingURL=main.css.map */
 
+/*# sourceMappingURL=main.css.map */
