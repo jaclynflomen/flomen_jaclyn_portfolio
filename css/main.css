@@ -20,7 +20,7 @@
   margin-top: 15%; }
 
 #page5 .headerName {
-    clear: both;
+  clear: both;
   margin-bottom: 2%; }
 
   #page5 .nav h4 {
@@ -134,14 +134,13 @@ form label {
   margin-top: 12.5%;
   margin-left: 25%; }
 
-#page1 .nav ul li a {
-  color: black; }
-
-  #page1 .nav ul li a {
-     margin-left: 3em;
-     margin-right: 3em;
+  #page1 .nav ul li a  {
+     margin-left: 6em;
+     margin-right: 5em;
      margin-bottom: 1.5em;
+     padding-left: 0.5em;
      margin-top: 0.5em;
+     color: black;
   }
 
   #page1 .nav {
@@ -152,6 +151,18 @@ form label {
   color: #FFD9D0; }
 
 @media only screen and (max-width: 480px) {
+    
+
+    #portfolioMain a img {
+        float: left;
+        width: 7em;
+        height: 7em;
+        object-fit: cover;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 5%;
+      }
+
   .gallery2 {
     display: block;
     margin-left: 5%; }
@@ -271,6 +282,17 @@ form label {
     margin-right: 0%;
     margin-bottom: 5%; } }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    #portfolioMain a img {
+        float: left;
+        width: 8em;
+        height: 8em;
+        object-fit: cover;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 5%;
+      }
+
   .gallery2 {
     display: none; }
 
@@ -406,6 +428,7 @@ form label {
     width: 90%; }
 
   #page4 .nav h4 {
+      clear: both;
     text-align: center;
     margin-top: 73em; }
 
@@ -435,6 +458,7 @@ form label {
     height: 8em; }
 
     #page4 .nav {
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); 
         height: 8em; }
 
     #page4 .nav h4 {
@@ -477,10 +501,24 @@ form label {
   .buttons {
     margin-left: 5%; }
 
+
   .artwork {
     margin-right: 3%;
     margin-top: 5%; } }
+
+
 @media only screen and (min-width: 768px) {
+
+    #portfolioMain a img {
+        float: left;
+        width: 11em;
+        height: 11em;
+        object-fit: cover;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 5%;
+      }
+
   body#page1 {
     /* background-image: url(/images/background.jpg);
     background-repeat: no-repeat; */
@@ -509,9 +547,6 @@ form label {
 
   .pics_cont a {
     display: inline; }
-
-  #page4 #portfolio_container {
-    margin-left: 5%; }
 
   #backtoTop {
     background-color: #b3b3b3;
@@ -673,9 +708,14 @@ form label {
   .gallery2 {
     display: none; }
 
+    #page5 footer {
+        margin-top: 15em;
+    }
+
   .gallery {
     display: block; } }
-.nav {
+
+    .nav {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); }
 
   #page3 .headerName {
@@ -685,33 +725,6 @@ form label {
 #page4 .headerName {
     clear: both;
     margin-bottom: 2%; }
-
-#portfolio_container {
-  clear: left; }
-
-#portfolio_container_main {
-  clear: left;
-  margin-left: 5%;
-  margin-right: 5%; }
-
-.pics_cont {
-  margin-bottom: 5%; }
-
-.artwork {
-  height: 170px;
-  object-fit: cover;
-  float: left; }
-
-/* #app {
-  clear: left; } */
-#portfolio_container h3 {
-  font-size: 120%;
-  align-content: center;
-  color: black;
-  padding: 0.5%; }
-
-#container_other {
-  clear: left; }
 
 .galleryDemo img {
   float: left;
@@ -898,7 +911,8 @@ body {
   text-shadow: 1px 1px 2px #FFD9D0; }
 
 footer {
-  position: absolute; }
+  position: absolute; 
+}
 
 footer #logo2 {
   width: 10%;
@@ -946,6 +960,13 @@ footer #socialMedia li a img {
   padding-top: 7%;
   padding-bottom: 0px;
   margin-bottom: 0px; }
+
+  #portfolioMain {
+      clear: both;
+      margin-bottom: 10em;
+  }
+
+  
 
 /*# sourceMappingURL=main.css.map */
 
