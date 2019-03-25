@@ -19,21 +19,6 @@
 .Title1 {
   margin-top: 15%; }
 
-#page5 .headerName {
-  clear: both;
-  margin-bottom: 2%; }
-
-  #page5 .nav h4 {
-    text-align: center;
-    position: sticky;
-    margin-top: 95em; 
-}
-
-#page5 .nav {
-    clear: both;
-    width: 100%;
-  float: right; }
-
 #contactBio {
   clear: left;
   margin-top: 5%;
@@ -150,6 +135,8 @@ form label {
 #page1 .nav ul li a:hover {
   color: #FFD9D0; }
 
+
+
 @media only screen and (max-width: 480px) {
     
 
@@ -254,20 +241,6 @@ form label {
   form label {
     margin-left: 15%; }
 
-  #page4 #app button {
-    border: #FFD9D0 solid 3px;
-    box-shadow: 2px 2px #b3b3b3;
-    width: 40%;
-    height: 80%;
-    font-family: 'Didot', sans-serif;
-    font-size: 100%;
-    background: white;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-right: 2%;
-    margin-top: 2%;
-    margin-left: 3.5%; }
-
   .buttons {
     margin-left: 5%; }
 
@@ -275,12 +248,7 @@ form label {
     margin-right: 3%;
     display: inline; }
 
-  #page4 .galleryDemo img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    margin-right: 0%;
-    margin-bottom: 5%; } }
+   }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 
     #portfolioMain a img {
@@ -364,9 +332,6 @@ form label {
   .aboutSvg img {
     height: 2.5em; }
 
-  #page5 .nav {
-    height: 8em; }
-
   form label {
     margin-left: 15%; }
 
@@ -427,17 +392,6 @@ form label {
     text-align: left;
     width: 90%; }
 
-  #page4 .nav h4 {
-      clear: both;
-    text-align: center;
-    margin-top: 73em; }
-
-  #page4 .galleryDemo img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-right: 0%; }
-
   .artwork {
     margin-right: 3%;
     display: inline; }
@@ -457,46 +411,27 @@ form label {
   #page3 .nav {
     height: 8em; }
 
-    #page4 .nav {
-        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); 
-        height: 8em; }
-
-    #page4 .nav h4 {
-        text-align: center;
-        position: sticky;
-        margin-top: 95em; 
-    }
-
   #page3 .nav h4 {
     text-align: center;
     position: sticky;
     margin-top: 95em; }
 
-  #page4 #app button {
-    border: #FFD9D0 solid 3px;
-    box-shadow: 2px 2px #b3b3b3;
-    width: 30%;
-    height: 80%;
-    font-family: 'Didot', sans-serif;
-    font-size: 100%;
-    background: white;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-right: 2%;
-    margin-top: 2%; }
+    
+      #page4 .nav {
+        height: 8em; }
+    
+      #page4 .nav h4 {
+        text-align: center;
+        position: sticky;
+        margin-top: 95em; }
 
-    #page5 #app button {
-        border: #FFD9D0 solid 3px;
-        box-shadow: 2px 2px #b3b3b3;
-        width: 30%;
-        height: 80%;
-        font-family: 'Didot', sans-serif;
-        font-size: 100%;
-        background: white;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        margin-right: 2%;
-        margin-top: 2%; }
+        #page5 .nav {
+            height: 8em; }
+        
+          #page5 .nav h4 {
+            text-align: center;
+            position: sticky;
+            margin-top: 95em; }
 
   .buttons {
     margin-left: 5%; }
@@ -576,6 +511,24 @@ form label {
     text-align: center;
     position: sticky;
     margin-top: 450%; }
+
+
+    #page4 .nav {
+        height: 5em; }
+    
+      #page4 .nav h4 {
+        text-align: center;
+        position: sticky;
+        margin-top: 450%; }
+
+
+        #page5 .nav {
+            height: 5em; }
+        
+          #page5 .nav h4 {
+            text-align: center;
+            position: sticky;
+            margin-top: 450%; }
 
   #selfPic {
     padding-left: 2%; }
@@ -671,28 +624,6 @@ form label {
   #endForm button {
     display: block; }
 
-  #page4 #app button {
-    border: #FFD9D0 solid 3px;
-    box-shadow: 2px 2px #b3b3b3;
-    width: 10%;
-    height: 80%;
-    font-family: 'Didot', sans-serif;
-    font-size: 100%;
-    background: white;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-right: 2%;
-    margin-top: 2%; }
-
-  #page4 .galleryDemo img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-right: 0%; }
-
-  #page4 .galleryDemo img:hover {
-    filter: grayscale(100%); }
-
   .buttons {
     margin-left: 5%; }
 
@@ -708,6 +639,10 @@ form label {
   .gallery2 {
     display: none; }
 
+    #page4 footer {
+        margin-top: 15em;
+    }
+
     #page5 footer {
         margin-top: 15em;
     }
@@ -722,9 +657,14 @@ form label {
     clear: both;
     margin-bottom: 2%; }
 
-#page4 .headerName {
-    clear: both;
-    margin-bottom: 2%; }
+    #page4 .headerName {
+        clear: both;
+        margin-bottom: 2%; }
+
+    #page5 .headerName {
+       clear: both;
+       margin-bottom: 2%; }
+
 
 .galleryDemo img {
   float: left;
@@ -928,6 +868,7 @@ footer ul li a {
 
 footer #nav2 {
   list-style: none;
+  text-align: left;
   float: left;
   margin-top: 5%; }
 

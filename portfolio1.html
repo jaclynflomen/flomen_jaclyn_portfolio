@@ -7,13 +7,20 @@
     <title>Jaclyn Flomen - Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/noframework.waypoints.min.js"></script>
-    <script src="js/portfolio_waypoints.js"></script>
-</head>
-<body id="page5">
+    <script src="js/waypoint.js"></script>
 
-    <nav class="nav" id="p5nav">
+    <!--LIGHTBOX-->
+    <link rel="stylesheet" href="path/to/halkaBox.min.css">
+    <script src="path/to/halkaBox.min.js"></script>
+</head>
+<body id="page3">
+
+    <a id="top"></a>
+    <nav class="nav" id="p4nav">
         <h1 class="hidden">Nav</h1>
+        <!-- <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a> -->
         <ul>
             <li><a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a></li>    
             <li class="link"><a href="index.html#page2body">ABOUT</a></li>
@@ -23,42 +30,13 @@
         </ul>
     </nav>
 
+    <h1 class="headerName">Portfolio</h1>
 
-    <h1 class="headerName">Contact</h1>
+
+
     
-    <h4 id="contactBio">Please fill out this form if you have any inquiries. <br>
-        For business related matters, please email me at <a href="mailto:jaclyn@jaclynflomen.com">jaclyn@jaclynflomen.com</a> <br>
-        Thank you</h4>
 
-        
 
-        <form method="POST" action="/includes/sendEmail.php">
-            <div id="formCont">
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" required>
-            <br>
-            <label for="email">Email Address</label>
-            <input id="email" type="email" name="email" required>
-            <br>
-            <label for="phone">Phone Number</label>
-            <input id="phone" type="tel" name="phone">
-            <br>
-            <label for="comments">Comments/Questions</label>
-            <textarea id="comments" type="text" name="comments" required></textarea>
-            <br>
-            </div>
-            <div id="endForm">
-               <ul>
-                <li><button id="submit" type="submit" value="Submit">Submit</button></li>
-                <li><button id="clear" type="reset" value="Reset">Clear</button></li>
-            </ul> 
-            </div>
-        </form>
-
-        
-
-       
-        
         <div id="footerNav">
             <footer>
               <h1 class="hidden">Nav</h1>
@@ -78,7 +56,8 @@
             </footer>
             <img id="Footerbackground" src="images/background.jpg" alt="background">
           </div>
-            
-    <script src="js/portfolio.js"></script>
+        
+<script src="js/portfolio.js"></script>
+<!-- <script src="js/portfolio_waypoints.js"></script> -->
 </body>
 </html>

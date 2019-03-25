@@ -1,3 +1,6 @@
+halkaBox.run("gallery1");
+halkaBox.run("gallery2");
+
 (() => {
     //init the vue stuff!
     const vm = new Vue({
