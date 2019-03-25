@@ -9,7 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "baguettebox.js": "^1.11.0",
     "basiclightbox": "^5.0.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",

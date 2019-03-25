@@ -10,76 +10,61 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/noframework.waypoints.min.js"></script>
     <script src="js/waypoint.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js" async></script>
 </head>
-<body id="page4">
+<body id="page3">
 
-    <nav class="nav">
+    <a id="top"></a>
+    <nav class="nav" id="p4nav">
         <h1 class="hidden">Nav</h1>
-        <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a>
+        <!-- <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a> -->
         <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a></li>    
+            <li class="link"><a href="index.html#page2body">ABOUT</a></li>
+            <li class="link"><a href="portfolio.html">PORTFOLIO</a></li>
+            <li class="link"><a href="resume.html">RESUME</a></li>
+            <li class="link"><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
 
-
     <h1 class="headerName">Portfolio</h1>
 
-    <h3 id="select">Select a category!</h3>
-    <main id="app">
-      <div class="buttons">
-            <button v-on:click="fetchPersonal" active id="1" class="textClick">Personal</button>
-            <button v-on:click="fetchWork" id="2" class="textClick">Work</button>
-            <button v-on:click="fetchSchool" id="3" class="textClick">School</button>
-            <button v-on:click="fetchPhotography" id="4" class="textClick">Photography</button>
-            <button v-on:click="fetchVideo" id="5" class="textClick">3D/Video</button>
-            <button v-on:click="fetchOther" id="6" class="textClick">Other</button>
-            
-        </div>            
-            <div v-for="item in artdata" id="imgCont"> <!-- v-for="item in artdata" -->
-                <p id="descrip">{{ item.art_desc }}</p>
-                
-                <div class="gallery"> 
-                        <a v-on:click.prevent="loadArt" id="LBoverlay" class="galleryDemo" :href="'images/' + item.imgPath">
-                        <img :src="'images/' + item.art_img" alt="portfolio piece" class="artwork">
-                    </a>
-                </div> 
 
-                <div class="gallery2"> 
-                        <a v-on:load="loadArt" id="LBoverlay" class="galleryDemo" :href="'images/' + item.imgPath">
-                        <img :src="'images/' + item.art_img" alt="portfolio piece" class="artwork">
-                    </a>
-                </div> 
-            </div> 
-    
-            <!--Lightbox-->
-            <div id="LBoutline" :class="{ 'show-lightbox' : showDetails }">
-                <span class="close" v-on:click="closeLB">&times;</span>
-                <div id="lboxImage" class="lightbox-img">
-                    <h4 id="lbText">{{arttitle}}</h4>
-                    <p id="lbText2">{{artinfo}}</p>
-                    <img :src="'images/' + artsource" alt="some alternate text">
 
-                </div>
-            </div>
-    
-    </main>
-    
-    <div id="navBreak">
-        <br><br>
+    <div id="portfolioMain">
+        <a><img src="images/1 - Lights/29.jpg" alt=""></a>
+        <a><img src="images/2 - KML/Newsblast.jpg" alt=""></a>
+        <a><img src="images/3 - Double Exposure/img_7403.jpg" alt=""></a>
+        <a><img src="images/4 - BW Photography/jaclynflomenportfolio-5.jpg" alt=""></a>
+        <a><img src="images/5 - Social Media for KML/national_watermelon_day.jpg" alt=""></a>
+        <a><img src="images/6 - LSFC/LSFC.png" alt=""></a>
+        <a><img src="images/7 - Ontario Summer/#" alt=""></a>
+        <a><img src="images/8 - Visual Art/img_3467.jpg" alt=""></a>
+        <a><img src="images/9 - Full House/jaclynloganvas1020.gif" alt=""></a>
+        <a><img src="images/11 - OHM/OHM_End_Screen.jpg" alt=""></a>
     </div>
-    <nav class="nav_mobile">
-            <h1 class="hidden">Nav</h1>
-            <a href="index.html"><img id="logo" alt="logo" src="images/JF_Logo_blue.svg"></a>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+
+
+        <div id="footerNav">
+            <footer>
+              <h1 class="hidden">Nav</h1>
+              <a href="index.html"><img id="logo2" alt="logo" src="images/JF_Logo_blue.svg"></a>
+              <ul id="nav2">
+                  <li><a href="index.html#page2body">ABOUT</a></li>
+                  <li><a href="portfolio.html">PORTFOLIO</a></li>
+                  <li><a href="resume.html">RESUME</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+      
+              <ul id="socialMedia">
+                  <li><a href="https://github.com/jaclynflomen" target="_blank"><img src="images/github_icon.png" alt=""></a></li>
+                  <li><a href="https://www.linkedin.com/in/jaclyn-flomen-b81928129/" target="_blank"><img src="images/linkedin.png" alt=""></a></li>
+                  <li><a href="https://www.pinterest.ca/flomen1217/" target="_blank"><img src="images/pinterest.png" alt=""></a></li>
+              </ul>
+            </footer>
+            <img id="Footerbackground" src="images/background.jpg" alt="background">
+          </div>
         
 <script src="js/portfolio.js"></script>
 <!-- <script src="js/portfolio_waypoints.js"></script> -->

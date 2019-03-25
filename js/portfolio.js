@@ -50,15 +50,15 @@
 
             },
 
-            fetchWork(e) {
-                //debugger;
-                this.fetchArtData(e.currentTarget.dataset.art_category = 'Works');
-
-            },
-
             fetchSchool(e) {
                 //debugger;
                 this.fetchArtData(e.currentTarget.dataset.art_category = 'School');
+
+            },
+
+            fetchMore(e) {
+                //debugger;
+                this.fetchArtData(e.currentTarget.dataset.art_category = 'More');
 
             },
 
@@ -90,7 +90,6 @@
                 this.arttitle = currentData[0].art_title;
                 this.artdesc = currentData[0].art_desc;
                 this.artinfo = currentData[0].art_info;
-                this.artheader = currentData[0].art_category;
                 this.artsource = dataKey;
 
                 this.showDetails = true;
